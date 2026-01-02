@@ -1,0 +1,544 @@
+NUMBER;NAME;NAME2;MCODE;ADDRESS;POSTINDEX;CITY;PHONE;INFO;UID;TAXNUMBER;TYPE;BILLTYPE;BILLCOPY;PAYRULE;TAREENABLE;TARERULE;GOODSPG;TAREPG;DLVRTIMEB1;DLVRTIMEE1;DLVRTIMEB2;DLVRTIMEE2
+123456;"Kala Muster";;"DBZ DIENSTLEISTUNGS-";"Am Turbinenkanal 3";73240;Wendlingen;07024/405366;;;59330/31234;;1;;1;1;;003;100;0000;0000;0000;0000
+789123;"Klaus Beispiel";;"AERO CLUB KEHL -KEHL";"Willstaetter Str. 20";77694;Kehl;015153543483;"Ware bitte mittig in den Kuehlraum stell";;08062/00011;;1;;1;1;;000;100;0000;0000;0000;0000
+766543;"Heinz Muster";"Tommy Hertwig";"ATHLETIKHALLE URLOFF";"Waldstr. 2";77767;Appenweier/Urloffen;0171/5142820;"Kiefer 0171 51 42 820";;08062/00340;;1;;1;1;;000;100;0000;0000;0000;0000
+110205;Barverkauf;Privatkundschaft;"BARVERKAUF -OFFENBUR";"Gutenbergstrasse 3";77654;Offenburg;;;;;1;7;;1;1;;004;100;0000;0000;0000;0000
+110232;"1. Boccia Club Offenburg";Vereinsheim;"BOCCIA-CLUB OFFENBUR";"Stegermattstrasse 30";77652;Offenburg;0781/24514;Schluesselkunde;;14047/02155;;1;;1;1;;000;100;0000;0000;0000;0000
+110303;"Eveline u. J. Hahn";;"EVELINE U. J. HAHN -";"Im unt. Angel 54";77654;Offenburg;"0171 3609285";"Lieferung an die Halle - vorher anrufen";;DE142539423;;1;;1;1;;000;100;0000;0000;0000;0000
+110330;"Michael Conrad";Linde;"CONRAD LINDE OFFENBU";"Winzerstr. 44";77654;Offenburg;0781/34982;"Lieferzeit:ab 8.30 Uhr";;14157/24005;;1;;1;1;;000;100;0000;0000;0000;0000
+110540;"Hahn Christine";"Weihnachtsmarkt OG";"HAHN CHRISTINE -OFFE";"Im Unteren Angel 54";77652;Offenburg;"0172 2810 130";;;;;1;;1;1;;000;100;0000;0000;0000;0000
+110586;"Christa Kempf";;"KEMPF CHRISTA RENTNE";Sauerbruchstr.5;77656;Offenburg;0781/55953;"2/3 Kisten/Monat à Euro 2,10+M WST.";;;;1;;1;1;;029;100;0000;0000;0000;0000
+110599;"Marco Jehle";Getraenke-Vertrieb;"JEHLE GETRAENKEVERTR";"Binzburgstr. 13";77749;"Hohberg/Hofweier GLN: 433";07808/439;;;14262/09005;;1;;1;1;;003;100;0000;0000;0000;0000
+110647;"Helene Kuber";Baeren;"KUBER BAEREN OBERHAR";"Dorfstr. 35";77784;Oberharmersbach;"07837 847";"Lieferzeit:9.00-17.00 Uhr";;23020/12006;;1;;1;1;;000;100;0000;0000;0000;0000
+110691;"Getraenke Kopf OHG";"Getraenkehandlung / Zeltv";"KOPF GETRAENKEVERTR.";Waseneckstr.9;77694;"Kehl-Goldscheuer GLN 4399";07854/985730;;;08231/09609;;1;;1;1;;003;100;0000;0000;0000;0000
+110770;"Schuetzenverein Schiltach";"Schuetzenhaus Joachim Bre";"SCHUETZENVEREIN SCHI";"Vor Heubach 9";77761;Schiltach;0781/25739;;;15055/2975;;1;;1;1;;019;100;0000;0000;0000;0000
+110881;"Klaus Fey";"Mandolinenverein Zell-Wei";"FEY MANDOLINENVEREIN";"Weinstrasse 44";77654;Offenburg;0781/34961;;;14047/56274;;1;;1;1;;000;100;0000;0000;0000;0000
+110883;"Christian Mueller";"Gasthaus Krone Nesselried";"MUELLER KRONE APPENW";"Dorfstr. 42";77767;Appenweier;07805/3351;"Lieferzeit 7.00 - 14.00 Uhr";;08269/32802;;1;;1;1;;000;100;0000;0000;0000;0000
+110961;"Karl-Heinz Burgert";;"BURGERT KARL-HEINZ R";"Ostpreusenweg 1";77880;Sasbach;07841/5279;;;;;1;;1;1;;029;100;0000;0000;0000;0000
+110988;"Oelke Thomas";Getraenkevertrieb;"OELKE THOMAS -OFFENB";Hanns-Martin-Schleyer-Str;77656;Offenburg;0781/58752;;;14355/05009;;1;;1;1;;003;100;0000;0000;0000;0000
+110991;"Turnverein 1909 Appenweie";"Manuel Mueller";"TURNVEREIN APPENWEIE";"Badenerstr. 13";77767;Appenweier;;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+110992;"Barverkauf Offenburg Fass";Privatkundschaft;"BARVERKAUF OFFENBURG";"Gutenberstrasse 3";77654;Offenburg;;;;;1;7;;1;1;;004;100;0000;0000;0000;0000
+111008;"Offenburger Schwellkepf e";"z.Hd. H. Tschochner";"OFFENBURGER SCHWELLK";"Unterer Huettersbacher We";77723;Gengenbach;07803/602586;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+111010;"Narrenzunft Tscherissili";"Festekonto Halle Elgerswe";"NARRENZUNFT TSCHERIS";Kirchstr.21;77654;Offenburg;;;;;;1;;1;1;;087;100;0000;0000;0000;0000
+111032;"Roem.-Kath. Kirchengemein";;"KATH. PFARRAMT MARIA";"Schutterner Hauptstrasse";77948;Friesenheim;07821/67713;;;"KEINE STEUERNR.ER";;1;;1;1;;000;100;0000;0000;0000;0000
+111157;"TuS Windschlaeg";Sporthaus;"TUS WINDSCHLAEG E.V.";"Windschlaegerstrasse 112";77652;"Offenburg <keine>";"0171 99 56 555";;;14047/00807;;1;;1;1;;000;100;0000;0000;0000;0000
+111175;"Sportfreunde Goldscheuer";Sportfreundehalle;"SPORTFREUNDE GOLDSCH";"Kittersburger Str. 23";77694;Kehl-Goldscheuer;;;;08062/00358;;1;;1;1;;000;100;0000;0000;0000;0000
+111181;"Berthold Litterst";;"LITTERST BERTHOLD RE";"Zur Dil 2";77652;Offenburg;;;;;;1;;1;1;;029;100;0000;0000;0000;0000
+111196;"Stadt Offenburg";Seniorenbuero;"STADT OFFENBURG -OFF";"Marktplatz 5";77652;Offenburg;82-2222;"Lieferzeit:8.00-12.00 Uhr";;14047/03036;;1;;1;1;;000;100;0000;0000;0000;0000
+111210;"Stadt Offenburg";"OB Buero";"STADT OFFENBURG -OFF";"Hauptstr. 90";77652;Offenburg;"0781/82 2203";;;14049/21957;;1;;1;1;;000;100;0000;0000;0000;0000
+111262;"Karl Hogenmueller";;"HOGENMUELLER KARL RE";"Nik.-Schrempp-Str. 4";77749;Hohberg/Hofweier;;"2 bzw.3 Kisten/Monat(Rentner) pro Kiste";;;;1;;1;1;;029;100;0000;0000;0000;0000
+111267;"Thomas Schwendemann";"Zur Krummholzstub";"SCHWENDEMANN KRUMMHO";"Huberhofstr. 24";77787;Nordrach;07838/721;"Lieferzeit: ab 8.00 Uhr";;1430042917;;1;;1;1;;000;100;0000;0000;0000;0000
+111312;"Rosemarie Strumbel";Budo-Zentrum;"STRUMBEL BUDO SPORTZ";"In der Liste 7";77656;Offenburg;0781/55521;"Lieferzeit: 7.30-12.00 Uhr /  1/2 Std. V";;14437/75002;;1;;1;1;;000;100;0000;0000;0000;0000
+111337;"Edgar Stueckler";"Zum Schwanen";"STUECKLER SCHWANEN N";"Hauptstr. 63";77743;"Neuried Ichenheim";07807/801;"Lieferzeit:8.30-11.30 Uhr";;08338/00801;;1;;1;1;;000;100;0000;0000;0000;0000
+111340;Altmeyer-Getraenkemarkt;Getraenkevertrieb;ALTMEYER-GETRAENKEMA;"Tramplerstr. 89/3";77933;Lahr;07821/22104;"bitte Vormittags liefern!";;;;1;;1;1;;003;100;0000;0000;0000;0000
+111353;"Offenburger Segel-Club Gi";"Stefan Furrer";"SEGELCLUB OFFENBURG";"Am Krummer 8a";77652;Offenburg;0781/503268;;;14047/52647;;1;;1;1;;000;100;0000;0000;0000;0000
+111356;"Martin Roth";Getraenkehandel;"MARTIN ROTH -OPPENAU";Bahnhofstr.13a;77728;Oppenau;"07804 2577";;;14383/12010;;1;;1;1;;003;100;0000;0000;0000;0000
+111406;"Tennis Club Weier";"Winfried Mantwill";"TENNIS CLUB WEIER";"Im Euroring";77656;"Offenburg Weier";"0176 22 64 8132";Schluesselkunde;;14047/56160;;1;;1;1;;000;100;0000;0000;0000;0000
+111412;"Tennisclub Griesheim e.V.";"vertr. d.d. Vorstand Eric";"TC GRIESHEIM -OFFENB";"Hesselhurster Strasse 34";77652;Offenburg-Griesheim;"0170-75 944 83";"Schluesselkunde   Monatlich gerade KW";;14047/04190;;1;;1;1;;000;100;0000;0000;0000;0000
+111447;"Saral, Cafer & Colakli, C";"Fried Chicken";"SARAL, CAFER & COLAK";"Schwarzwaldstr. 41";77933;Lahr;07821/38225;"Lieferzeit: ab 10.00 Uhr";;;;1;;1;1;;000;100;0000;0000;0000;0000
+111451;"Volksbank e.G.";;"VOLKSBANK E.G. -OFFE";"Okenstr. 7";77652;Offenburg;;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+111509;"Wroblewski GmbH & Co. KG";"Shell- Station";"WROBLEWSKI GMBH & CO";"Schutterwaelder Str. 2";77656;Offenburg;0781/62171;"Lieferzeit: ab 6.30 Uhr";;14008/06368;;1;;1;1;;003;100;0000;0000;0000;0000
+111650;"Fritz GmbH & Co.KG";Sanitaer-Heizung;"FRITZ SANITAER OFFEN";"Bruecklesbuend 4";77652;Offenburg;0781/78770;"ab 7:00 Uhr liefern";;;;1;;1;1;;000;100;0000;0000;0000;0000
+111764;"Renate Dietz";Veranstaltungsgastronomie;"DIETZ VERANSTALT.GAS";"Floesserweg 18";77652;Offenburg-Griesheim;0781/1375;;;14208/61006;;1;;1;1;;003;100;0000;0000;0000;0000
+111785;"Erich Wolf";;"WOLF ERICH RENTNER O";"Paradiesweg 5";77704;Oberkirch;07802/2283;"Haustrunk 2 bzw. 3 Kisten Monat (Rentner";;;;1;;1;1;;029;100;0000;0000;0000;0000
+111814;"Narrenzunft Griesheim e.V";"Markus Seitz";"NARRENZUNFT GRIESHEI";"Gartenstr. 17";77656;Offenburg;01520-8946859;;;14047/02001;;1;;1;1;;000;100;0000;0000;0000;0000
+111894;"Stadt Offenburg";"Fachbereich Kultur";"STADT OFFENBURG KULT";"Weingartenstr. 34";77654;"Offenburg Marlon Grieshab";0781/822250;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+111914;"FV Griesheim e.V.";"- Festekonto -";"FV GRIESHEIM E.V. -O";"Hesselhursterstr. 1";77652;Offenburg;0781/780586;"- nur Festabrechnung -";;14047/04413;;1;;1;1;;000;100;0000;0000;0000;0000
+111976;Getraenke-Fachgrosshandel;Ell-Getraenke;"ELL GETRAENKE-FACHGR";Ringstr.6;77704;"Oberkirch GLN 43999020275";07802/2531;;;14174/28025;;1;;1;1;;003;100;0000;0000;0000;0000
+112074;"Festhalle Weier";;"FESTHALLE WEIER -OFF";"Hubertusstr. 1b";77656;Offenburg-Weier;;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+112077;"Halle Windschlaeg";;"HALLE WINDSCHLAEG OF";"Oberrothweg 12";77652;"Offenburg Windschlaeg";;;;14047/03036;;1;;1;1;;000;100;0000;0000;0000;0000
+112136;"ASV Hofweier e.V.";"z.H. 1. Vorstand Maik Sch";"ASV HOFWEIER E.V. -H";"Kirchstrasse 12";77749;Hohberg;07808/2894;;;14047/05140;;1;;1;1;;000;100;0000;0000;0000;0000
+112201;Otto-Kempf-Halle;"Turn- und Festhalle";"TURN- U.SPORTHALLE O";"Sandackerweg 6";77656;"Offenburg Elgersweier";;;;14047/03036;;1;;1;1;;000;100;0000;0000;0000;0000
+112233;"Messe Offenburg-Ortenau G";;"MESSE OFFENBURG-ORTE";Messeplatz;77656;Offenburg;92260/;;;14045/06504;;1;;1;1;;000;100;0000;0000;0000;0000
+112239;"Karl Suhm";;"SUHM KARL RENTNER GE";Kaiserstr.14;77723;Gengenb./Reichenbach;;;;;;1;;1;1;;029;100;0000;0000;0000;0000
+112256;"Waldemar Frei";;"FREI WALDEMAR RENTNE";"Hauptstr. 37";77743;Neuried;07807/;"3 Kisten/Monat Haustrunk";;;;1;;1;1;;029;100;0000;0000;0000;0000
+112261;"Michael Haeusler";;"HAEUSLER MICHAEL MIT";"Turnhallenstrasse 20";77654;Offenburg;0781/43581;"4 Kisten/Monat OGV";;;;1;;1;1;;027;100;0000;0000;0000;0000
+112262;"Streb Getraenke AG";"Nicole Streb";"STREB GETRAENKE GMBH";"Kanalstr. 4";76571;Gaggenau;"07224 93 8920";;;3946645507;;1;;1;1;;003;100;0000;0000;0000;0000
+112279;"Klaus Petereit";;"PETEREIT KLAUS MITAR";"Grimmelshausenstr. 39";77654;Offenburg;0781/37681;"5 Kisten/Monat gratis";;;;1;;1;1;;026;100;0000;0000;0000;0000
+112285;"Hans Sandhaas";;"SANDHAAS HANS RENTNE";"Zum Grossen Deich 20";77656;Offenburg;0781/54547;"40 l verguenstigt";;;;1;;1;1;;029;100;0000;0000;0000;0000
+112290;"Mitarbeiter Automat";AFG;"MITARBEITER AUTOMAT";"Zellerstr. 46     .";77654;Offenburg;;;;;;1;;1;1;;003;100;0000;0000;0000;0000
+112291;"Spitznagel Hubert Hohberg";;"SPITZNAGEL HUBERT HO";"Abt-Fullrad-Str. 8";77749;Hohberg;;;;;;1;;1;1;;003;100;0000;0000;0000;0000
+112301;"Raimund Walz";;"WALZ RAIMUND RENTNER";"Gartenstr. 4";77656;Offenburg;;"4 Kisten Haustrunk Mtl. (Rentner)";;1448770971;;1;;1;1;;029;100;0000;0000;0000;0000
+112319;Hausint.Verkostung;"Brauwerk Baden";"HAUSINT.VERKOSTUNG -";"Gutenbergstrasse 3";77654;Offenburg;;;;;;1;;1;1;;000;110;0000;0000;0000;0000
+112320;"Michael Nitze";;"MICHAEL NITZE -OFFEN";Walther-Blumenstockstrass;77654;Offenburg;;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+112337;Sternenberghalle;;"GEMEINDE STERNENBERG";"Sternenberg 18";77948;Friesenheim;"0175 1577 099";;;DE142365476;;1;;1;1;;000;100;0000;0000;0000;0000
+112343;"Schlossbrauerei Stoeckle";Brauerei;"SCHLOSSBRAUEREI STOE";"Schlossstr. 64";77971;Kippenheim-Schmieheim;;;;;;1;;1;1;;003;100;0000;0000;0000;0000
+112353;"Uwe Joerger";Schwanen;"JOERGER SCHWANEN OFF";"Hubertusstr. 15";77656;Offenburg-Weier;0781/57204;"Ware im Kuehlraum nicht an die Wand stel";;14263/35002;;1;;1;1;;000;100;0000;0000;0000;0000
+112356;"Heiko Henninger";"Gasthaus Brandeck";"HENNINGER BRANDECK O";"Zeller Strasse 44";77654;Offenburg;30352;;;14229/79025;;1;;1;1;;000;100;0000;0000;0000;0000
+112458;"Ingrid Herrmann";Eintracht;"HERRMANN EINTRACHT A";"Am Baechel 17";77855;Achern-Grossweier;07841/3335;"Lieferzeit: 8.00 - 10.00Uhr    Kunde vor";;01147/33007;;7;;1;1;;000;100;0000;0000;0000;0000
+112464;"Vito Lamanna";Vesuvio;"LAMANNA VESUVIO OFFE";"Hildastr. 4";77654;Offenburg;0781/37474;"Lieferzeit:11.00-14.00 Uhr";;14303/59006;;1;;1;1;;000;100;0000;0000;0000;0000
+112499;"Monika Stern";Roxi-Bar;"STERN ROXI BAR OFFEN";"Hauptstr. 100";77652;Offenburg;01577/3035200;;;14433/48056;;1;;1;1;;000;100;0000;0000;0000;0000
+112561;"Karl-Heinz Lott";Engel;"LOTT ENGEL APPENWEIE";"Dorfstr. 43";77767;Appenweier-Nesselried;07805/3365;"Lieferzeit:8.00-14.00 Uhr";;08250/11206;;1;;1;1;;000;100;0000;0000;0000;0000
+112619;"Ciao Pinsa GbR";"Cakalic und Russo";"CAKALIC CIAO PINSA J";"Egonstr. 45";79106;Freiburg;"0172-25 046 31";;;06336/40123;;1;;1;1;;000;100;0000;0000;0000;0000
+112671;"Franz Scheidel";"Scheidels Restaurant";"SCHEIDEL SCHEIDELS R";Offenburgerstr.18;79341;Kenzingen;01577/3035200;;;DE141934095;;1;;1;1;;019;100;0000;0000;0000;0000
+112721;"Martin Berl";Ochsen;"BERL OCHSEN KEHL-MAR";"Kehler Str. 9";77694;Kehl-Marlen;07854/230;"Lieferzeit:ab 10.00 Uhr";;08116/41602;;1;;1;1;;000;100;0000;0000;0000;0000
+112774;"Klaus Lubberger e.K.";"Hotel Landgasthof Schwane";"LUBBERGER SCHWANEN K";"Landstrasse 3";77694;"Kehl Kork";07851/7960;"Lieferzeit:9.30-12.00 und             14";;;;1;;1;1;;000;100;0000;0000;0000;0000
+112793;"Ralf Specht";Pflug;"SPECHT PFLUG KEHL NE";"Elsaesser Str. 15";77694;Kehl-Neumuehl;07851/2154;"Lieferzeit:8.30-12.00 Uhr";;08064/05538;;1;;1;1;;000;100;0000;0000;0000;0000
+112828;"Edith Bauer";Linde;"BAUER LINDE LAHR-REI";"Gereutertalstr. 24";77933;"Lahr Reichenbach";07821/7195;"Lieferzeit: ab 10.00 Uhr";;10102/20107;;1;;1;1;;000;100;0000;0000;0000;0000
+112831;"Lydia Brucker";Bruckerhof;"BRUCKER BRUCKERHOF L";"Weiler 4";77933;"Lahr Reichenbach";07821/7215;"Faesser nicht stapeln!!!";;10123/01443;;1;;1;1;;000;100;0000;0000;0000;0000
+112849;DanielFehrenbacher;"Hotel Adler";"FEHRENBACHER ADLER L";"Reichenbacher Hauptstr.18";77933;Lahr;07821/906390;"Lieferzeit: 9.00-12.00 Uhr";;0;;1;;1;1;;000;100;0000;0000;0000;0000
+112854;"Udo Haser";Adler;"GRUNINGER ADLER RUST";Karl-Friedrich-Str.8;77977;Rust;07822/7501;"Lieferzeit ab 7.00 Uhr";;10184/01009;;1;;1;1;;000;100;0000;0000;0000;0000
+112887;"Arthur Schmieder";Ochsen;"SCHMIEDER OCHSEN SEE";"Hauptstr. 100";77960;Seelbach;07823/94950;Lieferzeit:7.30-12.00;;10351/00300;;1;;1;1;;000;100;0000;0000;0000;0000
+112903;"Friederike Weber-Schnebel";Eiche;"WEBER-SCHNEBEL EICHE";Langenhard;77933;Lahr;07821/7493;"Lieferzeit: ab 7.00 Uhr";;10404/00604;;1;;1;1;;000;100;0000;0000;0000;0000
+112948;"Walter & Monika Bruder";"Winzer Stube";"BRUDER WINZERSTUB OB";"Herztal 129";77704;Oberkirch-Nussbach;07805/880;"Lieferzeit:ab 15 Uhr, 0176-23827171";;14084/18684;;1;;1;1;;000;100;0000;0000;0000;0000
+112980;"Christian Dobrin";"Zeitlos Bistro";"CHRISTIAN DOBRIN";"Eisenbahnstr. 1";77871;Renchen;017628328235;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+113028;"Peter Bolay";Rappen;"BOLAY RAPPEN WILLSTA";"Ortenaustr. 35";77731;"Willstaett Hesselhurst";07852/2276;"Lieferzeit:9.00-12.00 Uhr";;08123/24008;;1;;1;1;;000;100;0000;0000;0000;0000
+113038;"Luigi Cascone";Krone;"CASCONE KRONE KAPPEL";"Muehlenstr. 10";77966;Kappel;07822/61633;;;10130/03008;;1;;1;1;;000;100;0000;0000;0000;0000
+113068;"Heiko Henninger";Linde;"HENNINGER LINDE HOHB";"Talstr. 9";77749;Hohberg;07808/94980;"Lieferzeit:9.30-11.00 und  ab 16.00 Uhr";;14229/79025;;1;;1;1;;000;100;0000;0000;0000;0000
+113074;"Martine Moser";Keglerstube;"MARTINE MOSER -HOHBE";"Kreisstr. 10";77749;Hohberg-Diersburg;;;;14005/08540;;1;;1;1;;019;100;0000;0000;0000;0000
+113080;"Franz Isenmann";Waldfrieden;"ISENMANN WALDFRIEDEN";"Am Schrofen 7";77784;Oberharmersbach;07837/825;"Lieferzeit:ab 10.00 Uhr";;;;1;;1;1;;000;100;0000;0000;0000;0000
+113125;"Thomas Roth";"Schuell's Winstub";"ROTH SCHUELL'S WINST";"Kanonengasse 10";77743;Neuried-Altenheim;07807/552;"Lieferzeit:7.30-12.00 Uhr";;08299/2160;;1;;1;1;;000;100;0000;0000;0000;0000
+113154;"Andreas Hofmann";Fantasy;"HOFMANN FANTASY ORTE";"Hauptstr. 60";77799;Ortenberg;39488;"Lieferzeit:ab 11.00 Uhr";;14241/41003;;7;;1;1;;000;100;0000;0000;0000;0000
+113161;"Klaus Willmann";Roessle;"WILLMANN ROESSLE GEN";"Reichenbachtal 57";77723;Gengenbach;07803/96590;"Lieferzeit: ab 8.00 Uhr";;14083/18052;;1;;1;1;;000;100;0000;0000;0000;0000
+113167;"Schutterzeller Muehle Gmb";"Familie Ziebold";"ZIEBOLD SCHUTTERZELL";;77743;Neuried/Schutterzell;07808/401;"Lieferzeit:8.00-11.00 Uhr";;08001/00174;;1;;1;1;;000;100;0000;0000;0000;0000
+113423;"REWE Markt GLN 4388095044";;"REWE MARKT ACHERN";"Eisenbahnstr. 12-14";77855;Achern;07841/6812916;;;;;1;;1;1;;060;100;0000;0000;0000;0000
+113477;"Neukauf Decker";"FA. H. Decker GmbH";"NEUKAUF DECKER -OPPE";"Strassburgerstr. 72";77728;"Oppenau ILN 4314122740635";07804/1500;;;;;1;;1;1;;076;100;0000;0000;0000;0000
+113530;"Prohoga Ortenau";"GmbH & Co.KG";"PROHOGA ORTENAU -HOH";"Gewerbestrasse 11";77749;Hohberg;07808/94920;;;21100/26910;;1;;1;1;;003;100;0000;0000;0000;0000
+113548;"Kaufland im EZO";;"KAUFLAND IM EZO OFFE";"Marlener Strasse 11";77656;Offenburg;0781/284170;"Lieferzeit: 7.00-12.30 Uhr   Palettentau";;DE145804059;;1;;1;1;;067;100;0000;0000;0000;0000
+113582;"Althistorische Narrenzunf";Narrenkeller;"ALTHISTORISCHE NARRE";"Ritterstrasse 10";77652;Offenburg;"0170-5602 620";;;14047/01284;;1;;1;1;;000;100;0000;0000;0000;0000
+113594;"FV Zell-Weierbach e.V.";Sporthaus;"FV ZELL-WEIERBACH SP";"Obertal 18";77654;Offenburg/Zell-Weierbach;01733185334;Schluesselkunde;;14047/00872;;1;;1;1;;000;100;0000;0000;0000;0000
+113598;"Gemeinschaft der Gartenfr";;"GARTENFREUNDE E.V. -";"Im Stockfeld";77656;Offenburg;"0781 75602";"14-taegig gerade KW";;14047/02243;;1;;1;1;;000;100;0000;0000;0000;0000
+113599;"Gartengem.Koenigswald Off";;GARTENGEM.KOENIGSWAL;"Im Stockfeld";77656;Offenburg;"07808 4318484";Schluesselkunde;;;;1;;1;1;;000;100;0000;0000;0000;0000
+113605;Kleintierzuchtverein;"Wolfgang Heuberger";KLEINTIERZUCHTVEREIN;"Am Katzensteg 1";77652;Offenburg;0781/598;;;;;7;;1;1;;087;100;0000;0000;0000;0000
+113625;"FSV Buehl";Clubheim;"FSV BUEHL E.V. OFFEN";"Buehler Strasse 18";77652;Offenburg;"0177-622 6329";Schluesselkunde;;14047/01034;;1;;1;1;;000;100;0000;0000;0000;0000
+113641;"Narrenzunft Appenweier e.";"Markus Thierauf";"NARRENZUNFT APPENWEI";"Oberkircher Str. 20";77767;Appenweier;01626858152;;;08062/00702;;1;;1;1;;000;100;0000;0000;0000;0000
+113645;"Turnverein 1909 e.V.";"Sporthalle Urloffen";"TURNVEREIN 1909 E.V.";"Jahnstr. 1";77767;Appenweier-Urloffen;07805/1560;;;08062/00439;;1;;1;1;;000;100;0000;0000;0000;0000
+113653;"SV Hecklingen e.V.";"Michael Joos";"SV HECKLINGEN E.V. -";"Feldbergstr. 11";79341;Kenzingen-Hecklingen;07642/;;;05088/00544;;1;;1;1;;000;100;0000;0000;0000;0000
+113658;"Sportverein SV Heimbach e";"Herrn Bruno Trenkle";"SPORTVEREIN SV HEIMB";"Binnaeckerstr. 12";79331;Teningen;;;;05077/01470;;1;;1;1;;019;100;0000;0000;0000;0000
+113662;"SV Wagenstadt e.V.";Vereinsheim;"SV WAGENSTADT E.V. -";"Kenzingerstr. 6a";79336;Herbolzheim-Wagenstadt;07643/4353;;;05070/02073;;1;;1;1;;019;100;0000;0000;0000;0000
+113666;"Wassersportclub e.V.";Clubhaus;"WASSERSPORTCLUB E.V.";"Rheinweidweg 2";77694;"Kehl Marlen";07854/980316;"Monatlich ger.KW";;;;1;;1;1;;000;100;0000;0000;0000;0000
+113670;"FV Bodersweier 1922 e.V.";Sporthaus;"FV BODERSWEIER 1922";"Querbacher Str. 21";77694;Kehl;07853/996942;Schluesselkunde;;08062/00078;;1;;1;1;;000;100;0000;0000;0000;0000
+113684;"Schuetzenverein Goldscheu";Vereinsheim;"SCHUETZENVEREIN GOLD";"Im Woerth 4";77694;"Kehl Goldscheuer";07854/7780;;;08062/01020;;1;;1;1;;000;100;0000;0000;0000;0000
+113686;"Schuetzenverein e.V. Leut";Schuetzenhaus;"SCHUETZENVEREIN E.V.";"Rheinwaldstr. 24";77694;Kehl-Leutesheim;07853/691;"Schluessel bei Hr.Keck holen  7-12 Uhr Z";;"08062/02263 S 601";;1;;1;1;;000;100;0000;0000;0000;0000
+113693;"SC Kuhbach-Reichenbach e.";Sporthaus;"SC KUHBACH-REICHENBA";"Am Sportplatz 16";77933;Lahr;07821/77200;;;10050/02730;;1;;1;1;;000;100;0000;0000;0000;0000
+113744;"FV Ebersweier";Clubheim;"SC DURBACHTEL DURBAC";"Wiesenstrasse 24";77770;"Durbach Ebersweier";0781/440205;Schluesselkunde;;14047/00362;;1;;1;1;;000;100;0000;0000;0000;0000
+113747;"FC Ankara e.V";"H. Muemtaz Canseker";"FC ANKARA E.V -GENGE";"In der Spoeck 20";77723;Gengenbach;;;;1404702106;;1;;1;1;;000;100;0000;0000;0000;0000
+113748;"Freiw. Feuerwehr";"z.Hd. M. Maier";"FREIW. FEUERWEHR -KE";;79341;Kenzingen;;;;;;1;;1;1;;019;100;0000;0000;0000;0000
+113779;"TC Rot Gold Durbach e.V.";"Marc Hefner";"TC ROT GOLD DURBACH";"Sendelbach 7c";77770;Durbach;01737980986;;;14047/04785;;1;;1;1;;000;100;0000;0000;0000;0000
+113783;"Heike Gerspacher";Sportschuetzengemeinschaf;SPORTSCHUETZENGEMEIN;"Felixstr. 9";77749;Hohberg;"0151 252 921 28";Schluesselkunde;;14047/02076;;1;;1;1;;000;100;0000;0000;0000;0000
+113786;"HGW Hofweier e.V.";Geschaeftstetlle;"HGW HANDBALL-VEREIN";"Freiburger Strasse 54";77749;Hohberg;;;;14047/00442;;1;;1;1;;019;100;0000;0000;0000;0000
+113910;"Kuehlwagenbestand / Feste";Aussenlager;"KUEHLWAGENBESTAND /";"Gutenbergstr. 3";77654;Offenburg;;;;;;1;;1;1;;019;110;0000;0000;0000;0000
+113999;"Junker und Osswald";"Speiserestaurant, Partyse";"JUNKER UND OSSWALD -";"Okenstr. 25 a";77652;"Offenburg Kasino GmbH.";0781/9709641;"Lieferzeit: 6.00-14.00 Uhr";;14001/16478;;1;;1;1;;000;100;0000;0000;0000;0000
+114005;"Printus GmbH.";Neubau;"PRINTUS GMBH -OFFENB";"Carl-Zeiss-Strasse 1";77656;"Offenburg Elgersweier";0781/60701;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+114034;"Getraenke Hauser GmbH & C";Getraenkefachh.Mitgl.Nr.1;"HAUSER GETRAENKE GMB";"Bundesstrasse 13";77855;"Achern/Fautenbach GLN: 43";07841/21679;;;01050/10327;;1;;1;1;;003;100;0000;0000;0000;0000
+114074;"Kloos GmbH";Getraenkevertrieb;"KLOOS GMBH -MAHLBERG";"Gottlieb-Daimler-Str. 2-6";77972;Mahlberg;07822/444580;;;DE295426862;;1;;1;1;;003;100;0000;0000;0000;0000
+114084;"Getraenke Graf GmbH.& Co.";;"GRAF GETRAENKE GMBH.";"Moenchsmatten 11";77704;Oberkirch;07802/2263;;;14209/42009;;1;;1;1;;003;100;0000;0000;0000;0000
+114100;"Wurz-Getraenke GmbH";Getraenke-Vertrieb;"WURZ-GETRAENKE GMBH";"Hubertusstrasse 11";76532;Baden-Baden;07221/24282;"vor 13 Uhr liefern oder anrufen!";;33021/05767;;1;;1;1;;003;100;0000;0000;0000;0000
+114119;"Getraenke Schulz";Getraenkevertrieb;"SCHULZ GETRAENKEVERT";"Hauptstr. 52";77974;Meissenheim;07824/3653;;;10360/05568;;1;;1;1;;003;100;0000;0000;0000;0000
+114226;"Heiko Obert";Getraenkevertrieb;"OBERT GETRAENKEVERTR";"Muehlsbach 31";77790;Steinach;07832/8597;;;23214/19304;;1;;1;1;;003;100;0000;0000;0000;0000
+114240;"A O K  Suedlicher Oberrhe";Krankenkasse;"A O K  SUEDLICHER OB";"Kolpingstr. 2";77656;"Offenburg Personal";0781/623-0;"Lieferzeit: 7.00-8.00 Uhr Monatlich unge";;14047/00066;;7;;1;1;;000;100;0000;0000;0000;0000
+114248;"Kratzer GmbH & Co.KG";"z.Hd. Herrn Schmider";"KRATZER GMBH & CO.KG";"Kolpingstr. 19";77656;Offenburg;0781/624-342;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+114290;"Printus GmbH.";Altbau;"PRINTUS GMBH ALTBAU";"Carl-Zeiss-Strasse 1";77656;"Offenburg Elgersweier";0781/60701;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+114300;"Jugenddorf Offenburg";Berufsbildungswerk;"JUGENDDORF OFFENBURG";"Zaehringerstr. 42-59";77652;Offenburg;0781/7908124;"Lieferzeit: ab 7.00 Uhr";;28/63089/00535;;1;;1;1;;000;100;0000;0000;0000;0000
+114486;"Buerstner GmbH & Co. KG";Wohnwagenwerk;"BUERSTNER GMBH WOHNW";Weststr.33;77694;Kehl;07851/85-701;"Lieferzeit:6.00-14.30 Uhr";;08001/01991;;1;;1;1;;000;100;0000;0000;0000;0000
+114487;"Buerstner GmbH & Co. KG.";Service-Center;"BUERSTNER GMBH SERVI";"Elsaesser Str. 80";77694;Kehl-Neumuehl;07851/85-427;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+114518;"Claus Vetter";Drive-Inn;"VETTER DRIVE INN LAH";"Offenburgerstr. 30";77933;Lahr;07821/54152;"Lieferzeit:8.00-11.00 Uhr             un";;10395/04458;;1;;1;1;;000;100;0000;0000;0000;0000
+114594;"Haus- und Landwirtsch.-Sc";Sekretariat;"HAUS- UND LANDWIRTSC";"Zaehringerstrasse 41";77656;Offenburg;82207;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+114632;"Sued-Treber GmbH";;"SUED TREBER GMBH STU";"Zaunackerstrasse 1";70771;Leinfelden-Echterdingen;0711/9528210;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+114642;"Messe Offenburg-Ortenau G";"Alexander Fritz";"MESSE OFFENBURG-ORTE";"Schutterwaelder.Str. 3";77656;Offenburg;52031;"Anlieferung in Halle 3 / voher telef. Mi";;14045/06504;;1;;1;1;;000;100;0000;0000;0000;0000
+114644;"Reblandhalle Fessenbach";;"REBLANDHALLE  FESSEN";"Fessenbacher Strasse 107";77654;"Offenburg Fessenbach";0781/9329611;;;14047/03036;;1;;1;1;;000;100;0000;0000;0000;0000
+114647;"Moerburghalle Schutterwal";;"MOERBURGHALLE SCHUTT";"Im Kirchfeld 26";77746;Schutterwald;;;;0;;1;;1;1;;000;100;0000;0000;0000;0000
+114650;"Festhalle Griesheim";;" HALLE OFFENBURG GRI";"Zum Gottsacker";77652;"Offenburg Griesheim";;Schluesselkunde;;;;1;;1;1;;000;100;0000;0000;0000;0000
+114654;"Stadtverwaltung Offenburg";"Abteilung Schule und Spor";"STADTVERWALTUNG OFFE";"Hauptstr. 75-77";77652;"Offenburg Betr. Nordwest-";;;;14047/03036;;1;;1;1;;000;100;0000;0000;0000;0000
+114657;"Festhalle Elgersweier";;"FESTHALLE  ELGERSWEI";"Hebelstrasse 12";77656;"Offenburg Elgersweier";54894;;;14047/03036;;1;;1;1;;000;100;0000;0000;0000;0000
+114658;"Ortsverwaltung Elgersweie";"z.Hd.Herrn OV Rais";"ORTSVERWALTUNG ELGER";"Kreuzwegstr. 16";77656;"Offenburg Elgersweier";54894;;;14047/03036;;1;;1;1;;087;100;0000;0000;0000;0000
+114661;Gemeindev.Appenweier;Schwarzwaldhalle;GEMEINDEV.APPENWEIER;Ortenauerstr.;77767;Appenweier;07805/95940;;;14050/20151;;1;;1;1;;000;100;0000;0000;0000;0000
+114663;"Hornisgrinde Halle";;"HORNISGRINDE HALLE -";;77855;Achern;;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+114676;"Gemeindehalle Eckartsweie";;"GEMEINDE- HALLE ECKA";"Kehler Strasse 62";77731;"Willstaett Eckartsweier";;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+114689;"Gemeinde Rheinhausen";"Buergerhaus Rheinhausen";"GEMEINDE BUERGERHAUS";"Hauptstr. 152";79365;Rheinhausen;07643/910713;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+114710;"Hanauerlandhalle Willstae";;"HANAUERLAND-HALLE WI";"Hornisgrinde Strasse 4";77731;Willstaett;07852/999270;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+114713;"Halle Diersburg";Mehrzweckhalle;"HALLE DIERSBURG -HOH";Kreisstr.10;77749;Hohberg;;;;;;1;;1;1;;019;100;0000;0000;0000;0000
+114714;Gemeinde/Buergermeisteram;"Mehrzweckhalle Welschenst";"GEMEINDE MEHRZWECKH.";"Kirchstr. 4";77790;Steinach;"07832/9198 0";;;23034/01153;;1;;1;1;;000;100;0000;0000;0000;0000
+114771;"Heuberger Jutta";Rentnerin;"HEUBERGER JUTTA RENT";"Siedlungstr. 2";77746;Schutterwald;0781/53149;"2 Kisten/Monat gratis";;;;1;;1;1;;029;100;0000;0000;0000;0000
+114831;"Paul Schiller";;"SCHILLER PAUL RENTNE";"Hundweg 2";77799;Ortenberg;0781/38238;"2/3 Ki./Monat DM 3,00";;;;1;;1;1;;029;100;0000;0000;0000;0000
+115272;"Willi Kliem GmbH";;"WILLI KLIEM -OFFENBU";"Dieselstrasse 1";77652;Offenburg;;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+115409;Offo-Halle,Schuttern;Aussenlager;"DEPOT 4 AUSSENLAGER";;77633;Schuttern;"07821 6337761";"Hausmeister telefonisch informieren!";;;;1;;1;1;;019;110;0000;0000;0000;0000
+115504;"Abtsberghalle Zell/W";Aussenlager;"DEPOT 3 AUSSENLAGER";;77654;Zell/Weierbach;;"7.00 Uhr anliefern !!!!";;;;1;;1;1;;019;110;0000;0000;0000;0000
+115526;"ETSV 1846 Jahn Offenburg";Geschaeftsstelle;"ETSV 1846 JAHN OFFEN";"Freiburger Str. 22";77652;Offenburg;1848;;;14047/00104;;1;;1;1;;000;100;0000;0000;0000;0000
+115533;"Raiffeisen Getraenkemarkt";"GLN 43288450000006";"RAIFFEISEN KINZIGTAL";"Bahnhofstrasse 3 A";77709;Wolfach;07834/833890;"Lieferzeit bis 10,00 Uhr !!!!!";;DE143052896;;1;;1;1;;003;100;0000;0000;0000;0000
+115577;"Musikverein Offenburg e.V";"Marc Petereit";"MUSIKVEREIN OFFENBUR";"Uhlandstr. 4";77746;Schutterwald;0781/9705355;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+115587;"Getraenke Geiger";;"GEIGER GETRAENKEFACH";"Bachstrasse 5";77948;Oberschopfheim;07808/912721;;;10171/02409;;1;;1;1;;003;100;0000;0000;0000;0000
+115745;"Gustav Roth";Buchhandlung;"GUSTAV ROTH -OFFENBU";"Hauptstr. 45";77612;Offenburg;0781/91420;;;;1;1;;1;1;;004;100;0000;0000;0000;0000
+115833;"Dr.med.Joachim Schraeder";;"DR.MED.JOACHIM SCHRA";"Im Albersbach 30";77654;Offenburg;0781/74628;;;;;1;;1;1;;087;100;0000;0000;0000;0000
+115850;"AOK Suedicher Oberrhein";Gesundheitskrankenkasse;"AOK  SUEDICHER OBERR";"Kolpingstrasse 2";77656;Offenburg;"0781 623291";"Lieferzeit ab 8.00 Uhr";;;;1;;1;1;;000;100;0000;0000;0000;0000
+116034;"Gerda & Vidko Golob";Schuetzen;"GOLOB ""SCHUETZEN"" HE";"Rheinstrasse 4";79336;Herbolzheim;07643/341;;;05200/01000;;1;;1;1;;087;100;0000;0000;0000;0000
+116409;"Halle Sulz";Sulzberghalle;"HALLE SULZ -LAHR";"Ziegelbrunnenstrasse 43";77933;"Lahr Sulz";07821/37544;;;10050/01006;;1;;1;1;;000;100;0000;0000;0000;0000
+116461;"Festhalle Rammersweier";"Depot 2";"DEPOT 2 AUSSENLAGER";;77654;"Offenburg-Rammersweier Au";440497;"Termin 7 Uhr !!!";;;;1;;1;1;;019;110;0000;0000;0000;0000
+116479;"Festhalle Altdorf";"Aussenlager Depot 5";"DEPOT 5 AUSSENLAGER";;77955;Ettenheim-Altdorf;440497;"Lieferzeit von 7.00-12.00 Uhr";;;;1;;1;1;;019;110;0000;0000;0000;0000
+116677;"Hans-Peter & Thomas Pfirm";Messekonto;"PFIRMANN -MESSEKONTO";"Schwarzwaldstr. 28";77654;Offenburg;0171/7595015;;;14096/25507;;1;;1;1;;087;100;0000;0000;0000;0000
+116683;"Auberghalle Oberschopfhei";Auberghalle;"AUBERGHALLE OBERSCHO";;77948;Friesenheim-;440497;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+116748;"Eiscafe La-Serenissima Gm";Palazzo;"EISCAFE LA-SERENISSI";"Lindenplatz 2";77652;Offenburg;78323;;;140097/02406;;1;;1;1;;000;100;0000;0000;0000;0000
+116764;"Eiscafe Pierod GmbH & Co.";;"EISCAFE PIEROD GMBH";"Hauptstr. 79-81";77694;Kehl;07851/78883;"Lieferzeit:ab 9.00 Uhr";;08009/02440;;7;;1;1;;000;100;0000;0000;0000;0000
+116846;"Dreschschopf Elgersweier";;"DRESCHSCHOPF STADT O";"Kreuzwegstrasse 37";77656;"Offenburg Elgersweier";;;;14047/03036;;1;;1;1;;000;100;0000;0000;0000;0000
+116931;"Benjamin Priebe";"Betr. TUS Schuttern";"BENJAMIN PRIEBE TUS-";"Offo-Str. 28";77948;"Friesenh. /Schuttern";;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+116971;"Christina Pfundstein";;"PFUNDSTEIN GRUENWINK";"Geroldsecker Str. 1";77736;Unterentersbach;07837/1611;"Lieferzeit:vor 14.00 Uhr !!!";;DE143043522;;1;;1;1;;000;100;0000;0000;0000;0000
+117011;"Raiffeisen Markt";"GLN  4328845000006";"RAIFFEISEN WARENGENO";"Kinzigstrasse 2";77781;Biberach;07835/6308-11;;;DE143052896;;1;;1;1;;003;100;0000;0000;0000;0000
+117017;"Richard Schuele e.K.";Kinzigstrand;"SCHUELE RICHARD KINZ";"Reiherwald 1";77781;Biberach;07835/3342;"Lieferzeit: ab 8.00 Uhr";;23035/30166;;1;;1;1;;000;100;0000;0000;0000;0000
+117025;Raiffeisen;Genossenschaft;"RAIFFEISEN -BERGHAUP";"Rathausplatz 3";77791;Berghaupten;;;;;;1;;1;1;;003;100;0000;0000;0000;0000
+117045;"Ellen Goeppert";Waldhorn;"GOEPPERT WALDHORN ZE";"Untertal 9";77736;Zell-Oberentersbach;07835/7105;"Lieferzeit:ab 11.00 Uhr";;23019/00714;;7;;3;1;;000;100;0000;0000;0000;0000
+117051;"Getraenke Hauser GmbH & C";(wg.Beteiligungen);"GETRAENKE HAUSER(W.B";"Bundesstrasse 13";77855;Achern-Fautenbach;07841/21679;;;01050/10327;;1;;1;1;;003;100;0000;0000;0000;0000
+117097;"Werner Neumaier";Schneeballen;"NEUMAIER SCHNEEBALLE";"Hauptstr. 11";77716;Hofstetten;07832/2815;;;23930/21057;;1;;1;1;;000;100;0000;0000;0000;0000
+117168;"Katharine Schneider";Pension;"SCHNEIDER PENSION OB";"Langenberg 2";77784;Oberharmersbach;07837/750;"Lieferzeit:9.00-17.00 Uhr   ""Vesperstube";;23035/04620;;1;;1;1;;000;100;0000;0000;0000;0000
+117198;"Landratsamt Ortenaukreis";Kantine;"LANDRATSAMT ORTENAUK";Badstr.20;77652;"Offenburg Mittelbindungsn";0781/805-1440;"Lieferzeit:7.30-12.30 Uhr";;14047/00187;;1;;1;1;;000;100;0000;0000;0000;0000
+117199;"Landratsamt Ortenaukreis";;"LANDRATSAMT ORTENAUK";;77609;Offenburg;0781/805-1440;"ab 8.00 Uhr an Lieferanteneingang !!°°°";;14047/00187;;7;;1;1;;000;100;0000;0000;0000;0000
+117208;"Karl-Heinz Buehler";"Badischer Hof";"BUEHLER BADISCHER  H";"Doerfle 32";77781;"Biberach Prinzbach";07835/6360;"Lieferzeit: ab 9.00 Uhr";;23035/33634;;1;;1;1;;000;100;0000;0000;0000;0000
+117210;"Peter Neumaier";"Landgasthaus zum Kreuz";"NEUMAIER KREUZ BIBER";"Untertal 7";77781;Biberach-Prinzbach;07835/426420;"Lieferzeit: ab 8.00 Uhr   Ausschluss:12.";;23035/41520;;1;;1;1;;000;100;0000;0000;0000;0000
+117228;"Heinz Dunajski";"TUS Reichenbach e.V.";"TUS LAHR-REICHENBACH";"Sportplatz Str. 17";77933;"Lahr Reichenbach";0151/25681966;"Kunde vorher anrufen 0151-25681966";;10050/06203;;1;;1;1;;000;100;0000;0000;0000;0000
+117256;"Andreas Moser";Blume;"MOSER BLUME HASLACH";"Schnellinger Str. 56";77716;"Haslach i.K.";07832/91250;"Lieferzeit:ab 6.00 Uhr";;23038/13927;;1;;1;1;;000;100;0000;0000;0000;0000
+117262;"Petra Giusa";Krone;"GIUSA KRONE SCHUTTER";"Bergstr. 29";77978;Schuttertal-Schweigh;07826/350;"Lieferzeit:9.00-11.30 Uhr Nachmittag ges";;10174/07753;;1;;1;1;;000;100;0000;0000;0000;0000
+117270;"Ursula Herrling -Erben-";Ochsen;"HERRLING -ERBEN- OCH";"Hauptstr. 150";77736;Zell-Unterharmersb.;07835/7240;"Lieferzeit: ab 8.00 Uhr";;23028/10577;;1;;1;1;;000;100;0000;0000;0000;0000
+117294;"Hans Beck";Sonne;"BECK SONNE ZELL A..H";"Hauptstr. 5";77736;"Zell a.H.";07835/63730;"Lieferzeit:7.00-11.00 Uhr";;23031/08237;;1;;1;1;;000;100;0000;0000;0000;0000
+117343;"Getraenke Hetz GmbH";Getraenkehandel;"HETZ GETRAENKE GMBH";"Im Kirchkopf 1";77866;"Rheinau Freistett";07844/918990;;;08016/01438;;1;;1;1;;003;100;0000;0000;0000;0000
+117357;"Kleintierzuchtverein C453";;KLEINTIERZUCHTVEREIN;"Beim Sportplatz 4a";77767;Appenweier;07805/3693;;;08062/01542;;1;;1;1;;000;100;0000;0000;0000;0000
+117390;"Michael Roht";;"ROHT MICHAEL RENTNER";"Adolf Gaenshirt-Str.10";77948;Friesenheim;07821/998959;"2 Kisten/Monat Rentner";;;;1;;1;1;;029;100;0000;0000;0000;0000
+117403;"Rolf Jehle";;"JEHLE ROLF RENTNER B";"Zeller Str.21";77781;Biberach;07835/7171;"2 Kisten à DM 3,00";;;;1;;1;1;;029;100;0000;0000;0000;0000
+117404;"Bernd Gissler";;"GISSLER BERND RENTNE";Hauptstr.55;77781;Biberach;07835/65740;;;;;1;;1;1;;029;100;0000;0000;0000;0000
+117414;"Feste DIVERSE Kronen 2";"diverse Festveranst.";"FESTE DIVERSE KRONEN";"Feste Kronen 2";77654;Offenburg;;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+117500;"FFW OG-Abt Elgersweier";"Herr Thomas Beck";"FREIW.FEUERWEHR ELGE";"Ziegelstrasse 15";77656;Offenburg;;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+117502;"Scheck-in Center Achern";;"SCHECK-IN CENTER ACH";"Fautenbacher Strasse 25";77855;Achern;07841/6746220;"Lieferzeit:8:00-12:00 Uhr";;;;1;;1;1;;076;100;0000;0000;0000;0000
+117514;"Scheck Buehlertal";"Frische Center";"SCHECK -BUEHLERTAL";"Haupstr.4 a";77830;"Buehlertal ILN 4314122749";07223/990850;;;;;1;;1;1;;076;100;0000;0000;0000;0000
+119502;"Stadt OG Abteilung 1.1 Fr";Wirtschaftsfoerderg.u.Lie;"STADT OG ABTEILUNG 1";"Am Marktplatz 7";77652;"Offenburg <keine>";;"Lfg. An Marktplatz 1";;;;1;;1;1;;000;100;0000;0000;0000;0000
+119831;"Joachim Woerner";;"WOERNER JOACHIM RENT";"Am Spielplatz 1";77866;Rheinau;07844/2140;"2/3 K.M/ 3,00 DM";;142248375;;1;;1;1;;029;100;0000;0000;0000;0000
+119845;"Hanauerlandhalle Willstae";"(TTC Willstaett)";"TTC WILLSTAETT -WILL";"Hornisgrinde Strasse 4";77731;Willstaett;"07852 9369 071";"Herr Sachs 0179-495 8602 / Herr Sachs 01";;;;1;;1;1;;000;100;0000;0000;0000;0000
+119852;"HC Hedos";"Sascha Wild";"HEDOS HANDBALLV. SPO";"Felix-Kempf-Str. 4";77656;Offenburg;"0176 1555 1611";;;14047/06416;;1;;1;1;;000;100;0000;0000;0000;0000
+119856;"Markus Bohn";;"BOHN MARKUS MITARBEI";"Gartenweg 19";77784;Oberharmersbach;07837/1543;"7 Kisten/Monat gratis";;0;;1;;1;1;;026;100;0000;0000;0000;0000
+119859;"Egon Falk";;"FALK EGON RENTNER WI";Tellstr.11;77731;Willstaett;07852/2600;"2 bzw. 3 Kisten Monat Haustr.  (Rentner)";;;;1;;1;1;;029;100;0000;0000;0000;0000
+119864;"Guenter Kuczorra";;"KUCZORRA GUENTER REN";"Floesserweg 7";77652;Offenburg-Griesheim;;;;;;1;;1;1;;029;100;0000;0000;0000;0000
+119865;"Karl-Heinz Marx";;"MARX KARL-HEINZ RENT";Mitteldorfstr.12;77781;Biberach;07835/1049;;;;;1;;1;1;;029;100;0000;0000;0000;0000
+119866;"Detlef Ney";;"NEY DETLEF RENTNER K";"Auf dem aeckerle 2";77654;Offenburg;0781/53897;;;;;1;;1;1;;029;100;0000;0000;0000;0000
+119869;"Albrecht Schaefer";;"SCHAEFER ALBRECHT RE";"Oberdorfstr. 9";77656;Offenburg;65240;"Haustrunk 2 bzw. 3 Kisten Monat  (Rentne";;;;1;;1;1;;029;100;0000;0000;0000;0000
+119871;"Wurth Rolf Rentner Kronen";;"WURTH ROLF RENTNER K";"Seeweg 19";77797;Ohlsbach;07803/926852;;;;;7;;1;1;;029;100;0000;0000;0000;0000
+119881;"Gabriele Lauinger";"TV Griesheim";"LAUINGER  TV-OG-GRIE";"Eichwald 29";77652;"Offenburg Griesheim";;;;;;1;;1;1;;087;100;0000;0000;0000;0000
+119904;"Dr.Frank S.Stetter";;"DR.FRANK S.STETTER";"Uhlandstr. 3";77654;Offenburg;;;;;;1;;1;1;;026;100;0000;0000;0000;0000
+119906;"Thomas Nitze";Dipl.Volkswirt;"THOMAS NITZE -WIESLO";"Beethovenstr. 26";69168;Wiesloch;06222/389972;;;;;1;;1;1;;000;110;0000;0000;0000;0000
+119909;"Dr. Hans Stetter";"Wirtschaftspruefer und St";"DR. HANS STETTER -DO";"Hohle Eiche 18";44229;Dortmund;;;;;;1;;1;1;;000;110;0000;0000;0000;0000
+119911;"Carolin Stetter";;"CAROLIN STETTER -FRA";"Robert-Mayer-Str. 36";60486;Frankfurt;0851/755860;;;;;1;;1;1;;000;110;0000;0000;0000;0000
+119913;"Dr.Thorsten Stetter";;"DR.THORSTEN STETTER";"Gunterstr. 1";70191;Stuttgart;;;;;;1;;1;1;;000;110;0000;0000;0000;0000
+119915;"Dr.Alois Schnitzer";"bei Frau Gabriele Gadanyi";"DR.ALOIS SCHNITZER -";"Kaiserstuhlstr. 32";79331;Nimburg;;;;;;7;;1;1;;004;100;0000;0000;0000;0000
+119923;"Rainer Bieger";Hoffnung;"BIEGER HOFFNUNG KEHL";"Leutesheimer Str. 1";77694;Kehl-Bodersweier;"0160-533 5574";"Lieferzeit:09.00-12.00 und  ab 14.00 Uhr";;DE156598229;;1;;1;1;;000;100;0000;0000;0000;0000
+119931;"Beate Brunner";Kreuz;"BRUNNER KREUZ ACHERN";"Bundesstrasse 25";77855;Achern-Fautenbach;07841/21483;;;01231/13000;;1;;1;1;;000;100;0000;0000;0000;0000
+119952;"Antonios u. Georgios Mark";"w. Dorfschaenke";"ANTONIOS U. GEORGIOS";"Hauptstrasse 201";77694;Kehl;;;;08257/12800;;1;;1;1;;000;100;0000;0000;0000;0000
+119994;"Heide Dohm-Acker";;"DOHM-ACKER RENTNERIN";"Brandhau 13";77746;Schutterwald;0781/51589;"Haustrunk 2 bzw. 3 Kisten Monat (Rentner";;;;1;;1;1;;029;100;0000;0000;0000;0000
+119999;"Edeltraud Graf";;"GRAF EDELTRAUD RENTN";"Von-Berckholz-Str. 13";77799;Ortenberg;;"2 -3 Kisten/Monat (Rentner)";;;;1;;1;1;;029;100;0000;0000;0000;0000
+120000;"Guetle Renate";;"GUETLE RENATE RENTNE";"Lindenplatz 3";77770;Durbach;0781/42897;;;;;1;;1;1;;029;100;0000;0000;0000;0000
+120005;"Astrid Mosmann";;"MOSMANN ASTRID MITAR";"Markusstrasse 2";77656;Offenburg;;"4Kisten/Monat gratis";;;;1;;1;1;;026;100;0000;0000;0000;0000
+120061;"Musikverein Windschlaeg e";"Dirk Thelen";"MUSIKVEREIN WINDSCHL";"Schwalbenrain 13";77652;Offenburg;07831/80183;;;14047/02269;;1;;1;1;;000;100;0000;0000;0000;0000
+120070;"FV Weier e.V.";Vereinsgaststaette;"FV WEIER VEREINSGAST";"Hubertusstrasse 1a";77656;Offenburg-Weier;0174/9054905;;;14047/00781;;1;;1;1;;000;100;0000;0000;0000;0000
+120074;"Rudi Adler";;"ADLER RUDI RENTNER W";"Ortenaustr. 49";77731;Willstaett;07852/7394;"3 Kisten/Monat Haustrunk Rentner";;;;1;;1;1;;029;100;0000;0000;0000;0000
+120077;"Gerald Jungmann";"SC Sand";"GERALD JUNGMANN -WIL";"Eichhofstr. 46";77731;"Willstaett-Sand Damenmann";07831/80183;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+120108;"Sportclub Sand e.V.";"Herr Gerald Jungmann";"KLAUS DRENGWITZ SC S";"Kuehnmatt 3";77731;Willstaett-Sand;07831/80183;"Lieferung Halle Willstaett";;08062/00777;;1;;1;1;;000;100;0000;0000;0000;0000
+120115;"NZ Tscherissili - Narrenk";"Frau Alexandra Boschert";"NZ TSCHERISSILI - NA";"Kirchstrasse 23";77656;Offenburg-Elgersweier;0781/55408;"Hausmeister vorher anrufen. 0172 533 413";;14047/1808;;1;;1;1;;000;100;0000;0000;0000;0000
+120181;Mueller;Fahrzeugbau;"MUELLER -OFFENBURG";"Heinr.-Hertz-Str. 28";77656;Offenburg;;;;;;1;;1;1;;087;100;0000;0000;0000;0000
+120253;"Oehler Maschinen Fahrzeug";;"OEHLER MASCHINEN FAH";"Windschlaeger Str. 105-10";77652;Offenburg;0781/91390;;;14041/66255;;1;;1;1;;000;100;0000;0000;0000;0000
+120342;"Franz Mueller";"Gesangverein Frohsinn";"MUELLER GESANGVEREIN";"Im Seemaettle 4";77652;Offenburg;07831/80183;;;14047/52238;;1;;1;1;;000;100;0000;0000;0000;0000
+120351;"SCO Sportclub Offenburg e";Sporthaus;"SCO SPORTHAUS OFFENB";"Fasanenweg 20";77656;Offenburg;0781/9904238;Schluesselkunde;;14047/00937;;1;;1;1;;000;100;0000;0000;0000;0000
+120359;"Narrenzunft Wolfonia Ramm";"Katharina Goos";"NARRENZUNFT WOLFONIA";"Durbacher Strasse 14";77654;Offenburg;;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+120374;"Freiwillige Feuerwehr Ohl";"z.Hd. Herrn Holzenthaler";"FREIWILLIGE FEUERWEH";"Hubersgasse 13";77797;Ohlsbach;;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+120424;"Dreher´s Marktbaeckerei G";"OBI Markt Bistro";"DREHER´S MARKTBAECKE";"Freibugerstr. 29";77652;Offenburg;0781/9708376;"Lieferzeit: 7.00-10.00 Uhr";;14037/61203;;1;;1;1;;000;100;0000;0000;0000;0000
+120499;"Marktbaeckerei Dreher Gmb";"Baeckerei u. Bistro";"DREHER´S MARKTBAECKE";Floesserstr.10;77723;Gengenbach;07803/933134;;;14092/00553;;1;;1;1;;000;100;0000;0000;0000;0000
+120681;"Hubert Burda Media";"Holding GmbH & Co. KG";"HUBERT BURDA MEDIA -";"Hauptstrasse 130";77652;"Offenburg Frau Selzer";07831/80183;;;;;1;;1;1;;087;100;0000;0000;0000;0000
+120697;"Mehrzweckhalle Hofweier";Schule;"MEHRZWECKHALLE HOFWE";;77749;Hohberg;07831/80183;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+120720;"SV Zunsweier  e.V.";"Abteilung Handball";"SV ZUNSWEIER  E.V. -";;77656;"Offenburg - Zunsweier";07831/80183;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+120728;"Narrenzunft Schelle Hexe";Hofweier;"NARRENZUNFT SCHELLE";;77749;Hohberg;06033/975-0;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+120730;"Arena Einkaufspark Lahr";"Marktbaeckerei Dreher Gmb";"DREHER´S MARKTBAECKE";"Am Alten Bahnhof";77933;Lahr;07821/92269-12;"Lieferzeit: 8:00 -10:00 Uhr";;14092/00395;;1;;1;1;;000;100;0000;0000;0000;0000
+120845;"Schuetzenverein Altdorf e";"I.Vorstand Theo Pflieger";"SCHUETZENVEREIN ALTD";"Flugplatzstrasse 1";77955;Ettenheim-Altdorf;07831/80183;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+120850;"Tennisclub Weisweil";"Doris Huber";"TENNISCLUB WEISWEIL";"Erbprinzenstrasse 31";79367;Weisweil;07831/80183;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+120940;"Schuetzenverein e.V.";Rust;"SCHUETZENVEREIN E.V.";"Hinter der Kirche 1";77977;"Rust Hans Rother";07831/80183;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+120949;"Hans-Dieter Oswald";"Wagner's Kneiple";"OSWALD WAGNERS KNEIP";Weingartenstr.39;77654;Offenburg;0781/9489799;"Lieferzeit:8.00-12.00 Uhr";;14356/65005;;7;;1;1;;000;100;0000;0000;0000;0000
+120987;"Pfadfinder Offenburg";"Stamm Konradin";"PFADFINDER OFFENBURG";"Franz Volk Strasse 33";77652;Offenburg;0781/6290;;;;;7;;1;1;;000;100;0000;0000;0000;0000
+121109;"Getraenke Schnebelt GmbH";;"SCHNEBELT GETRAENKEV";"Schutterstr. 2/1";77746;Schutterwald;51122;;;14045/03500;;1;;1;1;;003;100;0000;0000;0000;0000
+121163;"Marktbaeckerei Dreher Gmb";"Le Petit Dreher";"DREHER LE PETIT OFFE";"Hauptstr. 59";77652;Offenburg;0781/780517;"Lieferzeit:7.00-15.00 Uhr Ausschluss von";;14092/00395;;1;;1;1;;000;100;0000;0000;0000;0000
+121190;"Musikverein Offenburg e.V";"Vereinsheim Am Flugplatz";"MUSIKVEREIN OFFENBUR";"Uhlandstr. 4";77746;Schutterwald;0781/9705355;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+121232;"Stadt Offenburg Stadt Mar";"Stefan Schuerlein";"STADT-MARKETING -OFF";"Hauptstr. 90";77652;Offenburg;0781/6290;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+121293;"Spielothek Flair";"Bertold Allgeier";"SPIELOTHEK FLAIR OFF";"Franz-Volk-Str. 1";77652;Offenburg;0781/26449;"ab 9:00 Uhr liefern !!";;22200/15315;;1;;1;1;;000;100;0000;0000;0000;0000
+121295;"Spielothek Flair Achern";"Atlantic City Spielautoma";"SPIELOTHEK FLAIR ACH";"Fautenbacher Str. 7";77855;Achern;07841/29597;"ab 8 Uhr !";;22200/15315;;1;;1;1;;000;100;0000;0000;0000;0000
+121299;"Oliver Braun";;"BRAUN OLIVER MITARBE";Hauptstr.184;77767;Appenweier;07805/59508;"10 Kisten/Monat gratis";;;;1;;1;1;;026;100;0000;0000;0000;0000
+121300;"Dr. Ing. Hans Henning";Haustrunkkonto;"HENNING DR. RENTNER";"Lisztstrasse 4";77654;Offenburg;;"4 Kisten/Monat gratis";;;;1;;1;1;;026;110;0000;0000;0000;0000
+121315;"Heinrich Kiefer";;"KIEFER HEINRICH RENT";"Erlenweg 3";77781;Biberach;;;;;;1;;1;1;;029;100;0000;0000;0000;0000
+121339;"Felix Spaeth";;"SPAETH FELIX RENTNER";"Aenne-Burda-Allee 4";77654;Offenburg;;"2/3 Ki./Monat DM 3,00";;;;1;;1;1;;029;100;0000;0000;0000;0000
+121352;"Halle Muenchweier";Festhalle;"HALLE MUENCHWEIER -E";;77955;Ettenheim-Muenchweier;0781/6290;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+121386;"Martin Ockenfuss";Baeckerei;"OCKENFUSS BAECKEREI";"Windschlaegerstrasse 70";77652;"Offenburg Windschlaeg";0781/25657;vormittags;;DE177658157;;1;;1;1;;003;100;0000;0000;0000;0000
+121390;"Turn- und Festhalle";Wagenstadt;"TURN- UND FESTHALLE";"Hauptstrasse 26";79336;"Herbolzheim Stadt Herbolz";07643/91770;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+121391;Lerchenberghalle;Broggingen;"LERCHENBERGHALLE BRO";"Hauptstrasse 26";79336;"Herbolzheim Stadt Herbolz";0781/6290;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+121397;"Spielothek Flair Buehl";"Bertold Allgaier";"SPIELOTHEK FLAIR BUE";"Rheinstrasse 12";77815;Buehl;07223/944336;"Lieferzeit:ab 8.00 Uhr   bitte in der Ha";;22200/15315;;1;;1;1;;000;100;0000;0000;0000;0000
+121429;"Nachbargemeinschaft Ries";"Ehrenfried Hering";NACHBARGEMEINSCHAFT;"Im Ries 7";77654;Offenburg-Fessenbach;0781/6290;;;;;7;;1;1;;000;100;0000;0000;0000;0000
+121450;"Durmus Abidin";"City Pizza Kebap";"ABIDIN CITY PIZZA KE";"Ortenaustrasse 17";77767;Appenweier;07805/914441;"Lieferzeit:ab 10.00 Uhr";;08143/20211;;7;;1;1;;000;100;0000;0000;0000;0000
+121452;"Freiwillig Feuerwehr";"Niederschopfheim u. Hofwe";"FREIWILLIG FEUERWEHR";;77749;Hohberg;0781/6290;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+121455;"Dennis Polley";Sonne;"POLLEY SONNE KEHL-LE";"Badener Strasse 14";77694;Kehl-Leutesheim;0176/24151993;"Lieferzeit:egal    auf Handy anmelden";;08284/00055;;1;;1;1;;000;100;0000;0000;0000;0000
+121458;"Ulrich Nauhauser";"Dipl. Braumeister";"NAUHAUSER ULRICH REN";"Rulaenderstr. 1 A";77770;Durbach;0781/6290;;;;;1;;1;1;;029;100;0000;0000;0000;0000
+121483;"Freiwillige Feuerwehr";Bleicheim;"FREIWILLIGE FEUERWEH";;79336;"Herbolzheim Ralf Zaehring";0781/6290;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+121495;"Sylvia Jaekle";Freihof;"JAEKLE FREIHOF SCHUT";"Binzburgstr. 24";77746;Schutterwald;07816398973;"Ware nicht in den Kuehlraum stellen ! Wa";;14260/66005;;1;;1;1;;000;100;0000;0000;0000;0000
+121499;"Rewe Markt";;"REWE-MARKT -KENZINGE";"Weisweiler Strasse 2";79341;Kenzingen;07644/923407;"Lieferzeit: 8.00-13.00 Uhr";;;;1;;1;1;;060;100;0000;0000;0000;0000
+121577;"Pasqualina Pellettieri";"Restaurant Al Mulino";"PELLETTIERI AL MULIN";"Plaulmattstrasse 2";77815;Buehl-Weitenung;07223/951758;"Lieferzeit:10.00-11.30 Uhr";;36187/26522;;7;;1;1;;000;100;0000;0000;0000;0000
+121674;"Haus Zauberfloete";"W. Schoellmann";"ZAUBERFLOETE SCHOELL";"Lindenplatz 12";77652;Offenburg;0781/9666696;"ins Restaurant stellen!!!!!";;14410/30006;;1;;1;1;;000;100;0000;0000;0000;0000
+121704;"Stadt Herbolzheim";"Buergermeister Herr Gedem";"STADT HERBOLZHEIM BU";"Hauptstrasse 26";79336;Herbolzheim;0781/6290;;;05070/01512;;1;;1;1;;000;100;0000;0000;0000;0000
+121743;"Restaurant Cafe am Yachth";"Melanie Tiganele";"TIGANELE NAUTIC CLUB";"Hafenstrasse 8";77694;Kehl;07851/2389;"Lieferzeit:09:00-11:30 Uhr";;14497/017723;;7;;3;1;;000;100;0000;0000;0000;0000
+121749;"Marktbaeckerei Dreher Gmb";Stadtcafe;"DREHER STADTCAFE GEN";"Am Marktplatz 12";77723;Gengenbach;07803/9667836;;;14092/00553;;1;;1;1;;000;100;0000;0000;0000;0000
+121785;"Europa-Park Golfpark Tuts";;"EUROPA-PARK GOLFCLUB";"Am Golfpark 1";79336;Herbolzheim-Tutschfelden;0781/6290;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+121794;"Sportwerbung Weier";"FV Weier Frau Patricia An";"SPORTWERBUNG WEIER F";"Wiesenweg 5";77656;Offenburg-Weier;0781/66218;;;14004/02520;;1;;1;1;;000;100;0000;0000;0000;0000
+121863;"Gastro Media GmbH.";"Gasthaus Krone";"GASTRO-MEDIA KRONE O";"Hauptstrasse 28";77799;Ortenberg;0781/36711;"Nicht in der Mittagszeit !!!";;14092/01016;;7;;1;1;;000;100;0000;0000;0000;0000
+121899;"RMSV Urloffen";"Vereinsheim Go-Cart Bahn";"RMSV APPENWEIER-URLO";"Mattenstrasse 26";77767;Appenweier;07805/2844;Schluesselkunde;;08062/00769;;1;;1;1;;000;100;0000;0000;0000;0000
+121907;"Monika Petzold";"Schinken  UG.";"PETZOLD SCHINKEN  LA";"Vogtstorstrasse 11";77933;Lahr;07821/908493;"Faesser bitte nicht stapeln!!!";;"25/248/2040 HANNO";;1;;1;1;;000;100;0000;0000;0000;0000
+121921;"Konstantin Nitze";;"KONSTANTIN NITZE -OF";Gutenbergstr.;77654;Offenburg;;"2 bzw. 3 Kisten je Monat";;;;1;;1;1;;000;100;0000;0000;0000;0000
+121963;"Wilfried Schoellmann KG";Schoelmanns;"SCHOELLMANNS OFFENBU";"Hauptstrasse 88";77652;Offenburg;0781/9194999;"Lieferzeit:  FIX 10.00 Uhr";;14098/74007;;1;;1;1;;000;100;0000;0000;0000;0000
+121994;"Wallasch Kantinen-& Party";"Frau Sonja Bahr";"WALLASCH KANTINEN-&";"Oberrothweg 7";77652;Offenburg-Windschlaeg;"0781 966 67 68";;;14111-06423;;1;;1;1;;003;100;0000;0000;0000;0000
+122015;"Martin Schmitt";Braumeister;"SCHMITT MARTIN MITAR";"Alter Sportplatz 25";77797;Ohlsbach;07803/602034;"7 Kisten Haustrunk gratis p.M.";;;;1;;1;1;;026;100;0000;0000;0000;0000
+122017;"Fristo Getraenkemarkt SE";Markt-Nr.554;"FRISTO GETRAENKEMARK";"Schutterwaelderstr. 3a";77656;Offenburg;0781/9680705;;;;;1;;1;1;;069;100;0000;0000;0000;0000
+122032;"Wolfgang Klein";Thail.Rest.Orchidee;"KLEIN ORCHIDEE (ERHA";"Weinstrasse 1";77654;Offenburg;0781/31332;"Lieferzeit: 11.00-15.00 Uhr";;14284/49076;;1;;1;1;;000;100;0000;0000;0000;0000
+122045;"Gemeinde Hohberg Harmonie";Harmoniehalle;"GEMEINDE HARMONIEHAL";"Freiburger Str. 30";77749;"Hohberg Niederschopfheim";0781/6290;;;14049/20655;;1;;1;1;;000;100;0000;0000;0000;0000
+122058;"FV Griesheim e.V.";Vereinsheim;"FV GRIESHEIM E.V. -O";"Alexanderschanze 14";77652;Offenburg;0781/780586;;;;;7;;1;1;;000;100;0000;0000;0000;0000
+122079;"REWE Markt GLN: 438809540";;"REWE MARKT HASLACH";"Im Spiessacker 1";77716;Haslach;07832/975019;"Lieferzeit:ab 7.30 Uhr";;;;1;;1;1;;060;100;0000;0000;0000;0000
+122090;"HITRADIO OHR Events";"Private Rundfunkges. Orte";"HITRADIO OHR EVENTS";"Hauptstr. 83a";77652;"Offenburg z.Hd. Frau Ast";0781/6290;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+122101;"Julia Huber";"Eventhotel Pfeffer & Salz";"HUBER EVENTHOTEL PFE";"Mattenhofweg 3";77723;Gengenbach;07803/93480;"Lieferzeit:7.00-10.30 Uhr";;DE254899010;;1;;1;1;;000;100;0000;0000;0000;0000
+122109;"Musikverein Appenweier e.";"Juergen Loeffler";"MUSIKVEREIN APPENWEI";"Burgunderstrasse 16";77767;Appenweier;"0171 5293635";;;;;1;;1;1;;019;100;0000;0000;0000;0000
+122141;"Heinz Berger";Getraenkefachgrosshandel;"BERGER GETRAENKEFACH";"Am Risisee 4";77835;"Achern Baden-Getraenke";07841/68440;"frueh anliefern!!!";;0110920502;;1;;1;1;;003;100;0000;0000;0000;0000
+122154;"Restaurant Pfeffermuehle";"Axel Armbruster e.K.";"ARMBRUSTER PFEFFERMU";"Victor-Kretz Str. 17";77723;Gengenbach;07803/600753;"Anlieferung zwischen 9 und 10 Uhr!  Bitt";;14105/25002;;7;;1;1;;000;100;0000;0000;0000;0000
+122168;"Kaufland 2";;"KAUFLAND 2 ILN: 4300";"Okenstrasse 74";77652;"Offenburg <keine>";0781/63905850;"Lieferzeit:7.00-13.00 Uhr   Palettentaus";;;;1;;1;1;;067;100;0000;0000;0000;0000
+122173;"Schneider KG Gengenbach/E";"Lebensmittelmarkt Schneid";"SCHNEIDER KG GENGENB";"Breslauer Str. 2";77723;"Gengenbach ILN 4314120808";07803/926190;"ab 08:00 Uhr liefern";;14408/23009;;1;;1;1;;076;100;0000;0000;0000;0000
+122257;"Silvia Riester";Adler;"RIESTER ADLER NEURIE";"Offenburgerstr. 21";77743;Neuried-Dundenheim;"0160 9912 5966";"Lieferzeit:ab 14.00 Uhr Barzahler Muss";;08294/24810;;7;;3;1;;000;100;0000;0000;0000;0000
+122259;"Ursula Scheiderbauer";;"URSULA SCHEIDERBAUER";"Weinstrasse 173";77654;Offenburg;;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+122273;"Massimo Lombardo";Michelangelo;"LOMBARDO MICHELANGEL";"Ecke Hauptstr./Viktor-Kre";77723;Gengenbach;07803/40583;;;0824/931608;;1;;1;1;;000;100;0000;0000;0000;0000
+122279;Helene-Lange-Schule;Kreisschulzentrum;"HAUS- U.LANDWIRTSCHA";"Zaehringerstr. 41";77652;"Offenburg z.Hd. Frau Neli";0781/805-8215;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+122288;"Stefan Benz";Adlerstube;"BENZ ADLERSTUBE APPE";"Hauptstr. 136";77767;Appenweier-Urloffen;07805/59136;"Bei Kunde anmelden !   ab 8.00 Uhr";;DE265707120;;1;;1;1;;000;100;0000;0000;0000;0000
+122291;"Renate Birkmann";Sonne;"BIRKMANN RENATE  SON";"Renchtalstrasse 23";77704;"Oberkirch Nussbach";07805/1309;"Lieferzeit:frueh liefern";;14129/65012;;1;;1;1;;000;100;0000;0000;0000;0000
+122304;"JSK Feldhockey Club Stras";"Herr Marco Lahouel";"JSK FELDHOCKEY STRAS";"41 Rue Virgile";67200;Strassbourg;"0033 770 688001";;;;;7;;1;1;;000;100;0000;0000;0000;0000
+122328;"Alexander Ruder";"Bistro Badenia";"RUDER BADENIA OFFENB";"Hauptstr. 28";77652;Offenburg;"0176-808 792 17";"Neue oeffnungszeiten: taeglich um 11 Uhr";;14384/47771;;7;;1;1;;000;100;0000;0000;0000;0000
+122338;"Eugenio Frassica";"La Toscana (Ochsen)";"FRASSICA LA TOSCANA";"Obere Grendelstr. 14";77704;Oberkirch;07802/982420;"Lieferzeit:10.00-14.30 Uhr";;;;1;;1;1;;000;100;0000;0000;0000;0000
+122348;"Edeka Zentralhandelsgesel";Zentralregulierung;"EDEKA ZENTRALHANDELS";;22291;"Hamburg GLN 4311560000000";040/63773271;;;27/654/00050;;1;;1;1;;076;100;0000;0000;0000;0000
+122382;"Brigitte Kiessling-Krings";Linde;"KIESSLING BRIGITTE -";"Grossweierer Str.92";77855;Achern;07841/6307490;Schluesselkunde;;01162/10001;;1;;1;1;;000;100;0000;0000;0000;0000
+122394;"Nicole Giessler";"Wagner's Bierstueble";"GIESSLER BIERSTUEBLE";"Gerberstr. 31";77652;Offenburg;0152/33618532;"Lieferzeit: ab 10.00 Uhr";;14203/46404;;7;;3;1;;000;100;0000;0000;0000;0000
+122409;"Vereinsgemeinschaft Ramme";"Dorothea von Trotha";VEREINSGEMEINSCHAFT;"Grundmattstrasse 8 a";77654;"Offenburg Rammersweier";0172/7670877;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+122413;"GES e.G. Grosseinkaufsrin";Suesswaren-u.Getraenkehan;"GES E.G. GROSSEINKAU";"Ketzelstr. 7";90419;Nuernberg;0911/39306-0;;;241/106/20175;;1;;1;1;;003;100;0000;0000;0000;0000
+122422;"Melanie Lauppe";"Billard Pub";"LAUPPE MELANIE -NEUR";"Kehlerstrasse 67";77743;"Neuried Altenheim";"0176-521 43 957";;;08244/01604;;1;;1;1;;000;100;0000;0000;0000;0000
+122433;"Philipp Spitzmueller";"Gasthaus Feldschloesschen";"SPITZMUELLER FELDSCH";"Fliederweg 2";77656;Offenburg;0781/54208;"Lieferzeit 10.00 - 14.00 Uhr";;14428/61050;;1;;1;1;;000;100;0000;0000;0000;0000
+122436;"Thomas Schneider";"Deutscher Michel";"SCHNEIDER DEUTSCHER";"Hildastr. 105";77654;Offenburg;"0175 4651522";;;;;1;;1;1;;000;100;0000;0000;0000;0000
+122448;"Farbtex GmbH & Co.KG";;"FARBTEX OFFENBURG";"Heinrich-Hertz-Str. 30";77656;Offenburg;0781/639098910;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+122463;"Klein + Feger GmbH.";"Aral - Tankstelle";"KLEIN + FEGER GMBH.";"Adlerstr. 29";77948;Friesenheim;07821/997535;;;;;1;;1;1;;003;100;0000;0000;0000;0000
+122482;"Landratsamt Ortenaukreis";"Kantine Frau Ingrid Geile";"LANDRATSAMT ORTENAUK";"Lange Str. 51 / 2.OG";77652;"Offenburg Amt f. Soziale";0781/805-9769;"Lieferzeit : ab 8.00 Uhr";;;;7;;1;1;;000;100;0000;0000;0000;0000
+122486;"Europa 1 & 2";"Allgaier & Riebesell GbR";"EUROPA 1 & 2  KEHL";"Allensteinerstr. 17";77694;Kehl;07851/8865571;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+122489;"Abbas Bdair";(ehem.Schlageter);"BDAIR ABBAS SCHLAGET";"Untere Hauptstr. 11";77971;Kippenheim;"0176 2070 5998";;;;;7;;1;1;;000;100;0000;0000;0000;0000
+122494;"Spielothek Flair IV Kehl";"Bertold Allgaier";"SPIELOTHEK FLAIR IV";"Allensteinerstr. 9";77694;Kehl;"07851/48 555 95";;;;;1;;1;1;;000;100;0000;0000;0000;0000
+122512;"Konstantin Nitze";Eventkonto;"KONSTANTIN NITZE -OF";"Gutenbergstrasse 3";77654;Offenburg;;;;;;1;;1;1;;003;100;0000;0000;0000;0000
+122539;"Claudio Casanova";;"CLAUDIO CASANOVA -FI";"Via Carlo Raimondo (Z.I.)";1702;"Finale Ligure";019/692914;;;0;;1;;1;1;;000;117;0000;0000;0000;0000
+122544;"Marktbaeckerei Dreher Gmb";"Haus D";"DREHER MARKTBAECKERE";"Almendstr. 7";77723;Gengenbach;07803/9218621;;;14037/61203;;1;;1;1;;000;100;0000;0000;0000;0000
+122550;"Moreale Luciano";"Hotel Restaurant Alessand";"MOREALE LUCIANO -NEU";"Schwarzwaldstr. 2";77743;Neuried;07807/9569029;"frueh liefern !!!";;08267/11996;;1;;1;1;;000;100;0000;0000;0000;0000
+122551;"ESSthetik GmbH.";"Essgut im Seehaus Gifiz";"ESSTHETIK GMBH. -OFF";"Platanenallee 17";77656;Offenburg;0163/7718443;"Lieferung ab 11 Uhr";;14014/64848;;1;;1;1;;000;100;0000;0000;0000;0000
+122562;"Charles Knie GmbH.";;"KNIE GMBH WEIHNACHTS";"Braunschweiger Str. 2";37574;Einbeck;0172/5766272;"Bitte vormittags liefern";;;;1;;1;1;;000;100;0000;0000;0000;0000
+122573;"Arena Bar";"Dogan Automaten";"DOGAN AUTOMATEN KEHL";"Koenigsbergerstrasse 19";77649;Kehl;07851/3734;;;08140/37935;;7;;1;1;;000;100;0000;0000;0000;0000
+122580;"Abou El Enein Hani";"Loewen am Park";"HANI LOEWEN AM PARK";"Hauptstr. 95";77793;Gutach;07833/96956;"Lieferzeit ab 10:30 Uhr";;23100/27453;;7;;3;1;;000;100;0000;0000;0000;0000
+122602;"Nada Lukac";Sportklause;"LUKAC NADA SPORTKLAU";"Kittersburger Str. 23";77694;Kehl;0174/3303450;;;14318/20023;;7;;1;1;;000;100;0000;0000;0000;0000
+122606;"Fristo Getraenkemarkt Gmb";;"FRISTO GETRAENKEMARK";"Allmend 9";77723;Gengenbach;07803/9662795;"Lieferzeit : ab 8.00 Uhr";;;;1;;1;1;;069;100;0000;0000;0000;0000
+122621;"Paraskevi Mangoufi";"Zeus Palast im Braustuebl";"MANGOUFI WAGNER BRAU";"Lange Strasse 43";77652;Offenburg;0781/96723768;"Anlieferung 9 - 14 Uhr";;14324/53868;;1;;1;1;;000;100;0000;0000;0000;0000
+122639;"Carl Hermann Graf";;"GRAF CARL HERMANN MI";"Steingasse 3";77704;Oberkirch;0171/2154981;"5 Kisten Haustrunk Monat gratis";;;;1;;1;1;;026;100;0000;0000;0000;0000
+122640;"Lisa Lombardo";"Gaststaette Loewenbergkel";"LOMBARDO LA GRAPPA G";"Hauptstr. 15";77723;Gengenbach;0170/1244510;"Lieferzeit: 10.30  - 13.30 Uhr muss eing";;14317/50017;;1;;1;1;;000;100;0000;0000;0000;0000
+122644;"Bodo Ley";;"LEY BODO RENTNER OFF";"Fideliostr. 12";70597;Stuttgart;0172/6326356;;;;;1;;1;1;;026;100;0000;0000;0000;0000
+122655;"Marktbaeckerei Dreher Gmb";Baeckerwirtschaftsamt;"DREHER BAECKERWIRTSC";"Ortenberger Str. 13";77654;Offenburg;"0781/966 690 45";;;14037/61203;;1;;1;1;;000;100;0000;0000;0000;0000
+122668;"Offenburger Tafel e.V.";"Frau Dr. Ilse Herberg";"OFFENBURGER TAFEL E.";"Am unteren Muehlbach 1";77652;Offenburg;0781/639038-10;;;;;7;;1;1;;000;100;0000;0000;0000;0000
+122678;"Kuhn UG Fortuna";"vertr.durch Herrn Conny K";"KUHN UG FORTUNA WOLF";"Hauptstr. 8";77709;Wolfach;0170/5526529;;;14034/61109;;1;;1;1;;000;100;0000;0000;0000;0000
+122680;"Hotel Restaurant Linde Gm";"Restaurant Linde";"LINDE RESTAURANT GMB";"Lindenplatz 1";77770;Durbach;0781/93630;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+122694;"Fristo Getraenkemarkt SE";"ILN 4314 3330 11333";"FRISTO GETRAENKEMARK";"Zum Kaiserstuhl 4";79206;Breisach;07667/912573;"Lieferzeit :8.00 Uhr-20.00 Uhr";;;;1;;1;1;;069;100;0000;0000;0000;0000
+122700;"Seifermann GmbH.";"EDEKA Aktiv-Markt";"SEIFERMANN GMBH.EDEK";"Mozartstr. 1";77871;"Renchen ILN 4314122753949";07843/99356;"Herr Reuschel";;;;1;;1;1;;076;100;0000;0000;0000;0000
+122708;"Peter Buttgereit";"Rammersweierer Hof";"BUTTGEREIT RAMMERSWE";"Rosenstr. 13";77654;"Offenburg-Rammersweier Ho";0781/32780;"Lieferung 11 -14 Uhr !";;14033/67406;;1;;1;1;;000;100;0000;0000;0000;0000
+122727;"Thomas Schirmacher";;"SCHIRMACHER THOMAS M";"Rathausgasse 5";77654;Offenburg;0151/53945442;"5 Kisten Haustrunk im Monat  (gratis)  B";;;;1;;1;1;;026;100;0000;0000;0000;0000
+122729;"Personalrat Stadt Offenbu";"z.Hdn. Frau Rothfuss";"PERSONALRAT STADT OF";"Am Marktplatz 5";77652;Offenburg;0781/822364;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+122739;"Stadt Offenburg";"Dezernat II";"STADT OFFENBURG -OFF";"Wilhelmstr. 12";77654;Offenburg;0781/82-2303;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+122747;"Shien Lin";China-Schloss;"LIN ""CHINA-SCHLOSS""(";"Hauptstrasse 39";77790;Steinach;07832/978686;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+122758;"Solarium Paradies du Sole";"Solarium Fr.Sultan Dogan";"SOLARIUM PARADIES DU";"Rheinstr. 53-55";77694;Kehl;07851/8986788;"Lieferzeit ab 8.00 Uhr";;;;1;;1;1;;000;100;0000;0000;0000;0000
+122784;"Winkels Getraenkelogistik";"Regionallager Donaueschin";"WINKELS GETRAENKE LO";"Friedrich-Ebert-Strasse 9";78166;Donaueschingen;0771/8983523;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+122789;"Ortsverwaltung Offenburg-";;"ORTSVERWALTUNG OFFEN";"Buehler Strasse 16";77652;"Offenburg Buehl";0781/823130;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+122790;"Spielothek Flair 2";;"SPIELOTHEK FLAIR FRA";"Hauptstrasse 103";77855;Achern;07841/27872;"ab 8 Uhr !";;;;1;;1;1;;000;100;0000;0000;0000;0000
+122795;"Suedstar GmbH";;"SUEDSTAR GMBH MARCH-";"Gruenstrasse 9";79232;March-Hugstetten;07665/9246-19;;;;;1;;1;1;;003;100;0000;0000;0000;0000
+122796;"Inmar Alkadiri";"Gaststaette Laubenlinde";"ALKADIRI LAUBENLINDE";"Friedenstr. 1";77654;Offenburg;0176/80401420;;;0;;7;;3;1;;000;100;0000;0000;0000;0000
+122802;"Marktbaeckerei Dreher";"Brot  & Kaffee";"DREHER'S BROT & KAFF";"Hauptstrasse 10 - 12";77855;Achern;07841/6825092;"Lieferzeit: 7.00-10.00 Uhr";;14092/00553;;1;;1;1;;000;100;0000;0000;0000;0000
+122809;"Hotel Ritter Durbach GmbH";"Dominik Mueller";"MUELLER RITTER HOTEL";"Talstrasse 185";77770;Durbach;0781/9323207;"Ware neben Kuehlraum stellen! Da wo das";;;;1;;1;1;;000;100;0000;0000;0000;0000
+122810;"Festhalle Offenburg-Buehl";;"FESTHALLE OFFENBURG";"Talackerweg 9";77652;"Offenburg Buehl";;Schluesselkunde;;;;1;;1;1;;000;100;0000;0000;0000;0000
+122829;"Tobias Maennle";Kreuz;"MAENNLE TOBIAS KREUZ";"Am Durbach 11";77770;Durbach-Ebersweier;0781/42612;Schluesselkunde;;;;1;;1;1;;000;100;0000;0000;0000;0000
+122830;"Francesco Morreale";"Schaible Stadion La Famig";"MORREALE ""SCHAIBLE S";"Zaehringer Str. 61";77652;"Offenburg Ristorante ""La";0781/1848;"Lieferzeit :11.00-14.00 Uhr";;;;1;;1;1;;000;100;0000;0000;0000;0000
+122836;"Rewe Markt GLN: 438809540";;"REWE MARKT LAHR IM G";"Im Goetzmann";77933;Lahr;"07821 98 13 860";;;;;1;;1;1;;060;100;0000;0000;0000;0000
+122844;"Vereinsgemeinschaft Neumu";"w./Halle Neumuehl";VEREINSGEMEINSCHAFT;"Kuhmaettleweg 12";77694;"Kehl Neumuehl";0174/2116379;;;14048/73202;;1;;1;1;;000;100;0000;0000;0000;0000
+122847;"Angelica Wobornik Sonne";"Gasthaus ""Sonne"" Grieshei";"ANGELICA WOBORNIK SO";"Griesheimer Str. 16";77652;Offenburg;"0781 205 515 69";"ab 9.30 Uhr / 0179 60 35 941";;;;1;;1;1;;000;100;0000;0000;0000;0000
+122855;"Juergen Strosack ""Ratsstu";Ratsstueble;"STROSACK JUERGEN ""RA";"Kirchstr. 38";77743;"Neuried Altenheim";07807/92860;"Lieferzeit:7.30-11.30 Uhr";;08337/00137;;1;;1;1;;000;100;0000;0000;0000;0000
+122859;"Patrick Herrmann";Engel;"PATRICK HERMANN ENGE";"Hauptstrasse 29";77716;Fischerbach;"07832 2464";;;2613232029;;1;;1;1;;000;100;0000;0000;0000;0000
+122866;"Braun Oliver Festekonto -";;"BRAUN OLIVER FESTEKO";Hauptstr.184;77767;Appenweier;07805/59508;;;;;1;;1;1;;026;100;0000;0000;0000;0000
+122868;"Petereit Klaus";;"PETEREIT KLAUS FESTE";"Grimmelshausenstr. 39";77654;Offenburg;0781/37681;;;;;1;;1;1;;026;100;0000;0000;0000;0000
+122871;"Blue Tabac GmbH";"Mustafa Dogan w/Le Can";"MUSTAFA DOGAN BLUE T";"Am Rheinuebergang 2 b";77866;Rheinau-Freistett;"07844 918 2461";;;1400667184;;1;;1;1;;000;100;0000;0000;0000;0000
+122873;"Ingo Hahn";"Gaststaette Rebstueble";"INGO HAHN REBSTUEBLE";"Durbacher Str. 32";77654;Offenburg;01743326499;;;0114442219;;1;;1;1;;000;100;0000;0000;0000;0000
+122877;"Alexander Schreibeisen Gm";"Calamus Gastronomie / Jul";"CALAMUS AREAL JULIA´";"Boschstr. 7";77694;Kehl;"0160-95 170 251";"Belieferung zwischen 8-11 Uhr";;1400667184;;1;;1;1;;000;100;0000;0000;0000;0000
+122882;"Hachem Hachem";"Shisha Bar ""Apple""";"HACHEM SHISHA BAR AP";"Hauptstrasse 108";77652;"Offenburg <keine>";"01766 2289846";;;14218/10022;;1;;1;1;;000;100;0000;0000;0000;0000
+122892;"Wild´s Getraenke Oase UG";;"WILD´S GETRAENKE OAS";"Krautstueckerweg 10";76706;Dettenheim-Liedolsheim;"07247 947042";2351;;;;1;;1;1;;003;100;0000;0000;0000;0000
+122894;"The Grill";"Orhan oezmat e.Kfm.";"ORHAN OEZMAT THE GRI";"Lillienweg 2";77977;"R u s t";017628663544;;;1030710615;;1;;1;1;;000;100;0000;0000;0000;0000
+122897;"BP Service OHG";"B. Stiefel u. P. Hoffmann";"BP SERVICE OHG PATRI";"Im Herzthauen 7";77731;Willstaett-Legelshurst;07852-426490;;;0;;1;;1;1;;003;100;0000;0000;0000;0000
+122899;"Berner Roy";;"BERNER ROY MITARBEIT";"Obere Haupstr. 10";77971;Kippenheim;078259317;"5 Kisten Haustrunk OGV (monatlich)";;;;1;;1;1;;027;100;0000;0000;0000;0000
+122902;"Brauerei Ganter GmbH & Co";;"BRAUEREI GANTER LOHN";"Schwarzwaldstr. 43";79117;"Freiburg i/Brsg.";;;;0638431002;;1;;1;1;;018;110;0000;0000;0000;0000
+122903;"Jugenddorf Offenburg Rest";;"JUGENDDORF OFFENBURG";"Zaehringerstr. 42-59";77652;Offenburg;0781/7908147;"Lieferzeit: ab 7.00 Uhr";;;;1;;1;1;;000;100;0000;0000;0000;0000
+122905;"Thomas Brombach Mitarbeit";;"THOMAS BROMBACH MITA";"Wiesenstrasse 25b";77770;Durbach-Ebersweier;"07802 3600";;;;;1;;1;1;;026;100;0000;0000;0000;0000
+122907;"Raiffeisen HG Markt Genge";"GLN 43288450000006";"RAIFFEISEN HG-MARKT";"Am Winzerkeller 6";77723;Gengenb./Schoenberg;07803/980166;;;14046/00376;;1;;1;1;;003;100;0000;0000;0000;0000
+122910;"Taktgeber GmbH";;"TAKTGEBER GMBH";"Marlener Str. 9";77656;Offenburg;0781/639038-10;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+122917;"Weingut Markgraf von Bade";"Weinstube Schloss Staufen";"WEINGUT MARKGRAF VON";"Schlossberg 1";77770;Durbach;0781/93227955;;;1406724408;;1;;1;1;;000;100;0000;0000;0000;0000
+122920;"EHG Getraenkelager";"Lager Offenburg";"EHG GETRAENKELAGER E";Hanns-Martin-Schleyer-Str;77656;"Offenburg ILN 43139200004";"0781 502 3137";;;DE201806756;;1;;1;1;;077;100;0000;0000;0000;0000
+122921;"Truttenbach.IT GmbH";;"TRUTTENBACH IT";Isaak-Blum-Strasse8;77656;Offenburg;;"5 K. Brauwerk gratis pro Monat";;;;1;;1;1;;003;100;0000;0000;0000;0000
+122930;"Decker Appenweier GmbH Ap";"Frische Center";"DECKER APPENWEIER GM";"Sander Str. 1";77767;"Appenweier ILN 4314120741";07805/91697921;"Lieferzeit:ab 8.00 Uhr";;;;1;;1;1;;076;100;0000;0000;0000;0000
+122931;"Kohler Lebensmittel GmbH";"Neukauf-Markt 74209";"KOHLER LEBENSMITTEL";"Oberweierer Hauptstr.";77948;"Friesenheim-Oberweier ILN";07821/96370;"Lieferzeit: ab 8.00 Uhr";;1409300198;;1;;1;1;;076;100;0000;0000;0000;0000
+122933;"Wunnibald Lehmann Haslach";;"WUNNIBALD LEHMANN HA";"Im Spiessacker 15-17";77716;"Haslach ILN 4314120738795";"07832/999 8670";;;;;1;;1;1;;076;100;0000;0000;0000;0000
+122935;"Kohler Lebensmittel GmbH";"SB Neukauf Markt";"KOHLER LEBENSMITTEL";"Alte Landstrasse 1";77749;Hohberg-Niederschopfheim;07808/948612;"Lieferzeit:8.00-15.00 Uhr";;;;1;;1;1;;076;100;0000;0000;0000;0000
+122936;"Kohler Lebensmittelhandel";"E-Center Markt 69238";"KOHLER LEBENSMITTELH";"Blumenstr. 1";77694;"Kehl ILN 4314120692387";"07851/8988 731";"Lieferzeit:6.00-13.00 Uhr";;;;1;;1;1;;076;100;0000;0000;0000;0000
+122937;"Edeka Hoehn Kehl Boderswe";"A.Hoehn GmbH Aktiv-Markt";"EDEKA HOEHN KEHL BOD";"Am Russacker 2";77694;"Kehl 4314120658239";"07853 8544";;;;;1;;1;1;;076;100;0000;0000;0000;0000
+122938;"Kohler E-Center Lahr";"ARENA Lahr Markt 69146";"KOHLER E-CENTER LAHR";"Am Alten Stadtbahnhof 1";77933;"Lahr ILN 4314122691463";07821/923344;"Lieferzeit:8.00-14.00 Uhr";;;;1;;1;1;;076;100;0000;0000;0000;0000
+122940;"Kohler Lebensmittel GmbH";"Neukauf-Markt 73848";"KOHLER LEBENSMITTEL";"Schaflacher Weg 2";77743;"Neuried-Altenheim ILN 431";07807/3155;;;;;1;;1;1;;076;100;0000;0000;0000;0000
+122941;"Decker Frische Center Obe";"Frische Center";"DECKER FRISCHE CENTE";"Appenweierer Str. 42";77704;"Oberkirch ILN 43141227522";07802/925121;"Lieferzeit:08:00-12:00 Uhr";;;;1;;1;1;;076;100;0000;0000;0000;0000
+122942;"Decker Frische Center Obe";"Frische Center";"DECKER FRISCHE CENTE";"Nussbacher Str. 37";77704;"Oberkirch-Zusenhofen ILN";07805/9677-0;;;;;1;;1;1;;076;100;0000;0000;0000;0000
+122943;"Timm Zinth Offenburg";"Edeka-Aktivmarkt 84091";"TIMM ZINTH OFFENBURG";"Berta-von-Suttner-Str. 4";77654;"Offenburg ILN 43141203868";"0781 923896";"Lieferzeit: ab 7.00 Uhr";;;;1;;1;1;;076;100;0000;0000;0000;0000
+122945;"Reiner Schirmann Offenbur";"EDEKA Aktiv-Markt 79822";"REINER SCHIRMANN OFF";"Ortenberger Str. 26-28";77654;"Offenburg ILN 43141227980";0781/96640984;Lieferzeit:vormittags;;1439966006;;1;;1;1;;076;100;0000;0000;0000;0000
+122949;"Neukauf Oberle Schutterwa";"Neukauf Markt Nr. 69177";"NEUKAUF OBERLE SCHUT";Hindenburgstrasse;77746;"Schutterwald ILN 43141206";0781/9903210;"Lieferzeit. 8.00-12.00 Uhr";;0827706438;;1;;1;1;;076;100;0000;0000;0000;0000
+122951;"Kohler Lebensmittelhandel";"Edeka NK-MARKT 69207";"KOHLER LEBENSMITTELH";"Am Bahndamm 9";77760;"Seelbach ILN 431412069207";"07823 96178 11";"Lieferzeit:ab 8:00 Uhr Vormittags";;;;1;;1;1;;076;100;0000;0000;0000;0000
+122952;"Bruder Lebensmittel KG";;"EDEKA ALOIS BRUDER E";"Hauptstrasse 4";77736;"Zell a. H. GLN 4314122744";07835/635790;"ab 08:00 Uhr liefern";;;;1;;1;1;;076;100;0000;0000;0000;0000
+122954;"Thomas Schirmacher";;"SCHIRMACHER THOMAS F";"Rathausgasse 5";77654;Offenburg;0151/53945442;;;;;1;;1;1;;026;100;0000;0000;0000;0000
+122955;"Azad Alhasan";Krone;"AZAD ALHASAN KRONE O";"Hauptstr. 27";77797;Ohlsbach;017628343230;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+122963;"Czmiel Lukaz Adler-Nieder";"Gasthaus Adler Niederscho";"CZMIEL LUKAZ ADLER-N";"Alte Landstr. 25";77749;Hohberg;017620036661;"bitte halbe Stunde vorher anrufen 0176 2";;14157/15568;;1;;1;1;;000;100;0000;0000;0000;0000
+122964;"Kistner Gabriele";Linde;"KISTNER GABRIELE LIN";"Sandweg 24";77887;Sasbachwalden;01703815665;"Bei Anlieferung bitte 1/4 Std. Vorher an";;3652220087;;1;;1;1;;000;100;0000;0000;0000;0000
+122965;"SV Diersheim";Clubhaus;"SV DIERSHEIM CLUBHEI";"Rheinwaldstrasse 11";77688;"Rheinau Diersheim";"0176 566 71348";"Grundsaetzlich alles in die Garage stell";;1409434102;;1;;1;1;;000;100;0000;0000;0000;0000
+122971;"SV Diersheim";;"SV DIERSHEIM FESTEKO";"Rheinwaldstrasse 11";77688;"Rheinau Diersheim";;;;1404861006;;1;;1;1;;000;100;0000;0000;0000;0000
+122979;"Ott Axel";Festekonto;"OTT AXEL FESTEKONTO";"Sonnenblumenweg 47";77656;Offenburg;0781/9671484;;;;;7;;1;1;;026;100;0000;0000;0000;0000
+122980;"Rotary Club Offenburg Ort";"Juergen Riexinger";"ROTARY CLUB OFFENBUR";"Binzmattstr. 54";77723;Gengenbach;;;;;;7;;1;1;;000;100;0000;0000;0000;0000
+122986;"EDEKA Foodservice GmbH &";;"EDEKA FOODSERVICE GM";"Isaak-Blum-Str. 18";77656;"Offenburg ILN 43102852390";0781/9608212;"Lieferzeit:7.00-15.00 Uhr    von 12.00-1";;1401250303;;1;;1;1;;076;100;0000;0000;0000;0000
+122989;"Fuhrer Sports";"Kai Fuhrer";"FUHRER SPORTS OFFENB";"Vitus-Burg-Str. 5";77562;Offenburg;"0)781 71199";;;" 14195/25011";;1;;1;1;;000;100;0000;0000;0000;0000
+122990;"Ingo Schaudt & Benz GdbR";"Chalet Weihnachtsmarkt OG";"INGO SCHAUDT & BENZ";"Am Durbach 28";77652;Offenburg;0781/34942;"ab 10 Uhr!";;14086/10020;;1;;1;1;;000;100;0000;0000;0000;0000
+122995;"Thomas Heinzelmann";"Surprise Night Club";"THOMAS HEINZELMANN S";"Hornisgrindenstrasse 31";77866;Rheinau-Memprechtshofen;017628595918;" Bitte 1. Std vor Belieferung anrufen 01";;;;1;;1;1;;000;100;0000;0000;0000;0000
+122998;"Faldeep Singh";"Kiran Indische Spezialita";"FALDEEP SINGH INDER";"Friedrichstr. 40";77933;Lahr;017677228911;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+123003;"Giannoula Mylona Batzios";Akropolis;"GIANNOULA MYLONA BAT";"Hauptstr. 32";77746;Schutterwald;9904258;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+123004;"ETG Spedition";;"ETG SPEDITION OFFENB";"Marlener Str. 3";77652;"Offenburg <keine>";078319681672;"Lieferzeit:ab 7.00 Uhr Monatlich unger.K";;;;1;;1;1;;000;100;0000;0000;0000;0000
+123005;"Polizeidirektion Offenbur";Kantine;"POLIZEIDIREKTION OFF";"Hauptstr. 96";77652;"Offenburg <keine>";078319681672;"Lieferzeit :ab 8.00 Uhr Monatlich ger. W";;;;1;;1;1;;000;100;0000;0000;0000;0000
+123006;"Richter Aluminium GmbH";"Werk II Kantine";"RICHTER ALUMINIUM GM";"Drei Linden";77746;Schutterwald;078319681672;"Monatlich unger. KW";;;;1;;1;1;;000;100;0000;0000;0000;0000
+123008;"Moebel Schau";Kantine;"MOEBEL SCHAU OFFENBU";"Marlener Str. 7";77656;Offenburg;078319681672;"Schluesselkunde   ab 9.30 Uhr anliefern";;;;1;;1;1;;000;100;0000;0000;0000;0000
+123010;"Kaba Gallenschuetz GmbH";;"KABA GALLENSCHUETZ G";"Nicolaus Otto Strasse 1";77815;Buehl;07223/286209;"Bitte vor 10 Uhr anliefern !!!!!";;;;1;;1;1;;000;100;0000;0000;0000;0000
+123011;"Hochschule Gengenbach";;"HOCHSCHULE GENGENBAC";"Brueckenhaeuserstr. 26";77723;Gengenbach;078319681672;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+123012;"RMA GmbH & Co. KG";;"RMA GMBH & CO. KG RH";"Forsthausstrasse 3";77866;Rheinau-Rheinbischoffshei;"07831 9681672";"BIS 15.45 UHR / 1711";;;;1;;1;1;;000;100;0000;0000;0000;0000
+123013;"RMA GmbH Co.KG";;"RMA GMBH & CO.KG KEH";"Oststr. 17";77694;Kehl;"0170 9312740";"Bitte so frueh wie moeglich / 1711";;;;1;;1;1;;000;100;0000;0000;0000;0000
+123014;"Westiform GmbH & Co.KG";;"WESTIFORM ORTENBERG";"Kinzigtalstr. 2";77799;Ortenberg;0781489115;"Lieferung ab 07.30 Uhr";;;;1;;1;1;;000;100;0000;0000;0000;0000
+123015;"Klosterschule Mensa Vorra";"Unserer Lieben Frau";"KLOSTERSCHULE OFFENB";"Lange Strasse 9";77652;"Offenburg <keine>";"07831 9681672";"Schluesselkunde    ab 8.30 Uhr!";;;;1;;1;1;;000;100;0000;0000;0000;0000
+123016;"Clubkultur GmbH";"Etage Eins";"CLUBKULTUR GMBH ETAG";"Marlener Str. 5";77656;Offenburg;015785069616;;;1405150361;;1;;1;1;;000;100;0000;0000;0000;0000
+123017;"Robert Rheinschmidt";"S´ Wirtschaeftli";"RHEINSCHMIDT ROBERT";"Turnhallenstrasse 30";77654;Offenburg;001701121026;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+123018;"Graf Carl Hermann Festeko";;"GRAF CARL HERMANN FE";"Steingasse 3";77704;Oberkirch;0171/2154981;;;;;1;;1;1;;026;100;0000;0000;0000;0000
+123020;"Isabella Denu-Dangelmaier";;"ISABELLA DENU-DANGEL";"Schwarzwaldstrasse 161";77815;Buehl;"0175 5696 315";;;;;1;;1;1;;003;100;0000;0000;0000;0000
+123021;"Foerderverein SV Diershei";"Peter Heinzelmann";"FOERDERVEREIN SV DIE";"Fischereck 10";77866;Rheinau-Diersheim;;;;1404830452;;1;;1;1;;000;100;0000;0000;0000;0000
+123024;"Kaufland Dienstleistung G";"LN 4774810 GLN43001750000";"KAUFLAND DIENSTLEIST";"Postfach 1155";74148;Neckarsulm;07132/943838;;;0;;1;;1;1;;067;100;0000;0000;0000;0000
+123027;"Olga Simon";"Kaiserstuehler Hof";"OLGA SIMON KAISERSTU";"Hindenburgstr. 6";77977;Rust;;;;0;;1;;1;1;;000;100;0000;0000;0000;0000
+123029;"Schmitt Martin Festekonto";"Festekonto - nicht Haustr";"SCHMITT MARTIN FESTE";"Alter Sportplatz 25";77797;Ohlsbach;07803/602034;;;;;1;;1;1;;026;100;0000;0000;0000;0000
+123036;"Kohler Lebensmittel GmbH";;"KOHLER LEBENSMITTEL";"Tscheulinstrasse 2";79331;"Teningen ILN 431412079105";07641/954288-29;;;;;1;;1;1;;076;100;0000;0000;0000;0000
+123041;"Sebastian Kirn";"Schwimmbad Durbach";"SEBASTIAN KIRN SCHWI";"Stollenberg 10";77770;Durbach;016091138413;"1 Std. Vorher anrufen 0160-91138413";;1428227021;;1;;1;1;;000;100;0000;0000;0000;0000
+123043;"Akzente Catering Offenbur";;"AKZENTE CATERING OFF";"Schutterwaelder Str. 3";77656;Offenburg;"0781 9226507";;;04022840032;;1;;1;1;;000;100;0000;0000;0000;0000
+123044;"Sascha Roediger";"Villa del Amor";"ROEDIGER SASCHA VILL";"Heinrich-Hertz-Str. 22";77656;Offenburg;"0781 58393";"Bis spaetestens 12 Uhr anliefern!!!";;;;7;;1;1;;000;100;0000;0000;0000;0000
+123047;"Buelent Tozlukaya";"King Kebap";"BUELENT TOZLUKAYA KI";"Metzgerstrasse 10";77652;Offenburg;92664904;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+123052;"China Restaurant Goldsche";;"CHINA RESTAURANT GOL";"Wilhelm-Leonhard-Str. 2";77694;Kehl-Goldscheuer;07854/9898933;"Lieferzeit bis 15.00 Uhr";;1400869505;;1;;1;1;;000;100;0000;0000;0000;0000
+123061;"VCO Volleyball-Club Offen";;"VCO OFFENBURG HERR S";"Krummholzweg 5";77656;Offenburg;"0781/990 5375";;;;;1;;1;1;;000;100;0000;0000;0000;0000
+123062;"Raiffeisen Kinzigtal eG";"Markt Schiltach";"RAIFEISEN KINZIGTAL";"Bahnhofstrasse 1-3";77761;Schiltach;"07836 353";"Lieferzeit:8.00-12.00 und             13";;;;1;;1;1;;003;100;0000;0000;0000;0000
+123063;"Raiffeisen Kinzigtal eG";"Markt Hausach";"RAIFFEISEN KINZIGTAL";"Eisenbahnstrasse 3a";77756;Hausach;"07831 96493";"Lieferzeit:8.00-12.00 und             13";;;;1;;1;1;;003;100;0000;0000;0000;0000
+123067;"Haus E";"Marktbaeckerei Dreher";"HAUS E ETTENHEIM MAR";"Rheinstrasse 6";77955;Ettenheim;"07822 8676696";;;14092/00395;;1;;1;1;;000;100;0000;0000;0000;0000
+123069;"Marktbaeckerei Dreher Gmb";;"MARKTBAECKEREI DREHE";"Floesserstr. 10";77723;Gengenbach;"07803 9333 10";;;;;1;;1;1;;000;100;0000;0000;0000;0000
+123074;"Kohler Lebensmittel gmbH";;"KOHLER LM GMBH SCHWA";"Allmannsweierer Hauptstra";77963;"Schwanau-Allmannsweier IL";07824/649818;"Lieferzeit:08:00-19:00 Uhr";;1409300198;;1;;1;1;;076;100;0000;0000;0000;0000
+123083;"FV Urloffen Appenweier Mi";"Michael Federer";"FV URLOFFEN APPENWEI";"Klemensgasse 1 A";77767;Appenweier-Urloffen;017670981721;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+123086;"Luciano Arbia/Hahn GbR";"Weihnachtsmarkt OG";"LUCIANO ARBIA WEIHNA";"Im unteren Angel 54";77652;Offenburg;01728846555;"Kunde vorher anrufen!";;1410501559;;1;;1;1;;000;100;0000;0000;0000;0000
+123087;"Schneider KG Gengenbach E";"Lebensmittel Schneider";"SCHNEIDER KG GENGENB";"Berghauptener Strasse 29";77723;"Gengenbach ILN 4314120808";07803/926460;;;;;1;;1;1;;076;100;0000;0000;0000;0000
+123088;"Landratsamt Ortenaukreis";"Kantinenverein Vermessung";"LANDRATSAMT ORTENAUK";"Kronenstrasse 29";77652;Offenburg;"0781 805 1911";"Anlieferung ueber Fischerstrasse / ab 9.";;1404470024;;1;;1;1;;000;100;0000;0000;0000;0000
+123095;"Mosmann Astrid Festekonto";;"MOSMANN ASTRID FESTE";"Markusstrasse 2";77656;Offenburg;;"2 Kisten/Monat gratis";;;;1;;1;1;;026;100;0000;0000;0000;0000
+123098;"TV Auenheim";"Matthias Mansshardt";"TV AUENHEIM MATTHIAS";"Zum Wildhag 10";77694;Kehl;01735323273;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+123100;"Sascha Haubennestel";;"HAUBENNESTEL SASCHA";"Ernsbach 1";77787;Nordrach;;"4 Kisten OGV";;;;1;;1;1;;027;100;0000;0000;0000;0000
+123101;"Narrentreffen DIVERSE Off";"diverse Festveranst.";"NARRENTREFFEN DIVERS";;77654;Offenburg;;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+123105;"Rainer Kuber";Eckwaldblick;"HELENE KUBER ECKWALD";"Rebhalde 1";77736;"Zell a. H.";07837/847;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+123107;"Feste DIVERSE Narrentreff";"diverse Festveranst.";"FESTE DIVERSE NARREN";"Feste Kronen 3";77654;Offenburg;;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+123108;Sportfoerdergemeinschaft;"TV Auenheim";SPORTFOERDERGEMEINSC;"Waldstrasse 17 a";77694;Kehl;01735323273;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+123114;"Landratsamt Ortenaukreis";Migrationsamt;"LANDRATSAMT ORTENAUK";Badstr.20a;77652;Offenburg;0781/805-9014;"Lieferzeit:  8.30-15.00 Uhr";;;;7;;1;1;;000;100;0000;0000;0000;0000
+123122;"Marion Schultheiss";;"SCHULTHEISS MARION M";"Raiffeisenstrasse 11";77978;Schuttertal;07823760;;;;;1;;1;1;;027;100;0000;0000;0000;0000
+123123;"TESTKUNDE w/ Konditionen";;"TESTKUNDE W/ KONDITI";"Gutenbergstrasse 3";77654;Offenburg;;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+123126;"Harald Kupp";"WD GmbH";"HARALD KUPP WD GMBH";"Offenburger Strasse 14";77743;"Neuried Dundenheim";"07807 955348";;;;;1;;1;1;;003;100;0000;0000;0000;0000
+123128;"Yucel Tunc";"Freibadkiosk Kehl Auenhei";"YUCEL TUNC FREIBADKI";Badstrasse;77694;Kehl;017610411884;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+123137;"Nico Rieth";"Gaststaette Hupf";"NICO RIETH HUPF SCHW";"Lange Str. 25";77963;Schwanau;017684066047;;;1033004625;;7;;1;1;;000;100;0000;0000;0000;0000
+123138;"FV Weier e.V.";Jugendabteilung;"FV WEIER E.V. JUGEND";"Hubertusstrasse 1a";77656;Offenburg-Weier;;;;;;7;;1;1;;000;100;0000;0000;0000;0000
+123143;"Cordula Stefanie Muerb";"Ochsen Linx";"CORDULA STEFANIE MUE";"Tullastrasse 13";77866;Rheinau-Linx;01744582047;;;;;7;;1;1;;000;100;0000;0000;0000;0000
+123147;"TUS Rammersweier";"Thorsten Mueller";"TUS RAMMERSWEIER OFF";"Am Pflenzinger 1 b";77765;Offenburg;;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+123152;"Jessica Herb";"ETSV Jahnplatz Sportheim";"JESSICA HERB ETSV JA";"Freiburgerstr. 22";77652;Offenburg;017658734056;"Lieferzeit :11.00-14.00 Uhr 0176-7650310";;1423066505;;7;;3;1;;000;100;0000;0000;0000;0000
+123155;"H. + J. Armbruster";;"HERMANN ARMBRUSTER G";"Am Altenheimer Jachthafen";77743;Neuried;;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+123156;"Kohler Lebensmittelmarkt";;"KOHLER LEBENSMITTELM";"Lahrer Strasse 38-40";77933;"Lahr-Sulz ILN 43141207917";07821/909467;;;;;1;;1;1;;076;100;0000;0000;0000;0000
+123157;"Katharina Thrun";;"KATHARINA THRUN";"Ortenaustrasse 27";77743;Neuried/Schutterzell;"07802 3600";;;;;1;;1;1;;004;100;0000;0000;0000;0000
+123158;"Edeka GAM Oberle Schutter";Getraenkemarkt;"EDEKA GAM OBERLE SCH";"Saint-Denis-Str. 2";77746;"Schutterwald ILN 43141206";078199068838;;;;;1;;1;1;;076;100;0000;0000;0000;0000
+123161;"REWE Kappelrodeck GLN 438";;"REWE MARKT KAPPELROD";"Bronnmattstrasse 6";77876;Kappelrodeck;"07842 994114";"Lieferzeit:8.00-12.00 Uhr       und 14.0";;;;1;;1;1;;060;100;0000;0000;0000;0000
+123165;"Bernd A. Scheiderbauer";;"BERND-A. SCHEIDERBAU";"Laubenbergstrasse 12";77654;Offenburg;"0151 527 66 403";"vormittags liefern !";;;1;7;;1;1;;004;100;0000;0000;0000;0000
+123175;"Feisst GmbH Rust/EHG";"Lebensmittelmarkt Feisst";"FEISST GMBH  EDEKA M";"Franz-Sales-Str. 29";77977;"Rust ILN 4314120604847";07822/866132;"von 08:00 - 17:00 Uhr";;1005308127;;1;;1;1;;076;100;0000;0000;0000;0000
+123178;"Haeusler Michael";;"HAEUSLER MICHAEL FES";"Turnhallenstrasse 20";77654;Offenburg;0781/43581;;;;;1;;1;1;;026;100;0000;0000;0000;0000
+123186;"Gemeinde Appenweier Stabs";"Claudia Maennle";"GEMEINDE APPENWEIER";"Ortenauer Str. 13";77767;Appenweier;"07805 959414";;;;1;1;;1;1;;004;100;0000;0000;0000;0000
+123190;"Ingo Dregger";Gewoelbesektkellerei;"INGO DREGGER GEWOELB";"Gerberstrasse 18";77652;Offenburg;"0781 78105";;;;1;1;;1;1;;004;100;0000;0000;0000;0000
+123193;"Decker Frische Center Url";"Frische Center";"DECKER FRISCHE CENTE";"Am Griesenrain 1";77767;"Appenweier Urloffen ILN 4";"07805 8359000";"Lieferzeit:08:00-12:00 Uhr";;0;;1;;1;1;;076;100;0000;0000;0000;0000
+123196;"Margitta Platz";"Mineralbrunnen Ohlsbach";"MARGITTA PLATZ MINER";"Brucherstrasse 8";77781;Biberach;"0176 3011 5400";"1 Std. Vorher anrufen 0176 3011 5400";;2321832951;;1;;1;1;;000;100;0000;0000;0000;0000
+123198;"Kilo´s GmbH Appenweier";;"KILO´S GMBH APPENWEI";"Alemannenstrasse 55b";77767;Appenweier;"07805 9151606";;;;;1;;1;1;;000;100;0000;0000;0000;0000
+123203;"Esra Yagmur Tuerker";"Cafe Wolke Offenburg";"ESRA YAGMUR TUERKER";"Amalie-Hofer-Str. 2";77656;Offenburg;"0176 29 760 691";"1/2 Std. Vorher anrufen 0176-29760691";;1444714929;;1;;1;1;;000;100;0000;0000;0000;0000
+123204;"Decker Appenweier GmbH Ap";"Frische Center";"DECKER APPENWEIER SY";"Sander Strasse 1";77767;Appenweier;07802/925121;"Lieferzeit:08:00-12:00 Uhr";;;;1;;1;1;;076;100;0000;0000;0000;0000
+123207;"Maninder Zit Singh";"Saffron Elephant";"BAWA UG MANINDER JIT";"Wasserstrasse 2";77652;"Offenburg <keine>";0781-96715699;;;63407908513;;1;;1;1;;000;100;0000;0000;0000;0000
+123208;"Streb Wein & Getraenkemak";;"STREB WEIN & GETRAEN";"Appenweierer Strasse 80";77704;Oberkirch;"07802 983328";"Lieferzeit:10.00-14.00 Uhr";;;;1;;1;1;;065;100;0000;0000;0000;0000
+123210;"Streb Wein & Getraenkemar";;"STREB WEIN & GETRAEN";"Robert-Bosch-Strasse 12";77815;Buehl;"07223 2817732";"Lieferzeiten 8-16 Uhr";;;;1;;1;1;;065;100;0000;0000;0000;0000
+123212;"Decker Appenweier GmbH";"Frische Center";"DECKER OBERKIRCH SYP";"Appenweierer Strasse 42";77704;Oberkirch;07802/925121;"Lieferzeit:08:00-12:00 Uhr";;;;1;;1;1;;076;100;0000;0000;0000;0000
+123214;"Sebastian Schaller";Fussball.bo,de;"SEBASTIAN SCHALLER F";"Hebelstrasse 3";77656;Offenburg;01726295477;;;;;7;;1;1;;000;100;0000;0000;0000;0000
+123215;"Streb Wein & Getraenkemar";;"STREB WEIN & GETRAEN";"Am Elzdamm 68";79312;Emmendingen;"07641 9543207";"Lieferzeiten 8-16 Uhr";;;;1;;1;1;;065;100;0000;0000;0000;0000
+123217;"Marius Hauser";;"MARIUS HAUSER MITARB";"Franz-Philipp-Strasse 27";77656;Offenburg;"07802 3600";;;;;1;;1;1;;026;100;0000;0000;0000;0000
+123223;"Co2 Zuschlag";;"CO2 ZUSCHLAG -OFFENB";Gutenbergstrasse;77654;Offenburg;;;;;;1;;1;1;;000;000;0000;0000;0000;0000
+123224;"Volkan Suenger";Trendhouse;"VOLKAN SUENGER TREND";"Hauptstrasse 28";77736;"Zell a. H.";"07835 3600";"Rueckholung BW Kuehlschrank schwarz";;;;7;;1;1;;000;100;0000;0000;0000;0000
+123225;"Cem Sevgili";"Le Quartier";"CEM SEVGILI LE QUART";"Helene-Weber-Str. 8";77654;Offenburg;"0151 2533 9818";;;;;7;;1;1;;003;100;0000;0000;0000;0000
+123226;"WILD Schwarzwaldbrennerei";;"BRENNEREI & WEINGUT";"Streuobstgarten 1";77723;Gengenbach;"07803 5555";;;14064/79107;;7;;1;1;;000;100;0000;0000;0000;0000
+123227;"Hausint. Verkostung Graf,";"Brauwerk Baden GmbH";"HAUSINT. VERKOSTUNG";"Gutenbergstrasse 3";77654;Offenburg;;;;;;1;;1;1;;000;110;0000;0000;0000;0000
+123228;"Hausint. Verkostung Bromb";"Brauwerk Baden GmbH";"HAUSINT. VERKOSTUNG";"Gutenbergstrasse 3";77654;Offenburg;;;;;;1;;1;1;;000;110;0000;0000;0000;0000
+123230;"Hausint. Verkostung Hause";"Brauwerk Baden GmbH";"HAUSINT. VERKOSTUNG";"Gutenbergstrasse 3";77654;Offenburg;;;;;;1;;1;1;;000;110;0000;0000;0000;0000
+123231;"Hausint. Verkostung Peter";"Brauwerk Baden GmbH";"HAUSINT. VERKOSTUNG";"Gutenbergstrasse 3";77654;Offenburg;;;;;;1;;1;1;;000;110;0000;0000;0000;0000
+123232;"Hausint. Verkostung Schmi";"Brauwerk Baden GmbH";"HAUSINT. VERKOSTUNG";"Gutenbergstrasse 3";77654;Offenburg;;;;;;1;;1;1;;000;110;0000;0000;0000;0000
+123234;"Edeka Lehmann";;"EDEKA LEHMANN HAUSAC";"Hauptstrasse 82";77756;"Hausach ILN 4314120739167";"07831 966400";;;;;1;;1;1;;076;100;0000;0000;0000;0000
+123237;"Hausint. Verkostung Nitze";"Brauwerk Baden GmbH";"HAUSINT. VERKOSTUNG";"Gutenbergstrasse 3";77654;Offenburg;;;;;;1;;1;1;;000;110;0000;0000;0000;0000
+123238;"Hausint. Verkostung Braun";"Brauwerk Baden GmbH";"HAUSINT. VERKOSTUNG";"Gutenbergstrasse 3";77654;Offenburg;;;;;;1;;1;1;;000;110;0000;0000;0000;0000
+123240;"Hatice Dogan";Campingkueche;"HATICE DOGAN CAMPING";"Rheindammstr. 1";77694;Kehl;"01522 9656084";;;081404004;;1;;1;1;;000;100;0000;0000;0000;0000
+123241;"Marktbaeckerei Dreher Gmb";"Rée Carrée";"MARKTBAECKEREI DREHE";"Hauptstrasse 25";77652;"Offenburg <keine>";07819705691;;;14037/61203;;1;;1;1;;000;100;0000;0000;0000;0000
+123243;"Rewe Markt GLN 4388095401";;"REWE MARKT KUPPENHEI";"Teichaeckerstrasse 3";76456;Kuppenheim;"07222 104359";;;;;1;;1;1;;060;100;0000;0000;0000;0000
+123245;"Edeka Kohler";;"EDEKA KOHLER ETTENHE";"Otto-Stoelcker-Str. 73";77955;"Ettenheim GLN 43141207422";"07822 30217";;;;;1;;1;1;;076;100;0000;0000;0000;0000
+123247;"Stadt Offenburg";"Ortsverwaltung Rammerswei";"STADT OFFENBURG ORTS";"Am Pflenzinger 3";77654;Offenburg;"0781 823213";;;;;1;;1;1;;000;100;0000;0000;0000;0000
+123252;"Simone Huber";;"SIMONE HUBER, HERMAN";"Klingelbergerstrasse 18";77770;Durbach;"0176 973 466 15";"Lfg. Klingelbergerstr. 18 / frueh liefer";;1408315548;;7;;1;1;;000;100;0000;0000;0000;0000
+123253;"Tobias Drescher";;"TOBIAS DRESCHER MUEL";"Blankenhornstrasse 1";79379;Muellheim;"0151 46164295";;;;;7;;1;1;;000;100;0000;0000;0000;0000
+123254;"Edeka Aktiv Markt Notarai";;"EDEKA AKTIV MARKT NO";"Im Gewerbegebiet 47";77839;"Lichtenau GLN 43141207413";"07227 3003";;;;;1;;1;1;;076;100;0000;0000;0000;0000
+123255;"Rewe Markt GLN 4388095404";;"REWE MARKT SASBACH";"Hauptstrasse 7b";77880;Sasbach;"07841 6814026";;;;;1;;1;1;;060;100;0000;0000;0000;0000
+123258;"Klaus Stoffel";;"KLAUS STOFFEL";"Rosenstrasse 19";77749;Niederschopfheim;;;;;;7;;1;1;;026;100;0000;0000;0000;0000
+123264;"Johannes Schaetzle";Schuetzen;"JOHANNES SCHAETZLE S";"Rheinstrasse 2";79336;Herbolzheim;"0152 546 310 78";;;10159/00345;;1;;1;1;;000;100;0000;0000;0000;0000
+123269;"Diverse Kunden";"w Bearbeitungsgebuehr";"DIVERSE KUNDEN W WEI";"Gutenbergstrasse 3";77654;Offenburg;;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+123270;"Besprechungen divers Graf";;"BESPRECHUNGEN DIVERS";;77654;Offenburg;;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+123271;"Julien Abbes";;"ABBES JULIEN MITARBE";"Brandbach 1";77887;Sasbachwalden;;;;;;7;;1;1;;026;100;0000;0000;0000;0000
+123275;"Musikverein Urloffen";"Michael Boschert";"MUSIKVEREIN URLOFFEN";"Runzweg 8";77767;Appenweier;;;;;1;7;;1;1;;004;100;0000;0000;0000;0000
+123279;;Durstkurier;"UWE KOERKEL DURSTKUR";"Herbolzheimer Str. 15";79336;"Herbolzheim-Wagenstadt Wa";"07643 752 3000";;;05287/14949;;1;;1;1;;003;100;0000;0000;0000;0000
+123284;"Markus Bosong";;"MARKUS BOSONG KEHL M";"Kiefernweg 1";77694;Kehl-Marken;;;;;1;7;;1;1;;004;100;0000;0000;0000;0000
+123286;"Eds Lager GmbH & Co.KG Ku";"Tobias Kuehn";"EDS LAGER GMBH & CO.";"Lorenzstrasse 9";76297;Stutensee-Blankenbach;"07244 91023";;;;;1;;1;1;;003;100;0000;0000;0000;0000
+123287;"Narrenzunft Folterhexen O";"Sandrino Schaefer";"NARRENZUNFT FOLTERHE";"Froebelweg 1";77652;Offenburg;"0176 8909 8576";;;1404760808;;7;;3;1;;000;100;0000;0000;0000;0000
+123289;"Petra Jost";Bierkoenig;"PETRA JOST BIERKOENI";"Hauptstrasse 117a";77694;Kehl;"0176 46608379";"Schluesselkunde !";;0821023157;;1;;1;1;;000;100;0000;0000;0000;0000
+123290;"Durbach Adventures";"Timo und Vanessa Petereit";"DURBACH ADVENTURES T";"Hespengrund 9a";77770;Durbach;;;;1448762084;;1;;1;1;;003;100;0000;0000;0000;0000
+123291;"Forum-Culinaire Koch- u.";"Gerhard Volk";"GERHARD VOLK FORUM C";"Hespengrund 11";77770;Durbach;"0781 970 6468";"Ab 14 Uhr liefern";;0;;1;;1;1;;003;100;0000;0000;0000;0000
+123293;"Getraenke Kaeshammer";"Mike Kaeshammer";"GETRAENKE KAESHAMMER";"Hasenwald 5";77883;Ottenhoefen;"07842 3914";;;"01159 19007";;1;;1;1;;003;100;0000;0000;0000;0000
+123299;"onlineshop BWB";Onlinekauf;"ONLINESHOP BWB";;77654;Offenburg;;;;;;7;;1;1;;007;100;0000;0000;0000;0000
+123301;"Oekkes Kilcik";"Kebab House";"OEKKES KILCIK KEBAB";"Mahlberger Strasse 8";77975;Ringsheim;;;;;;1;;1;1;;000;100;0000;0000;0000;0000
+123303;"Edeka Oberle";;"EDEKA OBERLE WILLSTA";"Industriestrasse 2";77731;"Willstaett ILN 4314120618";"07852 9354490";"Lieferzeit ab 7.30 Uhr";;;;1;;1;1;;076;100;0000;0000;0000;0000
+123305;"Igor Kabale";;"IGOR KABALE BOHLSBAC";"Martin-Siebert-Strasse 9";77652;Offenburg;;;;;1;7;;1;1;;004;100;0000;0000;0000;0000
+123306;"Netto Marken-Discount";"Fil. 3711";"NETTO MARKEN-DISCOUN";"Adlerstrasse 17-19";77948;"Friesenh. /Schuttern ILN";"07821 9905980";;;;;1;;1;1;;075;100;0000;0000;0000;0000
+123307;powercloud;"Anika Zimmer";"ANIKA ZIMMER POWERCL";"Max-Planck-Str. 1";77656;Offenburg;078416307370;;;0;;1;;1;1;;000;116;0000;0000;0000;0000
+123308;"Baden Getraenke Plus GbR";"Werbe- u. Einkaufskoopera";"BADEN GETRAENKE PLUS";"Luetzelbergstrasse 15";79369;Wyhl/Kaiserstuhl;"07247 947042";;;;;1;;1;1;;003;100;0000;0000;0000;0000
+123310;"Tamara Moeller-Auer";"SC Sand Sportgaststaette";"TAMARA MOELLER AUER";"Kuehnmatt 3";77731;"Willstaett Sand";01799664204;"Am Vorabend Lieferzeit telefonisch abspr";;0;;1;;1;1;;000;100;0000;0000;0000;0000
+123312;"Matthias Seiler";"Noarg's by Brauwerk";"MATHIAS SEILER NOARG";"Hauptstrasse 77";77704;Oberkirch;01752491980;;;0;;1;;1;1;;000;100;0000;0000;0000;0000
+123317;"Marktscheune Berghaupten";Einkauf;"HARALD HAISS MARKTSC";"Auf dem Gruen 1";77791;Berghaupten;;;;;;1;;1;1;;003;100;0000;0000;0000;0000
+123318;"Andrea Fischer-Schroll";"Gaststaette Schuppe";"ANDREA FISCHER-SCHRO";"Raststaetter Str. 14";77694;Kehl-Bodersweier;"0155 6277 6309";;;0815504004;;7;;1;1;;000;100;0000;0000;0000;0000
+123319;"Mathias Seiler";"Noarg´s by Brauwerk";"MATHIAS SEILER DIE B";"Hauptstrasse 77";77704;Oberkirch;01752491980;"in der Krone abladen!  Leergut steht im";;0;;1;;1;1;;000;100;0000;0000;0000;0000
+123320;"Das Lolo - lose & lokal e";"Elena Hanusch";"DAS LOLO ELENA HANUS";Martin-Lutherweg;77694;Kehl;01737069634;;;0;;1;;1;1;;000;100;0000;0000;0000;0000
+123322;"Qunyong Ye";Kaiserpalast;"QUNYONG YE KAISERPAL";"Kehlerstrasse 47";77652;Offenburg;"0781/968 1818";;;14479/00024;;1;;1;1;;000;100;0000;0000;0000;0000
+123325;"Heimat- und Geschichtsver";"Reblandcafé z.H. A. End";"ALFONS END REBLAND C";"Weingartenstrasse 145";77654;Offenburg;01721078074;;;1404755473;;7;;1;1;;000;100;0000;0000;0000;0000
+123326;"Remo Ottaniano";"Hotel Landgasthof zur Blu";"HOTEL LANDGASTHAUS Z";"Landstrasse 18";77839;Lichtenau-Scherzheim;07227/979680;"alles im Lager abstellen - aber einzeln";;3500670027;;1;;1;1;;000;100;0000;0000;0000;0000
+123328;"Casamore GmbH";"Maximilian Spothelfer";"CASAMORE IL RESTORAN";"Frackensteinstr. 28";77749;Hohberg;;;;1405260252;;1;;1;1;;000;100;0000;0000;0000;0000
+123329;"The White House Mahlberg";;"WHITE HOUSE MAHLBERG";Gottlieb-Daimler-Str.12;77972;Mahlberg;"0176 2866 3544";;;;;1;;1;1;;000;100;0000;0000;0000;0000
+123331;"REWE Getraenkemarkt GLN 4";"Manuel Heltner OHG";"REWE GETRAENKEMARKT";"Seeweg 12";79336;Herbolzheim;"07643 9199340";;;;;1;;1;1;;060;100;0000;0000;0000;0000
+123332;"Christian Morariu";"TC Offenburg e.V.";"CHRISTIAN MORARIU TC";"Wilhelmstrasse 41";77654;Offenburg;;;;1433750064;;1;;1;1;;000;100;0000;0000;0000;0000
+123333;"Getraenke Fuchs";"Helmut Fuchs";"HELMUT FUCHS GETRAEN";"Beiersdorfstr. 14";79423;Heitersheim;"07634 552326";;;;;1;;1;1;;003;100;0000;0000;0000;0000
+123335;"Dominic Herzog";Klosterstube;"HERZOG DOMINIC KLOST";"Friedrichstr. 31";77723;Gengenbach;07803/926927;;;81423315068;;7;;1;1;;000;100;0000;0000;0000;0000
+123336;"Kohler Handelsgesellschaf";;"EDEKA KOHLER FREIBUR";"Gundelfinger Str. 4";79108;"Freiburg ILN 431412069291";;"Lieferzeit: 6:00 - 13:00 Uhr";;0;;1;;1;1;;076;100;0000;0000;0000;0000
+123339;"Raiderz MC";;"RAIDERZ MC OFFENBURG";"Max-Planck-Str. 1";77656;Offenburg;01784033334;;;;1;7;;1;1;;004;100;0000;0000;0000;0000
+123341;"Netto Marken-Discount";"Fil. 5649";"NETTO MARKEN-DISCOUN";"Strassburger Strasse 81";77767;Appenweier;"07805 9120831";;;;;1;;1;1;;075;100;0000;0000;0000;0000
+123343;"Lott Getraenkelogistik Gm";;"LOTT GETRAENKELOGIST";"Im Winkel 8";77767;Appenweier;07805/910788;;;0;;7;;1;1;;003;100;0000;0000;0000;0000
+123344;"M & C Bildner, Trabara, S";Sonne;"MARION BILDNER SONNE";"Hauptstrasse 92-94";77652;Offenburg;"0151 5888 1332";;;1409810818;;1;;1;1;;000;100;0000;0000;0000;0000
+123345;"E. Oberle Schutterwald";Festekonto;"E. OBERLE FESTEKONTO";"Saint-Denis-Str. 2";77746;"Schutterwald ILN 43141206";078199068838;;;;;1;;1;1;;076;100;0000;0000;0000;0000
