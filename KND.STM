@@ -2,10 +2,10 @@ NUMBER;NAME;NAME2;MCODE;ADDRESS;POSTINDEX;CITY;PHONE;INFO;UID;TAXNUMBER;TYPE;BIL
 123456;"Kala Muster";;"DBZ DIENSTLEISTUNGS-";"Am Turbinenkanal 3";73240;Wendlingen;07024/405366;;;59330/31234;;1;;1;1;;003;100;0000;0000;0000;0000
 789123;"Klaus Beispiel";;"AERO CLUB KEHL -KEHL";"Willstaetter Str. 20";77694;Kehl;015153543483;"Ware bitte mittig in den Kuehlraum stell";;08062/00011;;1;;1;1;;000;100;0000;0000;0000;0000
 766543;"Heinz Muster";"Tommy Hertwig";"ATHLETIKHALLE URLOFF";"Waldstr. 2";77767;Appenweier/Urloffen;0171/5142820;"Kiefer 0171 51 42 820";;08062/00340;;1;;1;1;;000;100;0000;0000;0000;0000
-110205;Barverkauf;Privatkundschaft;"BARVERKAUF -OFFENBUR";"Gutenbergstrasse 3";77654;Offenburg;;;;;1;7;;1;1;;004;100;0000;0000;0000;0000
-110232;"1. Boccia Club Offenburg";Vereinsheim;"BOCCIA-CLUB OFFENBUR";"Stegermattstrasse 30";77652;Offenburg;0781/24514;Schluesselkunde;;14047/02155;;1;;1;1;;000;100;0000;0000;0000;0000
-110303;"Eveline u. J. Hahn";;"EVELINE U. J. HAHN -";"Im unt. Angel 54";77654;Offenburg;"0171 3609285";"Lieferung an die Halle - vorher anrufen";;DE142539423;;1;;1;1;;000;100;0000;0000;0000;0000
-110330;"Michael Conrad";Linde;"CONRAD LINDE OFFENBU";"Winzerstr. 44";77654;Offenburg;0781/34982;"Lieferzeit:ab 8.30 Uhr";;14157/24005;;1;;1;1;;000;100;0000;0000;0000;0000
+884411;Barverkauf;Privatkundschaft;"BARVERKAUF -OFFENBUR";"Gutenbergstrasse 3";77654;Offenburg;;;;;1;7;;1;1;;004;100;0000;0000;0000;0000
+978787;"Werner Testmann";Vereinsheim;"BOCCIA-CLUB OFFENBUR";"Stegermattstrasse 30";77652;Offenburg;0781/24514;Schluesselkunde;;14047/02155;;1;;1;1;;000;100;0000;0000;0000;0000
+110303;"Heimdienst";;"EVELINE U. J. HAHN -";"Im unt. Angel 54";77654;Offenburg;"0171 3609285";"Lieferung an die Halle - vorher anrufen";;DE142539423;;1;;1;1;;000;100;0000;0000;0000;0000
+110330;"Klaus Biermann";Linde;"CONRAD LINDE OFFENBU";"Winzerstr. 44";77654;Offenburg;0781/34982;"Lieferzeit:ab 8.30 Uhr";;14157/24005;;1;;1;1;;000;100;0000;0000;0000;0000
 110540;"Hahn Christine";"Weihnachtsmarkt OG";"HAHN CHRISTINE -OFFE";"Im Unteren Angel 54";77652;Offenburg;"0172 2810 130";;;;;1;;1;1;;000;100;0000;0000;0000;0000
 110586;"Christa Kempf";;"KEMPF CHRISTA RENTNE";Sauerbruchstr.5;77656;Offenburg;0781/55953;"2/3 Kisten/Monat à Euro 2,10+M WST.";;;;1;;1;1;;029;100;0000;0000;0000;0000
 110599;"Marco Jehle";Getraenke-Vertrieb;"JEHLE GETRAENKEVERTR";"Binzburgstr. 13";77749;"Hohberg/Hofweier GLN: 433";07808/439;;;14262/09005;;1;;1;1;;003;100;0000;0000;0000;0000
