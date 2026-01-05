@@ -11,7 +11,7 @@ import math
 import time
 
 # --- KONFIGURATION ---
-APP_VERSION = "1.84"        # Fix: Doppelpunkt in der Überschrift "Aktuell gefundene Touren:" ergänzt
+APP_VERSION = "1.85"        # Fix: Beschriftung für "Sidebar ein/aus" wiederhergestellt
 HEADER_HEIGHT_PIXELS = 340  
 ROWS_PER_PAGE = 10          
 
@@ -19,7 +19,6 @@ ROWS_PER_PAGE = 10
 TRANSLATIONS = {
     "Deutsch": {
         "page_title": "LKW Touren Viewer Pro",
-        # HIER DIE KORREKTUR (Doppelpunkt eingefügt):
         "tours_found": "📂 Aktuell gefundene Touren: <b>{count}</b> (Auto-Update: 60s)",
         "no_files": "Keine GPX Dateien.",
         "upload_text": "GPX Datei hier ablegen (max. 200 MB)",
@@ -30,6 +29,7 @@ TRANSLATIONS = {
         "stats_dist": "📏 Distanz",
         "stats_speed": "Ø Geschw.",
         "btn_save_map": "🌍 Karte für 2. Monitor speichern",
+        "btn_sidebar": "Sidebar ein/aus",  # WIEDER EINGEFÜGT
         "btn_export": "📄 Export Standzeiten",
         "header_customers": "📋 Kundenliste",
         "col_tour_nr": "Tournummer",
@@ -75,6 +75,7 @@ TRANSLATIONS = {
         "stats_dist": "📏 Distance",
         "stats_speed": "Ø Speed",
         "btn_save_map": "🌍 Save Map for 2nd Monitor",
+        "btn_sidebar": "Sidebar on/off",  # RESTORED
         "btn_export": "📄 Export Standstills",
         "header_customers": "📋 Customer List",
         "col_tour_nr": "Tour No.",
