@@ -11,7 +11,7 @@ import math
 import time
 
 # --- KONFIGURATION ---
-APP_VERSION = "1.78"        # Restore: Zurückgesetzt auf Version 1.75 (Layout: Karte Links / Liste Rechts)
+APP_VERSION = "1.79"        # Feature: Tournummer in Überschrift & TourNr/Datum im CSV Export
 HEADER_HEIGHT_PIXELS = 340  
 ROWS_PER_PAGE = 10          
 
@@ -66,7 +66,7 @@ Der **LKW Touren Viewer Pro** visualisiert GPX-Routen, berechnet Standzeiten und
 
 #### 📋 Kundenliste & Analyse
 * **Auswahl:** Klicken Sie auf eine Zeile in der Tabelle, um zu zoomen.
-* **Export:** Der Button **"📄 Export Standzeiten"** erstellt eine CSV-Datei.
+* **Export:** Der Button **"📄 Export Standzeiten"** erstellt eine CSV-Datei mit Tournummer und Datum.
 """
     },
     "English": {
@@ -118,7 +118,7 @@ The **Truck Tour Viewer Pro** visualizes GPX routes, calculates standstill times
 
 #### 📋 Customer List & Analysis
 * **Selection:** Click a row in the table to zoom to the customer.
-* **Export:** The button **"📄 Export Standstills"** creates a CSV file.
+* **Export:** The button **"📄 Export Standstills"** creates a CSV file with tour number and date.
 """
     }
 }
@@ -385,46 +385,35 @@ def main():
         </style>
     """, unsafe_allow_html=True)
 
-    # --- HEADER (WEISS) ---
+    # --- HEADER & CONTROLS ---
     version_html = f'<div class="version">v{APP_VERSION}</div>'
     if logo_base64:
         st.markdown(f'<div class="custom-header"><img src="data:image/jpeg;base64,{logo_base64}">{version_html}</div>', unsafe_allow_html=True)
     else:
         st.markdown(f'<div class="custom-header"><h2 style="color:#047761!important; margin:0; font-size:24px;">movis</h2>{version_html}</div>', unsafe_allow_html=True)
 
-    # --- FIXED CONTROL AREA (GRÜN) ---
     with st.container():
         st.markdown('<div id="fixed-controls-anchor"></div>', unsafe_allow_html=True)
         
-        # OBERE ZEILE: TITEL (Links) + SPRACHE/HILFE (Rechts)
         tit_col1, tit_col2, tit_col3 = st.columns([6, 0.5, 0.5], gap="small")
         with tit_col1:
              st.markdown(f"<h3 style='text-align: center; color: white; margin-top: 5px; margin-bottom: 5px;'>🚚 {get_text('page_title')}</h3>", unsafe_allow_html=True)
-        
         with tit_col2:
             curr_lang = st.session_state.language
             btn_label = "DE" if curr_lang == 'Deutsch' else "GB"
             if st.button(btn_label, key="lang_toggle"):
-                new_lang = 'English' if curr_lang == 'Deutsch' else 'Deutsch'
-                st.session_state.language = new_lang
+                st.session_state.language = 'English' if curr_lang == 'Deutsch' else 'Deutsch'
                 st.rerun()
-
         with tit_col3:
-            if st.button("❓", help=get_text("manual_btn_help")):
-                show_help_dialog()
+            if st.button("❓", help=get_text("manual_btn_help")): show_help_dialog()
         
-        # UNTERE ZEILE
         head_col1, head_col2 = st.columns([5, 3], gap="medium")
-        
-        with head_col1:
-            file_selector_fragment()
-            
+        with head_col1: file_selector_fragment()
         with head_col2:
             st.markdown("<div style='height: 28px'></div>", unsafe_allow_html=True) 
             def on_upload_change(): st.session_state.last_upload_ts = time.time()
             uploaded_file = st.file_uploader("Upload", type=['gpx'], label_visibility="collapsed", on_change=on_upload_change)
 
-        # LOGIK
         file_to_process = None
         file_name_display = ""
         is_upload_newer = st.session_state.last_upload_ts > st.session_state.last_selection_ts
@@ -437,17 +426,21 @@ def main():
                     file_to_process, file_name_display = open(st.session_state.selected_local_file, 'rb'), st.session_state.selected_local_file
             except: pass
         
-        if file_to_process:
-            if st.session_state.loaded_file_name != file_name_display:
-                data = process_gpx_data(file_to_process, customer_db)
-                st.session_state.tour_data = data
-                st.session_state.loaded_file_name = file_name_display
+        if file_to_process and st.session_state.loaded_file_name != file_name_display:
+            st.session_state.tour_data = process_gpx_data(file_to_process, customer_db)
+            st.session_state.loaded_file_name = file_name_display
         
     # --- HAUPTBEREICH ---
     if st.session_state.tour_data and st.session_state.tour_data["points"]:
         data = st.session_state.tour_data
         points = data["points"]
         customer_stops = data["customer_stops"]
+
+        # --- TOUR NUMMER EXTRAHIEREN ---
+        tour_nr = ""
+        if st.session_state.loaded_file_name:
+            fname = os.path.splitext(st.session_state.loaded_file_name)[0]
+            tour_nr = fname.upper().replace("DL", "")
 
         col1, col2, col3, col4 = st.columns(4)
         box_style = "color: white; text-align: center; background: rgba(255,255,255,0.1); padding: 4px; border-radius: 8px;"
@@ -471,7 +464,6 @@ def main():
         # Linke Seite (Karte)
         bcol_left, bcol_right = st.columns([1, 1])
         with bcol_left:
-            # FIX 1: double_click_zoom=False
             m = folium.Map(location=mid_p, zoom_start=zoom_val, double_click_zoom=False)
             folium.PolyLine(points, color="red", weight=5, opacity=0.8).add_to(m)
             
@@ -486,7 +478,6 @@ def main():
                 popup_text = f"<b>{c_nr}: {stop[c_nr]}</b>{f'<br>({name_disp})' if name_disp else ''}<br>{c_dur}: {stop[c_dur]} min<br>{c_arr}: {stop[c_arr]}<br>{c_dep}: {stop[c_dep]}"
                 tooltip_text = f"{c_nr}: {stop[c_nr]}{f' ({name_disp})' if name_disp else ''}"
                 
-                # FIX 2: auto_pan=False
                 folium.Marker(
                     [stop['Lat'], stop['Lon']], 
                     popup=folium.Popup(popup_text, max_width=300, auto_pan=False), 
@@ -505,7 +496,15 @@ def main():
                     st.rerun()
             with sub_c2:
                 if customer_stops:
-                    df_export = pd.DataFrame(customer_stops).drop(columns=['Lat', 'Lon'], errors='ignore')
+                    # --- DATEN EXPORT ANPASSUNG ---
+                    df_export = pd.DataFrame(customer_stops)
+                    
+                    # 1. Spalte: TourNr
+                    df_export.insert(0, "TourNr", tour_nr)
+                    # 2. Spalte: Datum
+                    df_export.insert(1, "Datum", data['date_str'])
+                    
+                    df_export = df_export.drop(columns=['Lat', 'Lon'], errors='ignore')
                     csv = df_export.to_csv(index=False, sep=';', encoding='utf-16').encode('utf-16')
                     st.download_button(label=get_text("btn_export"), data=csv, file_name=f"Standzeiten_{data['date_str']}.csv", mime="text/csv")
 
@@ -514,14 +513,17 @@ def main():
             c_map, c_list = st.columns([1, 1])
             with c_map: 
                 st.markdown("<div style='margin-top: -15px;'></div>", unsafe_allow_html=True)
-                # Komponenten nutzen
                 components.html(map_html, height=800)
             
             with c_list:
-                # Sticky Container für Tabelle
                 st.markdown(f'<div style="position: sticky; top: {HEADER_HEIGHT_PIXELS + 20}px; z-index: 100;">', unsafe_allow_html=True)
                 
-                st.markdown(f"<div style='text-align: center; color: white; margin-bottom: 5px; font-weight: bold; font-size: 1.1em;'>{get_text('header_customers')}</div>", unsafe_allow_html=True)
+                # --- ÜBERSCHRIFT ANPASSUNG ---
+                header_text = get_text('header_customers')
+                if tour_nr:
+                    header_text += f" Tour {tour_nr}"
+                
+                st.markdown(f"<div style='text-align: center; color: white; margin-bottom: 5px; font-weight: bold; font-size: 1.1em;'>{header_text}</div>", unsafe_allow_html=True)
 
                 total_stops = len(customer_stops)
                 num_pages = math.ceil(total_stops / ROWS_PER_PAGE)
