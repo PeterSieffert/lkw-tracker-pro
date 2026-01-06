@@ -11,7 +11,7 @@ import math
 import time
 
 # --- KONFIGURATION ---
-APP_VERSION = "1.97"        # Design-Update: Upload-Feld schwarz/grau, Layout 2:1 (mehr Platz für Upload)
+APP_VERSION = "1.98"        # Fix: 'color-scheme: dark' erzwingt Dunkelmodus auch im Browser (behebt Light-Mode Fehler)
 HEADER_HEIGHT_PIXELS = 340  
 ROWS_PER_PAGE = 10 
 
@@ -436,8 +436,12 @@ def main():
         logo_base64 = get_base64_of_bin_file(logo_filename)
 
     # --- CSS DESIGN ---
+    # WICHTIG: :root { color-scheme: dark; } erzwingt den Dunkelmodus im Browser-Rendering
     st.markdown(f"""
         <style>
+            :root {{
+                color-scheme: dark;
+            }}
             .stApp {{ background-color: #047761; }}
             header[data-testid="stHeader"], [data-testid="stElementToolbar"] {{ display: none !important; }}
             
