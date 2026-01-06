@@ -11,15 +11,19 @@ import math
 import time
 
 # --- KONFIGURATION ---
-APP_VERSION = "1.86"        # Feature: Konfigurierbarer Quellordner für GPX-Dateien
+APP_VERSION = "1.94"        # Feature: Umfassendes Handbuch, das JEDEN Button erklärt
 HEADER_HEIGHT_PIXELS = 340  
 ROWS_PER_PAGE = 10 
 
-# --- PFAD ZU DEN GPX DATEIEN ---
-# "." bedeutet: Gleicher Ordner wie diese app.py Datei
-# Beispiel absoluter Pfad: "C:/Users/Name/Documents/Touren"
-# Beispiel Netzwerkpfad: "//Server/Freigabe/Touren"
+# --- PFADE KONFIGURATION ---
+# 1. Pfad zu den GPX Touren-Dateien (Lesen)
 GPX_FOLDER_PATH = "."       
+
+# 2. Pfad zur CSV Kunden-Datenbank (Lesen)
+CSV_FOLDER_PATH = "."       
+
+# 3. Pfad für den EXPORT der CSV-Dateien (Schreiben)
+EXPORT_FOLDER_PATH = "."
 
 # --- SPRACH-WÖRTERBUCH ---
 TRANSLATIONS = {
@@ -36,7 +40,13 @@ TRANSLATIONS = {
         "stats_speed": "Ø Geschw.",
         "btn_save_map": "🌍 Karte für 2. Monitor speichern",
         "btn_sidebar": "Sidebar ein/aus",
-        "btn_export": "📄 Export Standzeiten",
+        "btn_export": "Download Tour",
+        "btn_save_direct": "💾 Export der Tour",
+        "btn_batch_export": "💾 Alle Touren exportieren", 
+        "save_success": "✅ Datei erfolgreich exportiert, Dateiname: ",
+        "batch_success": "✅ Batch-Export abgeschlossen! Anzahl Dateien: ",
+        "save_error": "❌ Fehler beim Speichern: ",
+        "batch_error": "❌ Bitte EXPORT_FOLDER_PATH konfigurieren für Batch-Export!",
         "header_customers": "📋 Kundenliste",
         "col_tour_nr": "Tournummer",
         "col_filename": "Dateiname",
@@ -53,20 +63,33 @@ TRANSLATIONS = {
         "date_format": "%d.%m.%Y",
         "file_date_format": "%d.%m.%Y %H:%M",
         "manual_md": """
-## 📘 Benutzerhandbuch
+## 📘 Benutzerhandbuch & Button-Erklärung
 
-### 1. Ordner-Einstellung
-Die Touren werden nun aus dem konfigurierten Verzeichnis geladen (Standard: aktueller Ordner).
+### 1. Obere Leiste (Header)
+* **DE / GB:** Wechselt die Sprache (Deutsch / Englisch).
+* **❓:** Öffnet dieses Handbuch.
 
-### 2. Layout
-* **Alignment:** Die Spalte "Upload" ist nun pixelgenau mit der Kachel "Ø Geschw." ausgerichtet.
+### 2. Dateiauswahl (Oben Links)
+* **Liste der Touren:** Klicken Sie auf eine Zeile, um diese Tour in die Karte und Statistik zu laden.
+* **Auto-Update:** Die Liste aktualisiert sich alle 60 Sekunden automatisch.
 
-### 3. Bedienung
-#### 📂 Tour laden
-* Klicken Sie oben links auf eine Tour in der Liste.
+### 3. Upload & Batch (Oben Rechts)
+* **Upload-Feld:** Hier können Sie manuelle GPX-Dateien per Drag & Drop hineinziehen.
+* **💾 Alle Touren exportieren:** (Nur sichtbar wenn konfiguriert) Konvertiert **alle** Touren der Liste in CSV-Dateien und speichert sie im Export-Ordner.
 
-#### 🗺️ Karte & 2. Monitor
-* Nutzen Sie den Button **"🌍 Karte für 2. Monitor speichern"** unter der Karte.
+### 4. Kartenbereich (Mitte)
+* **Karte:** Zeigt die Route (rot) und Kundenstopps (Icons).
+* **Klick auf Icon:** Zeigt Details (Ankunft, Abfahrt, Dauer) zum Kunden.
+* **🌍 Karte für 2. Monitor speichern:** Lädt die aktuelle Ansicht als HTML-Datei herunter (ideal, um die Karte groß auf einem zweiten Bildschirm zu öffnen).
+
+### 5. Werkzeugleiste (Rechts neben Karte)
+* **Sidebar ein/aus:** Blendet die Kundenliste rechts aus, damit die Karte größer wird.
+* **Download Tour:** Lädt die Standzeiten-Tabelle (CSV) über den Browser herunter.
+* **💾 Export der Tour:** (Nur sichtbar wenn konfiguriert) Speichert die Standzeiten-Tabelle direkt auf dem Server/PC im Zielordner.
+
+### 6. Kundenliste (Rechts unten)
+* **Klick auf Zeile:** Zentriert die Karte sofort auf diesen Kunden.
+* **⬅️ / ➡️:** Blättert durch die Seiten der Kundenliste.
 """
     },
     "English": {
@@ -82,7 +105,13 @@ Die Touren werden nun aus dem konfigurierten Verzeichnis geladen (Standard: aktu
         "stats_speed": "Ø Speed",
         "btn_save_map": "🌍 Save Map for 2nd Monitor",
         "btn_sidebar": "Sidebar on/off",
-        "btn_export": "📄 Export Standstills",
+        "btn_export": "Download Tour",
+        "btn_save_direct": "💾 Export Tour",
+        "btn_batch_export": "💾 Export All Tours",
+        "save_success": "✅ File successfully exported, Filename: ",
+        "batch_success": "✅ Batch export finished! Files created: ",
+        "save_error": "❌ Error saving file: ",
+        "batch_error": "❌ Please configure EXPORT_FOLDER_PATH for batch export!",
         "header_customers": "📋 Customer List",
         "col_tour_nr": "Tour No.",
         "col_filename": "Filename",
@@ -99,20 +128,33 @@ Die Touren werden nun aus dem konfigurierten Verzeichnis geladen (Standard: aktu
         "date_format": "%Y-%m-%d",
         "file_date_format": "%Y-%m-%d %H:%M",
         "manual_md": """
-## 📘 User Manual
+## 📘 User Manual & Button Guide
 
-### 1. Folder Settings
-Tours are now loaded from the configured directory (Default: current folder).
+### 1. Top Bar (Header)
+* **DE / GB:** Switches language (German / English).
+* **❓:** Opens this manual.
 
-### 2. Layout
-* **Alignment:** The Upload box is now pixel-perfect aligned with the Speed tile.
+### 2. File Selection (Top Left)
+* **Tour List:** Click any row to load the tour into the map and statistics.
+* **Auto-Update:** The list refreshes automatically every 60 seconds.
 
-### 3. Operation
-#### 📂 Load Tour
-* Click a tour in the top left list.
+### 3. Upload & Batch (Top Right)
+* **Upload Box:** Drag & drop manual GPX files here.
+* **💾 Export All Tours:** (Visible only if configured) Converts **all** tours in the list to CSV files and saves them to the export folder.
 
-#### 🗺️ Map & 2nd Monitor
-* Use the **"🌍 Save Map..."** button below the map.
+### 4. Map Area (Center)
+* **Map:** Shows the route (red) and customer stops (icons).
+* **Click Icon:** Shows details (Arrival, Departure, Duration).
+* **🌍 Save Map...:** Downloads the current view as an HTML file (ideal for opening the map on a second monitor).
+
+### 5. Toolbar (Right of Map)
+* **Sidebar on/off:** Hides the customer list to make the map larger.
+* **Download Tour:** Downloads the standstill table (CSV) via the browser.
+* **💾 Export Tour:** (Visible only if configured) Saves the standstill table directly to the server/PC in the target folder.
+
+### 6. Customer List (Bottom Right)
+* **Click Row:** Instantly centers the map on this customer.
+* **⬅️ / ➡️:** Pages through the customer list.
 """
     }
 }
@@ -127,8 +169,7 @@ def get_base64_of_bin_file(bin_file):
     return base64.b64encode(data).decode()
 
 def load_customer_db():
-    # Datenbank liegt weiterhin im Programmverzeichnis, nicht im GPX Ordner (außer gewünscht)
-    filename = "KND.STM" 
+    filename = os.path.join(CSV_FOLDER_PATH, "KND.STM")
     if not os.path.exists(filename):
         return None
     try:
@@ -141,7 +182,12 @@ def load_customer_db():
         return None
 
 def process_gpx_data(file, customer_db=None):
-    file.seek(0) 
+    # Hilfsfunktion zum Verarbeiten (auch für Batch genutzt)
+    try:
+        file.seek(0)
+    except:
+        pass 
+        
     gpx = gpxpy.parse(file)
     points = []
     all_gpx_points = [] 
@@ -242,7 +288,6 @@ def get_local_gpx_files_info():
     col_fname = TRANSLATIONS[lang]["col_filename"]
     col_fdate = TRANSLATIONS[lang]["col_date"]
     
-    # --- CHANGE: Verwende den konfigurierten Pfad ---
     scan_path = GPX_FOLDER_PATH
     
     if os.path.exists(scan_path):
@@ -259,7 +304,8 @@ def get_local_gpx_files_info():
                     col_tour: tour_nr,
                     col_fname: f, 
                     col_fdate: date_str, 
-                    "timestamp": mod_time
+                    "timestamp": mod_time,
+                    "real_filename": f 
                 })
         file_list.sort(key=lambda x: x["timestamp"], reverse=True)
     return file_list
@@ -308,6 +354,50 @@ def show_help_dialog():
     if st.button("Close"):
         st.rerun()
 
+def run_batch_export(customer_db):
+    files = get_local_gpx_files_info()
+    if not files: return
+    
+    if not EXPORT_FOLDER_PATH or not os.path.exists(EXPORT_FOLDER_PATH):
+        st.session_state.save_msg = get_text("batch_error")
+        return
+
+    progress_bar = st.progress(0)
+    status_text = st.empty()
+    export_count = 0
+    
+    for i, f_info in enumerate(files):
+        fname = f_info["real_filename"]
+        tour_nr = f_info[get_text("col_tour_nr")] 
+        full_path = os.path.join(GPX_FOLDER_PATH, fname)
+        
+        status_text.text(f"Processing: {fname}...")
+        
+        try:
+            with open(full_path, 'rb') as f:
+                data = process_gpx_data(f, customer_db)
+                
+            if data and data["customer_stops"]:
+                df_export = pd.DataFrame(data["customer_stops"])
+                df_export.insert(0, "TourNr", tour_nr)
+                df_export.insert(1, "Datum", data['date_str'])
+                df_export = df_export.drop(columns=['Lat', 'Lon'], errors='ignore')
+                
+                csv_filename = f"Standzeiten_{data['date_str']}_{tour_nr}.csv"
+                save_path = os.path.join(EXPORT_FOLDER_PATH, csv_filename)
+                
+                df_export.to_csv(save_path, index=False, sep=';', encoding='utf-16')
+                export_count += 1
+        except Exception as e:
+            print(f"Error extracting {fname}: {e}")
+            
+        progress_bar.progress((i + 1) / len(files))
+        
+    status_text.empty()
+    progress_bar.empty()
+    st.session_state.save_msg = f"{get_text('batch_success')} {export_count}"
+    st.rerun()
+
 def main():
     st.set_page_config(page_title="LKW Touren Viewer Pro", page_icon="🚚", layout="wide")
     
@@ -322,6 +412,7 @@ def main():
     if 'tour_data' not in st.session_state: st.session_state.tour_data = None
     if 'loaded_file_name' not in st.session_state: st.session_state.loaded_file_name = None
     if 'last_lang' not in st.session_state: st.session_state.last_lang = st.session_state.language
+    if 'save_msg' not in st.session_state: st.session_state.save_msg = None 
 
     # --- RESET BEI SPRACHWECHSEL ---
     if st.session_state.language != st.session_state.last_lang:
@@ -411,7 +502,7 @@ def main():
         with tit_col3:
             if st.button("❓", help=get_text("manual_btn_help")): show_help_dialog()
         
-        # UNTERE ZEILE: DATEILISTE & UPLOAD (3:1 Verhältnis mit gap="small")
+        # UNTERE ZEILE
         head_col1, head_col2 = st.columns([3, 1], gap="small")
         
         with head_col1:
@@ -421,6 +512,12 @@ def main():
             st.markdown("<div style='height: 28px'></div>", unsafe_allow_html=True) 
             def on_upload_change(): st.session_state.last_upload_ts = time.time()
             uploaded_file = st.file_uploader("Upload", type=['gpx'], label_visibility="collapsed", on_change=on_upload_change)
+            
+            # --- BATCH EXPORT BUTTON ---
+            st.markdown("<div style='height: 10px'></div>", unsafe_allow_html=True)
+            if EXPORT_FOLDER_PATH and os.path.exists(EXPORT_FOLDER_PATH):
+                if st.button(get_text("btn_batch_export"), use_container_width=True):
+                    run_batch_export(customer_db)
 
         file_to_process = None
         file_name_display = ""
@@ -429,7 +526,6 @@ def main():
         if uploaded_file is not None and is_upload_newer:
             file_to_process, file_name_display = uploaded_file, uploaded_file.name
         elif st.session_state.selected_local_file:
-            # --- CHANGE: Pfad zusammensetzen mit GPX_FOLDER_PATH ---
             full_path = os.path.join(GPX_FOLDER_PATH, st.session_state.selected_local_file)
             try:
                 if os.path.exists(full_path):
@@ -452,24 +548,21 @@ def main():
             fname = os.path.splitext(st.session_state.loaded_file_name)[0]
             tour_nr = fname.upper().replace("DL", "")
 
-        # --- STATISTIK ZEILE (MIT NESTED COLUMNS FÜR PERFEKTES ALIGNMENT) ---
         stat_row_left, stat_row_right = st.columns([3, 1], gap="small")
-        
         box_style = "color: white; text-align: center; background: rgba(255,255,255,0.1); padding: 4px; border-radius: 8px;"
         
         with stat_row_left:
-            # 3 Unterspalten
             s1, s2, s3 = st.columns(3, gap="small")
             with s1: st.markdown(f"<div style='{box_style}'><div style='font-size:0.9em; opacity:0.8'>{get_text('stats_start')}</div><div style='font-size:1.1em; font-weight:bold'>{data['start_time']}</div></div>", unsafe_allow_html=True)
             with s2: st.markdown(f"<div style='{box_style}'><div style='font-size:0.9em; opacity:0.8'>{get_text('stats_end')}</div><div style='font-size:1.1em; font-weight:bold'>{data['end_time']}</div></div>", unsafe_allow_html=True)
             with s3: st.markdown(f"<div style='{box_style}'><div style='font-size:0.9em; opacity:0.8'>{get_text('stats_dist')}</div><div style='font-size:1.1em; font-weight:bold'>{data['dist_km']:.2f} km</div></div>", unsafe_allow_html=True)
             
         with stat_row_right:
-            # 4. Spalte
             st.markdown(f"<div style='{box_style}'><div style='font-size:0.9em; opacity:0.8'>{get_text('stats_speed')}</div><div style='font-size:1.1em; font-weight:bold'>{data['avg_speed']:.1f} km/h</div></div>", unsafe_allow_html=True)
         
         st.markdown("<div style='height: 10px'></div>", unsafe_allow_html=True)
         
+        # --- KARTE ---
         mid_p = points[len(points)//2]
         zoom_val = 12
         if st.session_state.selected_customer_id:
@@ -483,25 +576,15 @@ def main():
         with bcol_left:
             m = folium.Map(location=mid_p, zoom_start=zoom_val, double_click_zoom=False)
             folium.PolyLine(points, color="red", weight=5, opacity=0.8).add_to(m)
-            
             c_nr, c_name = get_text("col_cust_nr"), get_text("col_name")
             c_dur, c_arr, c_dep = get_text("col_dur"), get_text("col_arr"), get_text("col_dep")
-
             for stop in customer_stops:
                 is_sel = (stop[c_nr] == st.session_state.selected_customer_id)
                 icon_color, icon_type = ("red", "star") if is_sel else ("blue", "user")
-                
                 name_disp = stop.get(c_name, '')
                 popup_text = f"<b>{c_nr}: {stop[c_nr]}</b>{f'<br>({name_disp})' if name_disp else ''}<br>{c_dur}: {stop[c_dur]} min<br>{c_arr}: {stop[c_arr]}<br>{c_dep}: {stop[c_dep]}"
                 tooltip_text = f"{c_nr}: {stop[c_nr]}{f' ({name_disp})' if name_disp else ''}"
-                
-                folium.Marker(
-                    [stop['Lat'], stop['Lon']], 
-                    popup=folium.Popup(popup_text, max_width=300, auto_pan=False), 
-                    tooltip=tooltip_text, 
-                    icon=folium.Icon(color=icon_color, icon=icon_type, prefix="fa")
-                ).add_to(m)
-                
+                folium.Marker([stop['Lat'], stop['Lon']], popup=folium.Popup(popup_text, max_width=300, auto_pan=False), tooltip=tooltip_text, icon=folium.Icon(color=icon_color, icon=icon_type, prefix="fa")).add_to(m)
             map_html = m.get_root().render()
             st.download_button(get_text("btn_save_map"), map_html, "LKW_Tour.html", "text/html")
         
@@ -512,13 +595,35 @@ def main():
                     st.session_state.show_right_sidebar = not st.session_state.show_right_sidebar
                     st.rerun()
             with sub_c2:
+                # --- EXPORT BUTTONS ---
                 if customer_stops:
                     df_export = pd.DataFrame(customer_stops)
                     df_export.insert(0, "TourNr", tour_nr)
                     df_export.insert(1, "Datum", data['date_str'])
                     df_export = df_export.drop(columns=['Lat', 'Lon'], errors='ignore')
-                    csv = df_export.to_csv(index=False, sep=';', encoding='utf-16').encode('utf-16')
-                    st.download_button(label=get_text("btn_export"), data=csv, file_name=f"Standzeiten_{data['date_str']}.csv", mime="text/csv")
+                    csv_data = df_export.to_csv(index=False, sep=';', encoding='utf-16').encode('utf-16')
+                    filename_csv = f"Standzeiten_{data['date_str']}_{tour_nr}.csv"
+                    
+                    if EXPORT_FOLDER_PATH and os.path.exists(EXPORT_FOLDER_PATH):
+                        bx1, bx2 = st.columns(2)
+                        with bx1:
+                            st.download_button(label=get_text("btn_export"), data=csv_data, file_name=filename_csv, mime="text/csv")
+                        with bx2:
+                            if st.button(get_text("btn_save_direct")):
+                                try:
+                                    full_save_path = os.path.join(EXPORT_FOLDER_PATH, filename_csv)
+                                    with open(full_save_path, "wb") as f:
+                                        f.write(csv_data)
+                                    st.session_state.save_msg = f"{get_text('save_success')}{filename_csv}"
+                                except Exception as e:
+                                    st.session_state.save_msg = f"{get_text('save_error')} {str(e)}"
+                                st.rerun()
+                    else:
+                        st.download_button(label=get_text("btn_export"), data=csv_data, file_name=filename_csv, mime="text/csv")
+
+                    if st.session_state.save_msg:
+                        st.info(st.session_state.save_msg)
+                        st.session_state.save_msg = None
 
         if st.session_state.show_right_sidebar and customer_stops:
             c_map, c_list = st.columns([1, 1])
@@ -528,37 +633,23 @@ def main():
             
             with c_list:
                 st.markdown(f'<div style="position: sticky; top: {HEADER_HEIGHT_PIXELS + 20}px; z-index: 100;">', unsafe_allow_html=True)
-                
                 header_text = get_text('header_customers')
                 if tour_nr:
                     header_text += f" Tour {tour_nr}"
-                
                 st.markdown(f"<div style='text-align: center; color: white; margin-bottom: 5px; font-weight: bold; font-size: 1.1em;'>{header_text}</div>", unsafe_allow_html=True)
-
                 total_stops = len(customer_stops)
                 num_pages = math.ceil(total_stops / ROWS_PER_PAGE)
                 start_idx = st.session_state.page_number * ROWS_PER_PAGE
                 current_batch = customer_stops[start_idx : start_idx + ROWS_PER_PAGE]
                 df_stops = pd.DataFrame(current_batch)
-                
                 cols = [get_text("col_cust_nr"), get_text("col_arr"), get_text("col_dep"), get_text("col_dur")]
                 if has_customer_names: cols.insert(1, get_text("col_name"))
-                
-                sel = st.dataframe(
-                    df_stops.style.set_properties(**{'background-color': '#047761', 'color': 'white'}), 
-                    width="stretch", 
-                    hide_index=True, 
-                    column_order=cols, 
-                    selection_mode="single-row", 
-                    on_select="rerun", 
-                    key=f"tbl_{st.session_state.page_number}"
-                )
+                sel = st.dataframe(df_stops.style.set_properties(**{'background-color': '#047761', 'color': 'white'}), width="stretch", hide_index=True, column_order=cols, selection_mode="single-row", on_select="rerun", key=f"tbl_{st.session_state.page_number}")
                 if sel.selection.rows:
                     sel_cust = current_batch[sel.selection.rows[0]][get_text("col_cust_nr")]
                     if st.session_state.selected_customer_id != sel_cust:
                         st.session_state.selected_customer_id = sel_cust
                         st.rerun()
-
                 n1, n2, n3 = st.columns([1, 2, 1])
                 with n1: 
                     if st.session_state.page_number > 0 and st.button(get_text("nav_back")): st.session_state.page_number -= 1; st.rerun()
@@ -567,9 +658,7 @@ def main():
                     st.markdown(f"<div style='text-align:center;'>{page_txt}</div>", unsafe_allow_html=True)
                 with n3:
                     if st.session_state.page_number < num_pages-1 and st.button(get_text("nav_next")): st.session_state.page_number += 1; st.rerun()
-                
                 st.markdown('</div>', unsafe_allow_html=True)
-
         else: 
             components.html(map_html, height=800)
 
