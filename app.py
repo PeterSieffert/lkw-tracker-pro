@@ -11,7 +11,7 @@ import math
 import time
 
 # --- KONFIGURATION ---
-APP_VERSION = "1.98"        # Fix: 'color-scheme: dark' erzwingt Dunkelmodus auch im Browser (behebt Light-Mode Fehler)
+APP_VERSION = "2.03"        # Design-Fix: 'Green-Gap' am Tabellenrand mit Box-Shadow überdeckt
 HEADER_HEIGHT_PIXELS = 340  
 ROWS_PER_PAGE = 10 
 
@@ -325,9 +325,9 @@ def file_selector_fragment():
         
         df_files = pd.DataFrame(files_info)[[col_tour, col_fname, col_fdate]]
         
-        # --- TABELLE STYLE (Bleibt Teal/Grün) ---
+        # --- TABELLE STYLE: Hintergrund Schwarz (#1c1c1c) ---
         styled_df_files = df_files.style.set_properties(**{
-            'background-color': '#035e4d',  
+            'background-color': '#1c1c1c',  # Schwarz (dunkelgrau)
             'color': 'white', 
             'border-color': 'rgba(255,255,255,0.2)', 
             'cursor': 'pointer'
@@ -471,9 +471,9 @@ def main():
             [data-testid='stFileUploader'] section > div > div > span {{ display: none !important; }}
             [data-testid='stFileUploader'] section > div > div > small {{ display: none !important; }}
             
-            /* FIX: File Uploader Hintergrund jetzt SCHWARZ (statt Grün) und Schrift GRAU */
+            /* Upload Feld: Schwarz/Dunkelgrau */
             [data-testid='stFileUploader'] section > div {{
-                background-color: #1c1c1c !important; /* Fast Schwarz */
+                background-color: #1c1c1c !important; 
                 border: 1px dashed #444;
             }}
             
@@ -488,10 +488,27 @@ def main():
                 background-color: white !important; color: #047761 !important; border-radius: 6px !important; font-weight: bold !important;
             }}
             
+            /* Tabelle Header: Teal */
             [data-testid="stDataFrame"] thead tr th, [data-testid="stDataFrame"] thead tr {{
                 background-color: #035e4d !important; color: white !important;
             }}
             
+            /* FIX V2.03: Aggressive Clipping & Hintergrund-Füllung */
+            [data-testid="stDataFrame"] {{
+                background-color: #1c1c1c !important;  /* Füllt Lücken schwarz */
+                border: 1px solid rgba(255,255,255,0.2);
+                border-radius: 8px !important;
+                overflow: hidden !important;
+                /* Box-Shadow Hack: Erweitert den schwarzen Hintergrund minimal, um Lücken zu schließen */
+                box-shadow: 0px 0px 0px 1px #1c1c1c; 
+            }}
+            
+            /* Inneren Divs ebenfalls schwarz, um Transparenz zu vermeiden */
+            [data-testid="stDataFrame"] > div {{
+                background-color: #1c1c1c !important;
+                border-radius: 8px !important;
+            }}
+
             div[data-testid="stDialog"] {{
                 background-color: #047761 !important;
                 color: white !important;
@@ -663,9 +680,24 @@ def main():
                 start_idx = st.session_state.page_number * ROWS_PER_PAGE
                 current_batch = customer_stops[start_idx : start_idx + ROWS_PER_PAGE]
                 df_stops = pd.DataFrame(current_batch)
+                
+                # --- KUNDENLISTE STYLE: Hintergrund Schwarz (#1c1c1c) ---
                 cols = [get_text("col_cust_nr"), get_text("col_arr"), get_text("col_dep"), get_text("col_dur")]
                 if has_customer_names: cols.insert(1, get_text("col_name"))
-                sel = st.dataframe(df_stops.style.set_properties(**{'background-color': '#047761', 'color': 'white'}), width="stretch", hide_index=True, column_order=cols, selection_mode="single-row", on_select="rerun", key=f"tbl_{st.session_state.page_number}")
+                
+                sel = st.dataframe(
+                    df_stops.style.set_properties(**{
+                        'background-color': '#1c1c1c', # Schwarz (dunkelgrau) 
+                        'color': 'white'
+                    }), 
+                    width="stretch", 
+                    hide_index=True, 
+                    column_order=cols, 
+                    selection_mode="single-row", 
+                    on_select="rerun", 
+                    key=f"tbl_{st.session_state.page_number}"
+                )
+                
                 if sel.selection.rows:
                     sel_cust = current_batch[sel.selection.rows[0]][get_text("col_cust_nr")]
                     if st.session_state.selected_customer_id != sel_cust:
