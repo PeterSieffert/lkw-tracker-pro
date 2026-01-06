@@ -11,7 +11,7 @@ import math
 import time
 
 # --- KONFIGURATION ---
-APP_VERSION = "1.95"        # Feature: Sprache-Button von "GB" auf "EN" geändert
+APP_VERSION = "1.97"        # Design-Update: Upload-Feld schwarz/grau, Layout 2:1 (mehr Platz für Upload)
 HEADER_HEIGHT_PIXELS = 340  
 ROWS_PER_PAGE = 10 
 
@@ -23,7 +23,6 @@ GPX_FOLDER_PATH = "."
 CSV_FOLDER_PATH = "."       
 
 # 3. Pfad für den EXPORT der CSV-Dateien (Schreiben)
-# WICHTIG: Für den "Alle exportieren" Button muss hier ein Pfad eingetragen sein!
 EXPORT_FOLDER_PATH = "."
 
 # --- SPRACH-WÖRTERBUCH ---
@@ -325,7 +324,14 @@ def file_selector_fragment():
         st.markdown(f"<div style='color:white; font-size:0.9em; margin-bottom:3px;'>{info_text}</div>", unsafe_allow_html=True)
         
         df_files = pd.DataFrame(files_info)[[col_tour, col_fname, col_fdate]]
-        styled_df_files = df_files.style.set_properties(**{'background-color': 'rgba(255,255,255,0.1)', 'color': 'white', 'border-color': 'rgba(255,255,255,0.1)', 'cursor': 'pointer'})
+        
+        # --- TABELLE STYLE (Bleibt Teal/Grün) ---
+        styled_df_files = df_files.style.set_properties(**{
+            'background-color': '#035e4d',  
+            'color': 'white', 
+            'border-color': 'rgba(255,255,255,0.2)', 
+            'cursor': 'pointer'
+        })
         
         selection = st.dataframe(
             styled_df_files, 
@@ -460,9 +466,18 @@ def main():
             
             [data-testid='stFileUploader'] section > div > div > span {{ display: none !important; }}
             [data-testid='stFileUploader'] section > div > div > small {{ display: none !important; }}
+            
+            /* FIX: File Uploader Hintergrund jetzt SCHWARZ (statt Grün) und Schrift GRAU */
+            [data-testid='stFileUploader'] section > div {{
+                background-color: #1c1c1c !important; /* Fast Schwarz */
+                border: 1px dashed #444;
+            }}
+            
             [data-testid='stFileUploader'] section > div > div::after {{
                 content: "{get_text('upload_text')}";
-                white-space: pre; color: white; text-align: center; display: block; font-weight: bold; font-size: 14px;
+                white-space: pre; 
+                color: #999999; /* Grau */
+                text-align: center; display: block; font-weight: bold; font-size: 14px;
             }}
 
             div[data-testid="stButton"] button, div[data-testid="stDownloadButton"] button {{
@@ -470,7 +485,7 @@ def main():
             }}
             
             [data-testid="stDataFrame"] thead tr th, [data-testid="stDataFrame"] thead tr {{
-                background-color: rgba(255,255,255,0.1) !important; color: white !important;
+                background-color: #035e4d !important; color: white !important;
             }}
             
             div[data-testid="stDialog"] {{
@@ -504,7 +519,8 @@ def main():
             if st.button("❓", help=get_text("manual_btn_help")): show_help_dialog()
         
         # UNTERE ZEILE
-        head_col1, head_col2 = st.columns([3, 1], gap="small")
+        # Layout 2:1 Verhältnis (Tabelle schmaler, Upload breiter)
+        head_col1, head_col2 = st.columns([2, 1], gap="small")
         
         with head_col1:
             file_selector_fragment()
