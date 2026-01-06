@@ -11,7 +11,7 @@ import math
 import time
 
 # --- KONFIGURATION ---
-APP_VERSION = "2.03"        # Design-Fix: 'Green-Gap' am Tabellenrand mit Box-Shadow überdeckt
+APP_VERSION = "2.06"        # Design-Fix: Schrift im "Browse files"-Button ist jetzt wieder WEISS (statt Grau)
 HEADER_HEIGHT_PIXELS = 340  
 ROWS_PER_PAGE = 10 
 
@@ -471,10 +471,34 @@ def main():
             [data-testid='stFileUploader'] section > div > div > span {{ display: none !important; }}
             [data-testid='stFileUploader'] section > div > div > small {{ display: none !important; }}
             
-            /* Upload Feld: Schwarz/Dunkelgrau */
-            [data-testid='stFileUploader'] section > div {{
+            /* FIX V2.05: Upload Feld Hintergrund ist jetzt ZWINGEND SCHWARZ (#1c1c1c) */
+            [data-testid='stFileUploaderDropzone'] {{
                 background-color: #1c1c1c !important; 
-                border: 1px dashed #444;
+                border: 1px dashed #555 !important;
+                border-radius: 5px;
+            }}
+            
+            /* Textfarbe im Dropzone-Bereich auf Grau setzen */
+            [data-testid='stFileUploaderDropzone'] div, 
+            [data-testid='stFileUploaderDropzone'] span, 
+            [data-testid='stFileUploaderDropzone'] small {{
+                color: #999999 !important;
+            }}
+            
+            /* FIX V2.06: "Browse files" Button Text muss WEISS sein */
+            [data-testid='stFileUploader'] button {{
+                color: white !important;
+                border-color: white !important;
+            }}
+            /* Falls der Text in einem inneren Tag liegt */
+            [data-testid='stFileUploader'] button p,
+            [data-testid='stFileUploader'] button span {{
+                color: white !important;
+            }}
+            
+            /* Verhindern, dass innere Container die Farbe überlagern */
+            [data-testid='stFileUploaderDropzone'] > div {{
+                background-color: transparent !important;
             }}
             
             [data-testid='stFileUploader'] section > div > div::after {{
@@ -484,6 +508,7 @@ def main():
                 text-align: center; display: block; font-weight: bold; font-size: 14px;
             }}
 
+            /* Buttons allgemein (außerhalb Upload) */
             div[data-testid="stButton"] button, div[data-testid="stDownloadButton"] button {{
                 background-color: white !important; color: #047761 !important; border-radius: 6px !important; font-weight: bold !important;
             }}
@@ -493,17 +518,15 @@ def main():
                 background-color: #035e4d !important; color: white !important;
             }}
             
-            /* FIX V2.03: Aggressive Clipping & Hintergrund-Füllung */
+            /* FIX V2.03: Aggressive Clipping & Hintergrund-Füllung für Tabelle */
             [data-testid="stDataFrame"] {{
-                background-color: #1c1c1c !important;  /* Füllt Lücken schwarz */
+                background-color: #1c1c1c !important;  
                 border: 1px solid rgba(255,255,255,0.2);
                 border-radius: 8px !important;
                 overflow: hidden !important;
-                /* Box-Shadow Hack: Erweitert den schwarzen Hintergrund minimal, um Lücken zu schließen */
                 box-shadow: 0px 0px 0px 1px #1c1c1c; 
             }}
             
-            /* Inneren Divs ebenfalls schwarz, um Transparenz zu vermeiden */
             [data-testid="stDataFrame"] > div {{
                 background-color: #1c1c1c !important;
                 border-radius: 8px !important;
