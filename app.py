@@ -11,7 +11,7 @@ import math
 import time
 
 # --- KONFIGURATION ---
-APP_VERSION = "1.94"        # Feature: Umfassendes Handbuch, das JEDEN Button erklärt
+APP_VERSION = "1.95"        # Feature: Sprache-Button von "GB" auf "EN" geändert
 HEADER_HEIGHT_PIXELS = 340  
 ROWS_PER_PAGE = 10 
 
@@ -23,6 +23,7 @@ GPX_FOLDER_PATH = "."
 CSV_FOLDER_PATH = "."       
 
 # 3. Pfad für den EXPORT der CSV-Dateien (Schreiben)
+# WICHTIG: Für den "Alle exportieren" Button muss hier ein Pfad eingetragen sein!
 EXPORT_FOLDER_PATH = "."
 
 # --- SPRACH-WÖRTERBUCH ---
@@ -66,7 +67,7 @@ TRANSLATIONS = {
 ## 📘 Benutzerhandbuch & Button-Erklärung
 
 ### 1. Obere Leiste (Header)
-* **DE / GB:** Wechselt die Sprache (Deutsch / Englisch).
+* **DE / EN:** Wechselt die Sprache (Deutsch / Englisch).
 * **❓:** Öffnet dieses Handbuch.
 
 ### 2. Dateiauswahl (Oben Links)
@@ -131,7 +132,7 @@ TRANSLATIONS = {
 ## 📘 User Manual & Button Guide
 
 ### 1. Top Bar (Header)
-* **DE / GB:** Switches language (German / English).
+* **DE / EN:** Switches language (German / English).
 * **❓:** Opens this manual.
 
 ### 2. File Selection (Top Left)
@@ -495,7 +496,7 @@ def main():
              st.markdown(f"<h3 style='text-align: center; color: white; margin-top: 5px; margin-bottom: 5px;'>🚚 {get_text('page_title')}</h3>", unsafe_allow_html=True)
         with tit_col2:
             curr_lang = st.session_state.language
-            btn_label = "DE" if curr_lang == 'Deutsch' else "GB"
+            btn_label = "DE" if curr_lang == 'Deutsch' else "EN"
             if st.button(btn_label, key="lang_toggle"):
                 st.session_state.language = 'English' if curr_lang == 'Deutsch' else 'Deutsch'
                 st.rerun()
