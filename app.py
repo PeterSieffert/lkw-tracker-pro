@@ -11,16 +11,22 @@ import math
 import time
 
 # --- KONFIGURATION ---
-APP_VERSION = "1.85"        # Fix: Beschriftung für "Sidebar ein/aus" wiederhergestellt
+APP_VERSION = "1.86"        # Feature: Konfigurierbarer Quellordner für GPX-Dateien
 HEADER_HEIGHT_PIXELS = 340  
-ROWS_PER_PAGE = 10          
+ROWS_PER_PAGE = 10 
+
+# --- PFAD ZU DEN GPX DATEIEN ---
+# "." bedeutet: Gleicher Ordner wie diese app.py Datei
+# Beispiel absoluter Pfad: "C:/Users/Name/Documents/Touren"
+# Beispiel Netzwerkpfad: "//Server/Freigabe/Touren"
+GPX_FOLDER_PATH = "."       
 
 # --- SPRACH-WÖRTERBUCH ---
 TRANSLATIONS = {
     "Deutsch": {
         "page_title": "LKW Touren Viewer Pro",
         "tours_found": "📂 Aktuell gefundene Touren: <b>{count}</b> (Auto-Update: 60s)",
-        "no_files": "Keine GPX Dateien.",
+        "no_files": "Keine GPX Dateien im Ordner gefunden.",
         "upload_text": "GPX Datei hier ablegen (max. 200 MB)",
         "manual_btn_help": "Handbuch",
         "manual_title": "Benutzerhandbuch",
@@ -29,7 +35,7 @@ TRANSLATIONS = {
         "stats_dist": "📏 Distanz",
         "stats_speed": "Ø Geschw.",
         "btn_save_map": "🌍 Karte für 2. Monitor speichern",
-        "btn_sidebar": "Sidebar ein/aus",  # WIEDER EINGEFÜGT
+        "btn_sidebar": "Sidebar ein/aus",
         "btn_export": "📄 Export Standzeiten",
         "header_customers": "📋 Kundenliste",
         "col_tour_nr": "Tournummer",
@@ -49,24 +55,24 @@ TRANSLATIONS = {
         "manual_md": """
 ## 📘 Benutzerhandbuch
 
-### 1. Layout
+### 1. Ordner-Einstellung
+Die Touren werden nun aus dem konfigurierten Verzeichnis geladen (Standard: aktueller Ordner).
+
+### 2. Layout
 * **Alignment:** Die Spalte "Upload" ist nun pixelgenau mit der Kachel "Ø Geschw." ausgerichtet.
 
-### 2. Bedienung
+### 3. Bedienung
 #### 📂 Tour laden
 * Klicken Sie oben links auf eine Tour in der Liste.
 
 #### 🗺️ Karte & 2. Monitor
 * Nutzen Sie den Button **"🌍 Karte für 2. Monitor speichern"** unter der Karte.
-
-#### 📋 Liste
-* Klicken Sie auf eine Zeile links, um den Kunden in der Karte zu zentrieren.
 """
     },
     "English": {
         "page_title": "Truck Tour Viewer Pro",
         "tours_found": "📂 Found tours currently: <b>{count}</b> (Auto-Update: 60s)",
-        "no_files": "No GPX files.",
+        "no_files": "No GPX files found in folder.",
         "upload_text": "Drop GPX file here (max. 200 MB)",
         "manual_btn_help": "Manual",
         "manual_title": "User Manual",
@@ -75,7 +81,7 @@ TRANSLATIONS = {
         "stats_dist": "📏 Distance",
         "stats_speed": "Ø Speed",
         "btn_save_map": "🌍 Save Map for 2nd Monitor",
-        "btn_sidebar": "Sidebar on/off",  # RESTORED
+        "btn_sidebar": "Sidebar on/off",
         "btn_export": "📄 Export Standstills",
         "header_customers": "📋 Customer List",
         "col_tour_nr": "Tour No.",
@@ -95,18 +101,18 @@ TRANSLATIONS = {
         "manual_md": """
 ## 📘 User Manual
 
-### 1. Layout
+### 1. Folder Settings
+Tours are now loaded from the configured directory (Default: current folder).
+
+### 2. Layout
 * **Alignment:** The Upload box is now pixel-perfect aligned with the Speed tile.
 
-### 2. Operation
+### 3. Operation
 #### 📂 Load Tour
 * Click a tour in the top left list.
 
 #### 🗺️ Map & 2nd Monitor
 * Use the **"🌍 Save Map..."** button below the map.
-
-#### 📋 List
-* Click a row on the left to center the customer on the map.
 """
     }
 }
@@ -121,7 +127,8 @@ def get_base64_of_bin_file(bin_file):
     return base64.b64encode(data).decode()
 
 def load_customer_db():
-    filename = "KND.STM"
+    # Datenbank liegt weiterhin im Programmverzeichnis, nicht im GPX Ordner (außer gewünscht)
+    filename = "KND.STM" 
     if not os.path.exists(filename):
         return None
     try:
@@ -235,21 +242,26 @@ def get_local_gpx_files_info():
     col_fname = TRANSLATIONS[lang]["col_filename"]
     col_fdate = TRANSLATIONS[lang]["col_date"]
     
-    for f in os.listdir('.'):
-        if os.path.isfile(f) and f.upper().startswith('DL') and f.upper().endswith('.GPX'):
-            mod_time = os.path.getmtime(f)
-            dt_obj = datetime.fromtimestamp(mod_time)
-            fmt = TRANSLATIONS[lang]["file_date_format"]
-            date_str = dt_obj.strftime(fmt)
-            tour_nr = f.upper().replace("DL", "").replace(".GPX", "")
-            
-            file_list.append({
-                col_tour: tour_nr,
-                col_fname: f, 
-                col_fdate: date_str, 
-                "timestamp": mod_time
-            })
-    file_list.sort(key=lambda x: x["timestamp"], reverse=True)
+    # --- CHANGE: Verwende den konfigurierten Pfad ---
+    scan_path = GPX_FOLDER_PATH
+    
+    if os.path.exists(scan_path):
+        for f in os.listdir(scan_path):
+            full_path = os.path.join(scan_path, f)
+            if os.path.isfile(full_path) and f.upper().startswith('DL') and f.upper().endswith('.GPX'):
+                mod_time = os.path.getmtime(full_path)
+                dt_obj = datetime.fromtimestamp(mod_time)
+                fmt = TRANSLATIONS[lang]["file_date_format"]
+                date_str = dt_obj.strftime(fmt)
+                tour_nr = f.upper().replace("DL", "").replace(".GPX", "")
+                
+                file_list.append({
+                    col_tour: tour_nr,
+                    col_fname: f, 
+                    col_fdate: date_str, 
+                    "timestamp": mod_time
+                })
+        file_list.sort(key=lambda x: x["timestamp"], reverse=True)
     return file_list
 
 @st.fragment(run_every=60)
@@ -417,9 +429,11 @@ def main():
         if uploaded_file is not None and is_upload_newer:
             file_to_process, file_name_display = uploaded_file, uploaded_file.name
         elif st.session_state.selected_local_file:
+            # --- CHANGE: Pfad zusammensetzen mit GPX_FOLDER_PATH ---
+            full_path = os.path.join(GPX_FOLDER_PATH, st.session_state.selected_local_file)
             try:
-                if os.path.exists(st.session_state.selected_local_file):
-                    file_to_process, file_name_display = open(st.session_state.selected_local_file, 'rb'), st.session_state.selected_local_file
+                if os.path.exists(full_path):
+                    file_to_process, file_name_display = open(full_path, 'rb'), st.session_state.selected_local_file
             except: pass
         
         if file_to_process:
