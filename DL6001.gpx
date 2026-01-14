@@ -9,21 +9,21 @@
 <name>GPS Logger 20260114-111327</name>
 <time>2026-01-14T14:55:21Z</time>
 
-<wpt lat="49.27583850" lon="7.09565510"><ele>312.700</ele><time>2026-01-14T11:08:46.930Z</time><name>CLIENT_BEGIN:0171942(Ing. Punzenberger Copa Da)</name><sat>32</sat></wpt>
+<wpt lat="49.27583850" lon="7.09565510"><ele>312.700</ele><time>2026-01-14T11:08:46.930Z</time><name>CLIENT_BEGIN:0171942(Getränkemarkt 123)</name><sat>32</sat></wpt>
 
-<wpt lat="49.27584450" lon="7.09569700"><ele>312.700</ele><time>2026-01-14T11:29:41.926Z</time><name>CLIENT_END:0171942(Ing. Punzenberger Copa Da)</name><sat>33</sat></wpt>
+<wpt lat="49.27584450" lon="7.09569700"><ele>312.700</ele><time>2026-01-14T11:29:41.926Z</time><name>CLIENT_END:0171942(Getränkemarkt 123)</name><sat>33</sat></wpt>
 
-<wpt lat="49.28945840" lon="7.02865870"><ele>342.800</ele><time>2026-01-14T11:43:01.921Z</time><name>CLIENT_BEGIN:0205004(Hämmerle Theo jun.)</name><sat>34</sat></wpt>
+<wpt lat="49.28945840" lon="7.02865870"><ele>342.800</ele><time>2026-01-14T11:43:01.921Z</time><name>CLIENT_BEGIN:0205004(Gaststätte Am Markt)</name><sat>34</sat></wpt>
 
-<wpt lat="49.28945000" lon="7.02866260"><ele>342.900</ele><time>2026-01-14T12:17:16.910Z</time><name>CLIENT_END:0205004(Hämmerle Theo jun.)</name><sat>32</sat></wpt>
+<wpt lat="49.28945000" lon="7.02866260"><ele>342.900</ele><time>2026-01-14T12:17:16.910Z</time><name>CLIENT_END:0205004(Gaststätte Am Markt)</name><sat>32</sat></wpt>
 
 <wpt lat="49.28979690" lon="6.98530670"><ele>382.333</ele><time>2026-01-14T12:29:56.908Z</time><name>PAUSE_BEGIN:1(MITTAGSPAUSE)</name><sat>29</sat></wpt>
 
 <wpt lat="49.28986620" lon="6.98529420"><ele>398.707</ele><time>2026-01-14T13:10:46.893Z</time><name>PAUSE_END:1(MITTAGSPAUSE)</name><sat>28</sat></wpt>
 
-<wpt lat="49.30760170" lon="6.93921640"><ele>303.400</ele><time>2026-01-14T13:19:21.891Z</time><name>CLIENT_BEGIN:0236877(Feuerwehr Salzburg)</name><sat>27</sat></wpt>
+<wpt lat="49.30760170" lon="6.93921640"><ele>303.400</ele><time>2026-01-14T13:19:21.891Z</time><name>CLIENT_BEGIN:0236877(Feuerwehr Verbund)</name><sat>27</sat></wpt>
 
-<wpt lat="49.30752980" lon="6.93930180"><ele>303.400</ele><time>2026-01-14T14:30:49.872Z</time><name>CLIENT_END:0236877(Feuerwehr Salzburg)</name><sat>32</sat></wpt>
+<wpt lat="49.30752980" lon="6.93930180"><ele>303.400</ele><time>2026-01-14T14:30:49.872Z</time><name>CLIENT_END:0236877(Feuerwehr Verbund)</name><sat>32</sat></wpt>
 
 <trk>
  <name>Track 20260114-111327</name>
@@ -3176,5 +3176,6 @@
   <trkpt lat="49.31514620" lon="6.90643460"><ele>286.800</ele><time>2026-01-14T14:55:19.866Z</time><speed>0.112</speed><sat>5</sat></trkpt>
  </trkseg>
 </trk>
+
 
 </gpx>
