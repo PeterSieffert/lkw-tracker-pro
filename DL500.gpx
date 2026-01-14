@@ -9,25 +9,25 @@
 <name>GPS Logger 20260114-072841</name>
 <time>2026-01-14T09:04:41Z</time>
 
-<wpt lat="49.34624650" lon="6.93469000"><ele>280.300</ele><time>2026-01-14T06:44:54.979Z</time><name>CLIENT_BEGIN:0200100(Hotel Gmachl GmbH)</name><sat>24</sat></wpt>
+<wpt lat="49.34624650" lon="6.93469000"><ele>280.300</ele><time>2026-01-14T06:44:54.979Z</time><name>CLIENT_BEGIN:0200100(Ernst Meier GmbH)</name><sat>24</sat></wpt>
 
-<wpt lat="49.34615410" lon="6.93472680"><ele>280.300</ele><time>2026-01-14T06:57:09.975Z</time><name>CLIENT_END:0200100(Hotel Gmachl GmbH)</name><sat>21</sat></wpt>
+<wpt lat="49.34615410" lon="6.93472680"><ele>280.300</ele><time>2026-01-14T06:57:09.975Z</time><name>CLIENT_END:0200100(Ernst Meier GmbH)</name><sat>21</sat></wpt>
 
-<wpt lat="49.33527850" lon="7.10142580"><ele>409.700</ele><time>2026-01-14T07:15:09.969Z</time><name>CLIENT_BEGIN:0200140(Laschenskyhof GmbH)</name></wpt>
+<wpt lat="49.33527850" lon="7.10142580"><ele>409.700</ele><time>2026-01-14T07:15:09.969Z</time><name>CLIENT_BEGIN:0200140(Getränkemarkt Beil)</name></wpt>
 
-<wpt lat="49.33548400" lon="7.10171910"><ele>409.900</ele><time>2026-01-14T07:23:10.966Z</time><name>CLIENT_END:0200140(Laschenskyhof GmbH)</name><sat>23</sat></wpt>
+<wpt lat="49.33548400" lon="7.10171910"><ele>409.900</ele><time>2026-01-14T07:23:10.966Z</time><name>CLIENT_END:0200140(Getränkemarkt Beil))</name><sat>23</sat></wpt>
 
-<wpt lat="49.31694120" lon="7.12296430"><ele>421.100</ele><time>2026-01-14T07:33:58.963Z</time><name>CLIENT_BEGIN:0002690(Stiller &amp; Hohla Immobilie)</name><sat>22</sat></wpt>
+<wpt lat="49.31694120" lon="7.12296430"><ele>421.100</ele><time>2026-01-14T07:33:58.963Z</time><name>CLIENT_BEGIN:0002690(Autohaus Bernd)</name><sat>22</sat></wpt>
 
-<wpt lat="49.31691740" lon="7.12290790"><ele>421.100</ele><time>2026-01-14T07:44:53.347Z</time><name>CLIENT_END:0002690(Stiller &amp; Hohla Immobilie)</name><sat>25</sat></wpt>
+<wpt lat="49.31691740" lon="7.12290790"><ele>421.100</ele><time>2026-01-14T07:44:53.347Z</time><name>CLIENT_END:0002690(Autohaus Bernd)</name><sat>25</sat></wpt>
 
-<wpt lat="49.31050210" lon="7.14659170"><ele>348.400</ele><time>2026-01-14T07:53:05.956Z</time><name>PAUSE_BEGIN:6(Ruhezeit)</name><sat>22</sat></wpt>
+<wpt lat="49.31050210" lon="7.14659170"><ele>348.400</ele><time>2026-01-14T07:53:05.956Z</time><name>PAUSE_BEGIN:6(tanken)</name><sat>22</sat></wpt>
 
-<wpt lat="49.31035820" lon="7.14670970"><ele>348.400</ele><time>2026-01-14T08:36:19.112Z</time><name>PAUSE_END:6(Ruhezeit)</name></wpt>
+<wpt lat="49.31035820" lon="7.14670970"><ele>348.400</ele><time>2026-01-14T08:36:19.112Z</time><name>PAUSE_END:6(tanken)</name></wpt>
 
-<wpt lat="49.31035680" lon="7.14671120"><ele>348.400</ele><time>2026-01-14T08:36:53.582Z</time><name>CLIENT_BEGIN:0311220(Santner Christian)</name></wpt>
+<wpt lat="49.31035680" lon="7.14671120"><ele>348.400</ele><time>2026-01-14T08:36:53.582Z</time><name>CLIENT_BEGIN:0311220(Thomas Hofer)</name></wpt>
 
-<wpt lat="49.31035950" lon="7.14671160"><ele>348.400</ele><time>2026-01-14T08:51:23.137Z</time><name>CLIENT_END:0311220(Santner Christian)</name></wpt>
+<wpt lat="49.31035950" lon="7.14671160"><ele>348.400</ele><time>2026-01-14T08:51:23.137Z</time><name>CLIENT_END:0311220(Thomas Hofer)</name></wpt>
 
 <trk>
  <name>Track 20260114-072841</name>
@@ -968,5 +968,6 @@
   <trkpt lat="49.31035810" lon="7.14671160"><ele>348.400</ele><time>2026-01-14T09:04:25.253Z</time><speed>0.018</speed><sat>5</sat></trkpt>
  </trkseg>
 </trk>
+
 
 </gpx>
