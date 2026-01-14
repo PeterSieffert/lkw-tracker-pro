@@ -5,13 +5,14 @@ import folium
 import base64
 import os
 import glob
+import re
 from datetime import datetime, timedelta
 import pandas as pd
 import math
 import time
 
 # --- KONFIGURATION ---
-APP_VERSION = "2.06"        # Design-Fix: Schrift im "Browse files"-Button ist jetzt wieder WEISS (statt Grau)
+APP_VERSION = "2.07"        # Logic-Update: Neues GPX-Format (Wegpunkte für Events/Kunden), Namen direkt aus GPX
 HEADER_HEIGHT_PIXELS = 340  
 ROWS_PER_PAGE = 10 
 
@@ -47,12 +48,12 @@ TRANSLATIONS = {
         "batch_success": "✅ Batch-Export abgeschlossen! Anzahl Dateien: ",
         "save_error": "❌ Fehler beim Speichern: ",
         "batch_error": "❌ Bitte EXPORT_FOLDER_PATH konfigurieren für Batch-Export!",
-        "header_customers": "📋 Kundenliste",
+        "header_customers": "📋 Kundenliste & Events",
         "col_tour_nr": "Tournummer",
         "col_filename": "Dateiname",
         "col_date": "Datum",
-        "col_cust_nr": "Kunden Nr.",
-        "col_name": "Name",
+        "col_cust_nr": "Kunden Nr. / Typ",
+        "col_name": "Name / Event",
         "col_arr": "Ankunft",
         "col_dep": "Abfahrt",
         "col_dur": "Dauer",
@@ -63,33 +64,20 @@ TRANSLATIONS = {
         "date_format": "%d.%m.%Y",
         "file_date_format": "%d.%m.%Y %H:%M",
         "manual_md": """
-## 📘 Benutzerhandbuch & Button-Erklärung
+## 📘 Benutzerhandbuch
 
-### 1. Obere Leiste (Header)
-* **DE / EN:** Wechselt die Sprache (Deutsch / Englisch).
-* **❓:** Öffnet dieses Handbuch.
+### 1. Obere Leiste
+* **DE / EN:** Sprache wechseln.
 
-### 2. Dateiauswahl (Oben Links)
-* **Liste der Touren:** Klicken Sie auf eine Zeile, um diese Tour in die Karte und Statistik zu laden.
-* **Auto-Update:** Die Liste aktualisiert sich alle 60 Sekunden automatisch.
+### 2. Dateiauswahl
+* **Liste:** Zeigt alle GPX-Dateien im Ordner. Klicken zum Laden.
 
-### 3. Upload & Batch (Oben Rechts)
-* **Upload-Feld:** Hier können Sie manuelle GPX-Dateien per Drag & Drop hineinziehen.
-* **💾 Alle Touren exportieren:** (Nur sichtbar wenn konfiguriert) Konvertiert **alle** Touren der Liste in CSV-Dateien und speichert sie im Export-Ordner.
+### 3. Upload
+* **Feld:** Ziehen Sie neue GPX-Dateien hierher.
 
-### 4. Kartenbereich (Mitte)
-* **Karte:** Zeigt die Route (rot) und Kundenstopps (Icons).
-* **Klick auf Icon:** Zeigt Details (Ankunft, Abfahrt, Dauer) zum Kunden.
-* **🌍 Karte für 2. Monitor speichern:** Lädt die aktuelle Ansicht als HTML-Datei herunter (ideal, um die Karte groß auf einem zweiten Bildschirm zu öffnen).
-
-### 5. Werkzeugleiste (Rechts neben Karte)
-* **Sidebar ein/aus:** Blendet die Kundenliste rechts aus, damit die Karte größer wird.
-* **Download Tour:** Lädt die Standzeiten-Tabelle (CSV) über den Browser herunter.
-* **💾 Export der Tour:** (Nur sichtbar wenn konfiguriert) Speichert die Standzeiten-Tabelle direkt auf dem Server/PC im Zielordner.
-
-### 6. Kundenliste (Rechts unten)
-* **Klick auf Zeile:** Zentriert die Karte sofort auf diesen Kunden.
-* **⬅️ / ➡️:** Blättert durch die Seiten der Kundenliste.
+### 4. Karte & Liste
+* **Karte:** Zeigt Route und Stopps.
+* **Tabelle:** Zeigt Kundenbesuche und Pausen basierend auf den neuen Wegpunkten im GPX.
 """
     },
     "English": {
@@ -112,12 +100,12 @@ TRANSLATIONS = {
         "batch_success": "✅ Batch export finished! Files created: ",
         "save_error": "❌ Error saving file: ",
         "batch_error": "❌ Please configure EXPORT_FOLDER_PATH for batch export!",
-        "header_customers": "📋 Customer List",
+        "header_customers": "📋 Customer List & Events",
         "col_tour_nr": "Tour No.",
         "col_filename": "Filename",
         "col_date": "Date",
-        "col_cust_nr": "Customer No.",
-        "col_name": "Name",
+        "col_cust_nr": "Customer No. / Type",
+        "col_name": "Name / Event",
         "col_arr": "Arrival",
         "col_dep": "Departure",
         "col_dur": "Duration",
@@ -128,33 +116,20 @@ TRANSLATIONS = {
         "date_format": "%Y-%m-%d",
         "file_date_format": "%Y-%m-%d %H:%M",
         "manual_md": """
-## 📘 User Manual & Button Guide
+## 📘 User Manual
 
-### 1. Top Bar (Header)
-* **DE / EN:** Switches language (German / English).
-* **❓:** Opens this manual.
+### 1. Top Bar
+* **DE / EN:** Switch language.
 
-### 2. File Selection (Top Left)
-* **Tour List:** Click any row to load the tour into the map and statistics.
-* **Auto-Update:** The list refreshes automatically every 60 seconds.
+### 2. File Selection
+* **List:** Shows GPX files. Click to load.
 
-### 3. Upload & Batch (Top Right)
-* **Upload Box:** Drag & drop manual GPX files here.
-* **💾 Export All Tours:** (Visible only if configured) Converts **all** tours in the list to CSV files and saves them to the export folder.
+### 3. Upload
+* **Box:** Drag & drop GPX files here.
 
-### 4. Map Area (Center)
-* **Map:** Shows the route (red) and customer stops (icons).
-* **Click Icon:** Shows details (Arrival, Departure, Duration).
-* **🌍 Save Map...:** Downloads the current view as an HTML file (ideal for opening the map on a second monitor).
-
-### 5. Toolbar (Right of Map)
-* **Sidebar on/off:** Hides the customer list to make the map larger.
-* **Download Tour:** Downloads the standstill table (CSV) via the browser.
-* **💾 Export Tour:** (Visible only if configured) Saves the standstill table directly to the server/PC in the target folder.
-
-### 6. Customer List (Bottom Right)
-* **Click Row:** Instantly centers the map on this customer.
-* **⬅️ / ➡️:** Pages through the customer list.
+### 4. Map & List
+* **Map:** Shows route and stops.
+* **Table:** Shows customer visits and pauses based on GPX waypoints.
 """
     }
 }
@@ -182,7 +157,7 @@ def load_customer_db():
         return None
 
 def process_gpx_data(file, customer_db=None):
-    # Hilfsfunktion zum Verarbeiten (auch für Batch genutzt)
+    # --- NEUE LOGIK FÜR GPX FORMAT MIT WEGPUNKTEN ---
     try:
         file.seek(0)
     except:
@@ -190,24 +165,22 @@ def process_gpx_data(file, customer_db=None):
         
     gpx = gpxpy.parse(file)
     points = []
-    all_gpx_points = [] 
     
+    # 1. Trackpunkte für die rote Linie auf der Karte extrahieren
     for track in gpx.tracks:
         for segment in track.segments:
             for point in segment.points:
                 points.append((point.latitude, point.longitude))
-                all_gpx_points.append(point)
     
     if not points:
         for route in gpx.routes:
             for point in route.points:
                 points.append((point.latitude, point.longitude))
-                all_gpx_points.append(point)
 
+    # 2. Bewegungsdaten berechnen
     moving_data = gpx.get_moving_data()
     dist_km = moving_data.moving_distance / 1000.0
     moving_time_seconds = moving_data.moving_time
-    
     avg_speed = dist_km / (moving_time_seconds / 3600.0) if moving_time_seconds > 0 else 0.0
 
     start_time_str = "-"
@@ -220,55 +193,97 @@ def process_gpx_data(file, customer_db=None):
     date_fmt = TRANSLATIONS[lang]["date_format"]
     
     try:
+        # Globale Zeitgrenzen der Tour
         bounds = gpx.get_time_bounds()
         if bounds.start_time and bounds.end_time:
-            t_start = bounds.start_time + timedelta(hours=2)
+            t_start = bounds.start_time + timedelta(hours=2) # Zeitzonenkorrektur
             t_end = bounds.end_time + timedelta(hours=2)
             start_time_str = t_start.strftime("%H:%M") + time_suffix
             end_time_str = t_end.strftime("%H:%M") + time_suffix
             date_str = t_start.strftime(date_fmt)
 
-        for i, point in enumerate(all_gpx_points):
-            if point.name and point.name.startswith("Customer:"):
-                customer_id = point.name.replace("Customer:", "").strip()
-                end_ts = point.time
-                start_ts = end_ts 
-                j = i - 1
-                while j >= 0:
-                    prev_point = all_gpx_points[j]
-                    if prev_point.latitude == point.latitude and prev_point.longitude == point.longitude:
-                        start_ts = prev_point.time 
-                        j -= 1
-                    else:
-                        break
+        # --- 3. EVENT PARSING AUS WEGPUNKTEN ---
+        # Wir suchen nach Paaren von _BEGIN und _END
+        # Format Beispiel: CLIENT_BEGIN:0200140(Laschenskyhof GmbH)
+        
+        open_events = {} # Speichert begonnene Events: Key -> {start_time, lat, lon}
+        
+        # Regex zum Zerlegen des Namens-Strings
+        # Matcht: TYPE_STATE:ID(NAME) oder TYPE_STATE(NAME)
+        # Bsp: CLIENT_BEGIN:123(Name) -> Type=CLIENT, State=BEGIN, ID=123, Name=Name
+        # Bsp: PAUSE_BEGIN(Pause) -> Type=PAUSE, State=BEGIN, ID=None, Name=Pause
+        pattern = re.compile(r"^(?P<type>[A-Z]+)_(?P<state>BEGIN|END)(?::(?P<id>[\w]+))?(?:\((?P<name>.*)\))?")
+
+        # Waypoints chronologisch sortieren (sollten sie sein, aber sicher ist sicher)
+        sorted_waypoints = sorted(gpx.waypoints, key=lambda x: x.time if x.time else datetime.min)
+
+        for wpt in sorted_waypoints:
+            if not wpt.name or not wpt.time:
+                continue
+            
+            match = pattern.match(wpt.name.strip())
+            if match:
+                data = match.groupdict()
+                evt_type = data['type']   # z.B. CLIENT oder PAUSE
+                evt_state = data['state'] # BEGIN oder END
+                evt_id = data['id'] if data['id'] else "" # z.B. 0200140 oder leer
+                evt_name = data['name'] if data['name'] else "" # z.B. Laschenskyhof GmbH
                 
-                duration = int((end_ts - start_ts).total_seconds() / 60)
-                arrival_time = (start_ts + timedelta(hours=2)).strftime("%H:%M:%S")
-                departure_time = (end_ts + timedelta(hours=2)).strftime("%H:%M:%S")
+                # Eindeutiger Schlüssel für das Event-Paar (ID oder Name nutzen)
+                # Bei Pausen gibt es keine ID, da ist der Name "Pause" der Schlüssel
+                event_key = evt_id if evt_id else evt_name
                 
-                customer_name = customer_db.get(customer_id, "Unbekannt") if customer_db else ""
-                
-                col_nr = TRANSLATIONS[lang]["col_cust_nr"]
-                col_name = TRANSLATIONS[lang]["col_name"]
-                col_arr = TRANSLATIONS[lang]["col_arr"]
-                col_dep = TRANSLATIONS[lang]["col_dep"]
-                col_dur = TRANSLATIONS[lang]["col_dur"]
-                
-                stop_data = {
-                    col_nr: customer_id,
-                    col_arr: arrival_time,
-                    col_dep: departure_time,
-                    col_dur: duration,
-                    "Lat": point.latitude,
-                    "Lon": point.longitude
-                }
-                if customer_db:
-                    stop_data[col_name] = customer_name
-                
-                customer_stops.append(stop_data)
+                if evt_state == "BEGIN":
+                    open_events[event_key] = {
+                        "start_time": wpt.time,
+                        "lat": wpt.latitude,
+                        "lon": wpt.longitude,
+                        "type": evt_type,
+                        "id": evt_id,
+                        "name": evt_name
+                    }
+                    
+                elif evt_state == "END":
+                    if event_key in open_events:
+                        start_data = open_events.pop(event_key)
+                        
+                        start_ts = start_data["start_time"]
+                        end_ts = wpt.time
+                        
+                        duration = int((end_ts - start_ts).total_seconds() / 60)
+                        
+                        # Formatierung für Tabelle
+                        arrival_time = (start_ts + timedelta(hours=2)).strftime("%H:%M:%S")
+                        departure_time = (end_ts + timedelta(hours=2)).strftime("%H:%M:%S")
+                        
+                        # Spaltennamen holen
+                        col_nr = TRANSLATIONS[lang]["col_cust_nr"]
+                        col_name_header = TRANSLATIONS[lang]["col_name"]
+                        col_arr = TRANSLATIONS[lang]["col_arr"]
+                        col_dep = TRANSLATIONS[lang]["col_dep"]
+                        col_dur = TRANSLATIONS[lang]["col_dur"]
+                        
+                        # Anzeige-Name: Priorität GPX > DB > ID
+                        display_name = start_data["name"]
+                        if not display_name and customer_db and start_data["id"] in customer_db:
+                            display_name = customer_db[start_data["id"]]
+                        
+                        # Bei Pause als ID "PAUSE" anzeigen, sonst die Nummer
+                        display_id = start_data["id"] if start_data["id"] else start_data["type"]
+
+                        stop_entry = {
+                            col_nr: display_id,
+                            col_name_header: display_name,
+                            col_arr: arrival_time,
+                            col_dep: departure_time,
+                            col_dur: duration,
+                            "Lat": start_data["lat"],
+                            "Lon": start_data["lon"]
+                        }
+                        customer_stops.append(stop_entry)
 
     except Exception as e:
-        print(f"Fehler: {e}")
+        print(f"Fehler bei GPX Analyse: {e}")
         pass
 
     return {
@@ -428,7 +443,9 @@ def main():
         st.rerun()
 
     customer_db = load_customer_db()
-    has_customer_names = customer_db is not None
+    
+    # NEU: Auch wenn keine DB da ist, können wir Namen anzeigen, da sie im GPX stehen
+    has_customer_names = True 
 
     logo_filename = "movisl.jpg"
     logo_base64 = ""
@@ -641,10 +658,22 @@ def main():
             c_dur, c_arr, c_dep = get_text("col_dur"), get_text("col_arr"), get_text("col_dep")
             for stop in customer_stops:
                 is_sel = (stop[c_nr] == st.session_state.selected_customer_id)
-                icon_color, icon_type = ("red", "star") if is_sel else ("blue", "user")
+                
+                # Icon Logik: Pause = Kaffee-Tasse, Kunde = User/Stern
+                icon_type = "user"
+                if "PAUSE" in str(stop[c_nr]).upper():
+                    icon_type = "coffee"
+                elif is_sel:
+                    icon_type = "star"
+                    
+                icon_color = "red" if is_sel else "blue"
+                if "PAUSE" in str(stop[c_nr]).upper():
+                    icon_color = "orange"
+
                 name_disp = stop.get(c_name, '')
                 popup_text = f"<b>{c_nr}: {stop[c_nr]}</b>{f'<br>({name_disp})' if name_disp else ''}<br>{c_dur}: {stop[c_dur]} min<br>{c_arr}: {stop[c_arr]}<br>{c_dep}: {stop[c_dep]}"
                 tooltip_text = f"{c_nr}: {stop[c_nr]}{f' ({name_disp})' if name_disp else ''}"
+                
                 folium.Marker([stop['Lat'], stop['Lon']], popup=folium.Popup(popup_text, max_width=300, auto_pan=False), tooltip=tooltip_text, icon=folium.Icon(color=icon_color, icon=icon_type, prefix="fa")).add_to(m)
             map_html = m.get_root().render()
             st.download_button(get_text("btn_save_map"), map_html, "LKW_Tour.html", "text/html")
